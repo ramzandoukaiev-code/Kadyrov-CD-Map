@@ -2,7 +2,7 @@
 
 Cartographie OSINT interactive des réseaux d'influence, avoirs et canaux financiers de Ramzan Kadyrov, de l'Europe au Moyen-Orient.
 
-**Carte en ligne :** https://VOTRE-PSEUDO.github.io/NOM-DU-DEPOT/
+**Carte en ligne :** https://ramzandoukaiev-code.github.io/Kadyrov-CD-Map/
 
 ## À propos
 
