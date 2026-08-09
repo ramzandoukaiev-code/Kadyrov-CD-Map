@@ -1,0 +1,4769 @@
+{
+  "cat": {
+    "imm": {
+      "color": "#f5b14a",
+      "fr": "Immobilier & finance",
+      "en": "Property & finance",
+      "short": {
+        "fr": "Immobilier",
+        "en": "Property"
+      }
+    },
+    "dipl": {
+      "color": "#4fc3dd",
+      "fr": "Religieux & diplomatique",
+      "en": "Religious & diplomatic",
+      "short": {
+        "fr": "Diplomatie",
+        "en": "Diplomacy"
+      }
+    },
+    "hum": {
+      "color": "#5cc98c",
+      "fr": "Caritatif & humanitaire",
+      "en": "Charitable & humanitarian",
+      "short": {
+        "fr": "Caritatif",
+        "en": "Charity"
+      }
+    },
+    "rep": {
+      "color": "#e74c3c",
+      "fr": "Répression & assassinats",
+      "en": "Repression & killings",
+      "short": {
+        "fr": "Répression",
+        "en": "Repression"
+      }
+    },
+    "dyn": {
+      "color": "#d98ca8",
+      "fr": "Diaspora & dynastie",
+      "en": "Diaspora & dynasty",
+      "short": {
+        "fr": "Diaspora",
+        "en": "Diaspora"
+      }
+    }
+  },
+  "cert": {
+    "3": {
+      "color": "#90a0ac",
+      "fr": "Rapporté",
+      "en": "Reported",
+      "dfr": "source unique / présomption",
+      "den": "single source / presumption",
+      "dashArr": [
+        2,
+        6
+      ],
+      "style": "dotted",
+      "w": 1.4,
+      "parts": 2
+    },
+    "4": {
+      "color": "#c7d2da",
+      "fr": "Documenté",
+      "en": "Documented",
+      "dfr": "enquête recoupée, sans pièce judiciaire",
+      "den": "corroborated reporting, no ruling",
+      "dashArr": [
+        7,
+        5
+      ],
+      "style": "dashed",
+      "w": 1.6,
+      "parts": 3
+    },
+    "5": {
+      "color": "#eef2f6",
+      "fr": "Établi",
+      "en": "Established",
+      "dfr": "document officiel / décision judiciaire",
+      "den": "official record / court ruling",
+      "dashArr": [],
+      "style": "solid",
+      "w": 2,
+      "parts": 4
+    }
+  },
+  "clusters": {
+    "famille": {
+      "color": "#d98ca8",
+      "fr": "Famille",
+      "en": "Family",
+      "ang": -1.5707963267948966
+    },
+    "exec": {
+      "color": "#e74c3c",
+      "fr": "Exécutants",
+      "en": "Enforcers",
+      "ang": 0
+    },
+    "intermed": {
+      "color": "#4fc3dd",
+      "fr": "Intermédiaires",
+      "en": "Intermediaries",
+      "ang": 1.5707963267948966
+    },
+    "affaires": {
+      "color": "#f5b14a",
+      "fr": "Affaires",
+      "en": "Business",
+      "ang": 3.141592653589793
+    },
+    "facade": {
+      "color": "#a98be0",
+      "fr": "Façade internationale / luxe",
+      "en": "International façade / luxury",
+      "ang": 2.356194490192345
+    },
+    "agayev": {
+      "color": "#6fbf9a",
+      "fr": "Clan Agayev",
+      "en": "Agayev clan",
+      "ang": 3.9269908169872414
+    }
+  },
+  "sourceRefs": {
+    "istories_afd": {
+      "name": "IStories / CORRECTIV (déc. 2025)",
+      "url": "https://istories.media/en/stories/2025/12/09/the-first-chechen-of-german-nationalism/"
+    },
+    "nyt": {
+      "name": "New York Times (2009)",
+      "url": "https://www.nytimes.com/2009/02/01/world/europe/01torture.html"
+    },
+    "spiegel": {
+      "name": "Der Spiegel (2018)",
+      "url": "https://www.spiegel.de/politik/deutschland/ramsan-kadyrow-statthalter-in-deutschland-der-botschafter-des-boesen-a-f9ccfe7d-0002-0001-0000-000177244289"
+    },
+    "istories": {
+      "name": "IStories — Chechnya’s Unofficial Embassy (2025)",
+      "url": "https://istories.media/en/stories/2025/01/30/chechnyas-unofficial-embassy-in-the-uae/"
+    },
+    "occrp": {
+      "name": "OCCRP — Dubai Uncovered (2022)",
+      "url": "https://www.occrp.org/en/investigation/dubai-uncovered-data-leak-exposes-how-criminals-officials-and-sanctioned-politicians-poured-money-into-dubai-real-estate"
+    },
+    "occrpjet": {
+      "name": "OCCRP — Chechen President’s Cousin Owns Mystery Jet",
+      "url": "https://www.occrp.org/en/news/chechen-presidents-cousin-owns-mystery-jet-russian-authorities-mistakenly-reveal"
+    },
+    "dubaiunlocked": {
+      "name": "IStories — Dubai Unlocked (2024)",
+      "url": "https://istories.media/en/stories/2024/05/14/dubai-unlocked/"
+    },
+    "ukr": {
+      "name": "Ukrainska Pravda (2022)",
+      "url": "https://www.pravda.com.ua/eng/articles/2022/03/30/7335658/"
+    },
+    "ocmedia": {
+      "name": "OC Media (2025)",
+      "url": "https://oc-media.org/kadyrov-attends-wedding-of-uae-ambassadors-son-in-abu-dhabi/"
+    },
+    "ocmedia_gaza": {
+      "name": "OC Media (août 2025)",
+      "url": "https://oc-media.org/ramzan-kadyrovs-17-year-old-son-adam-appointed-coordinator-of-chechnyas-humanitarian-aid-to-gaza/"
+    },
+    "alarabiya": {
+      "name": "Al Arabiya (2018)",
+      "url": "https://english.alarabiya.net/News/gulf/2018/08/22/IN-PICTURES-Saudi-Crown-Prince-receives-Chechen-President-Kadyrov"
+    },
+    "moscowtimes": {
+      "name": "The Moscow Times (2016)",
+      "url": "https://www.themoscowtimes.com/2016/11/28/chechen-leader-kadyrov-apologizes-to-saudis-for-wahhabism-snub-a56316"
+    },
+    "jamestown": {
+      "name": "Jamestown Foundation (2011)",
+      "url": "https://jamestown.org/ramzan-visits-saudi-arabia/"
+    },
+    "arabnews": {
+      "name": "Arab News",
+      "q": "site:arabnews.com Kadyrov hajj Mecca"
+    },
+    "caucasianknot": {
+      "name": "Caucasian Knot (2025)",
+      "url": "https://www.eng.kavkaz-uzel.eu/articles/72381"
+    },
+    "riddle": {
+      "name": "Al Jazeera — verdict Yandarbiyev (2004)",
+      "url": "https://www.aljazeera.com/news/2004/6/30/qatar-finds-russian-agents-guilty-of-murder"
+    },
+    "mei": {
+      "name": "Jamestown Foundation (2016)",
+      "url": "https://jamestown.org/program/chechen-special-battalions-sent-syria-reinforcements/"
+    },
+    "tass": {
+      "name": "TASS (média d’État, à recouper)",
+      "q": "site:tass.com Kadyrov foundation Syria humanitarian aid"
+    },
+    "ofac": {
+      "name": "US Treasury / OFAC (2020)",
+      "url": "https://home.treasury.gov/news/press-releases/sm1208"
+    },
+    "toi": {
+      "name": "Times of Israel (2014)",
+      "url": "https://www.timesofisrael.com/chechen-president-dedicates-abu-ghosh-mega-mosque/"
+    },
+    "jordantimes": {
+      "name": "Jordan Times (2024)",
+      "url": "https://jordantimes.com/news/local/refugees-founders-studying-legacy-circassians-chechens-jordans-history"
+    },
+    "bellingcat": {
+      "name": "Bellingcat — verdict de Berlin (2021)",
+      "url": "https://www.bellingcat.com/bellingcat-statement-on-verdict-of-berlin-kammergericht-tiergarten-murder/"
+    },
+    "meduza": {
+      "name": "Meduza (2021)",
+      "url": "https://meduza.io/en/news/2021/08/06/austrian-court-sentences-chechen-gunrunner-to-life-in-prison-for-kadyrov-critic-s-murder"
+    },
+    "rferl": {
+      "name": "RFE/RL (2020)",
+      "url": "https://www.rferl.org/a/chechen-blogger-known-for-criticizing-kadyrov-reportedly-murdered-in-france/30416291.html"
+    },
+    "aljazeera": {
+      "name": "Al Jazeera (2009)",
+      "url": "https://www.aljazeera.com/news/2009/4/5/dubai-claims-chechen-link-to-murder"
+    },
+    "europarl": {
+      "name": "Parlement européen — question E-002961/2022",
+      "url": "https://www.europarl.europa.eu/doceo/document/E-9-2022-002961_EN.html"
+    },
+    "rusi": {
+      "name": "RUSI / LSE",
+      "q": "site:rusi.org Kadyrov Chechnya Gulf sanctions"
+    },
+    "novaya": {
+      "name": "Novaya Gazeta Europe (2025)",
+      "url": "https://novayagazeta.eu/en/articles/2025/07/01/a-marked-man-en"
+    },
+    "public": {
+      "name": "Domaine public",
+      "url": ""
+    },
+    "egrul": {
+      "name": "EGRUL / FNS — « Prozrachny biznes » (extraits officiels 2026)",
+      "url": "https://pb.nalog.ru/"
+    },
+    "checko": {
+      "name": "Checko.ru — registre des entreprises (EGRUL)",
+      "url": "https://checko.ru/"
+    },
+    "groznyinform": {
+      "name": "Grozny-Inform (agence officielle, à recouper)",
+      "q": "site:grozny-inform.ru Bellagio Roberto Cavalli"
+    },
+    "oniro": {
+      "name": "ONIRO Group (site du groupe)",
+      "url": "https://onirogroup.it/"
+    },
+    "prnews": {
+      "name": "PRNewswire / Business of Fashion (2019)",
+      "q": "Vision Investment DICO Roberto Cavalli acquisition 2019"
+    },
+    "istories_agayevs": {
+      "name": "IStories × Le Monde × OCCRP — enquête Agayev (OpenLux, 24/06/2026)",
+      "url": "https://istories.media/en/stories/2026/06/24/agayevs/"
+    },
+    "lemonde": {
+      "name": "Le Monde — enquête OpenLux (Agayev, 2026)",
+      "url": "https://www.lemonde.fr/"
+    },
+    "openlux": {
+      "name": "OpenLux — registre luxembourgeois (consortium)",
+      "url": "https://www.lemonde.fr/projet-openlux/"
+    },
+    "opensanctions": {
+      "name": "OpenSanctions (base consolidée multi-juridictions)",
+      "url": "https://www.opensanctions.org/"
+    },
+    "fr_tresor": {
+      "name": "Registre national français des gels d’avoirs (DG Trésor)",
+      "url": "https://gels-avoirs.dgtresor.gouv.fr/"
+    }
+  },
+  "places": [
+    {
+      "id": "grozny",
+      "hub": true,
+      "lon": 45.69,
+      "lat": 43.32,
+      "dir": "up",
+      "name": {
+        "fr": "Grozny",
+        "en": "Grozny"
+      },
+      "sub": {
+        "fr": "Tchétchénie · Russie",
+        "en": "Chechnya · Russia"
+      }
+    },
+    {
+      "id": "dubai",
+      "big": true,
+      "lon": 55.27,
+      "lat": 25.2,
+      "dir": "right",
+      "name": {
+        "fr": "Dubaï",
+        "en": "Dubai"
+      },
+      "sub": {
+        "fr": "Émirats arabes unis",
+        "en": "United Arab Emirates"
+      }
+    },
+    {
+      "id": "abudhabi",
+      "lon": 54.37,
+      "lat": 24.45,
+      "dir": "down",
+      "name": {
+        "fr": "Abou Dabi",
+        "en": "Abu Dhabi"
+      },
+      "sub": {
+        "fr": "Émirats arabes unis",
+        "en": "United Arab Emirates"
+      }
+    },
+    {
+      "id": "riyadh",
+      "lon": 46.72,
+      "lat": 24.71,
+      "dir": "down",
+      "name": {
+        "fr": "Riyad",
+        "en": "Riyadh"
+      },
+      "sub": {
+        "fr": "Arabie saoudite",
+        "en": "Saudi Arabia"
+      }
+    },
+    {
+      "id": "mecca",
+      "lon": 39.83,
+      "lat": 21.42,
+      "dir": "left",
+      "name": {
+        "fr": "La Mecque",
+        "en": "Mecca"
+      },
+      "sub": {
+        "fr": "Arabie saoudite",
+        "en": "Saudi Arabia"
+      }
+    },
+    {
+      "id": "doha",
+      "lon": 51.53,
+      "lat": 25.29,
+      "dir": "up",
+      "name": {
+        "fr": "Doha",
+        "en": "Doha"
+      },
+      "sub": {
+        "fr": "Qatar",
+        "en": "Qatar"
+      }
+    },
+    {
+      "id": "aleppo",
+      "lon": 37.16,
+      "lat": 36.2,
+      "dir": "left",
+      "name": {
+        "fr": "Alep",
+        "en": "Aleppo"
+      },
+      "sub": {
+        "fr": "Syrie",
+        "en": "Syria"
+      }
+    },
+    {
+      "id": "abughosh",
+      "lon": 35.11,
+      "lat": 31.81,
+      "dir": "left",
+      "name": {
+        "fr": "Abou Ghosh",
+        "en": "Abu Ghosh"
+      },
+      "sub": {
+        "fr": "Israël",
+        "en": "Israel"
+      }
+    },
+    {
+      "id": "gaza",
+      "lon": 34.47,
+      "lat": 31.5,
+      "dir": "down",
+      "name": {
+        "fr": "Gaza",
+        "en": "Gaza"
+      },
+      "sub": {
+        "fr": "Palestine",
+        "en": "Palestine"
+      }
+    },
+    {
+      "id": "amman",
+      "lon": 35.94,
+      "lat": 31.95,
+      "dir": "right",
+      "name": {
+        "fr": "Amman",
+        "en": "Amman"
+      },
+      "sub": {
+        "fr": "Jordanie",
+        "en": "Jordan"
+      }
+    },
+    {
+      "id": "berlin",
+      "lon": 13.4,
+      "lat": 52.52,
+      "dir": "up",
+      "name": {
+        "fr": "Berlin",
+        "en": "Berlin"
+      },
+      "sub": {
+        "fr": "Allemagne",
+        "en": "Germany"
+      }
+    },
+    {
+      "id": "vienna",
+      "lon": 16.37,
+      "lat": 48.21,
+      "dir": "down",
+      "name": {
+        "fr": "Vienne",
+        "en": "Vienna"
+      },
+      "sub": {
+        "fr": "Autriche",
+        "en": "Austria"
+      }
+    },
+    {
+      "id": "hanover",
+      "lon": 9.73,
+      "lat": 52.37,
+      "dir": "left",
+      "name": {
+        "fr": "Hanovre",
+        "en": "Hanover"
+      },
+      "sub": {
+        "fr": "Allemagne",
+        "en": "Germany"
+      }
+    },
+    {
+      "id": "lille",
+      "lon": 3.06,
+      "lat": 50.63,
+      "dir": "left",
+      "name": {
+        "fr": "Lille",
+        "en": "Lille"
+      },
+      "sub": {
+        "fr": "France",
+        "en": "France"
+      }
+    },
+    {
+      "id": "paris",
+      "lon": 2.35,
+      "lat": 48.86,
+      "dir": "down",
+      "name": {
+        "fr": "Paris",
+        "en": "Paris"
+      },
+      "sub": {
+        "fr": "France",
+        "en": "France"
+      }
+    },
+    {
+      "id": "prague",
+      "lon": 14.42,
+      "lat": 50.08,
+      "dir": "right",
+      "name": {
+        "fr": "Prague",
+        "en": "Prague"
+      },
+      "sub": {
+        "fr": "Tchéquie",
+        "en": "Czechia"
+      }
+    },
+    {
+      "id": "istanbul",
+      "lon": 28.98,
+      "lat": 41.01,
+      "dir": "down",
+      "name": {
+        "fr": "Istanbul",
+        "en": "Istanbul"
+      },
+      "sub": {
+        "fr": "Turquie",
+        "en": "Türkiye"
+      }
+    },
+    {
+      "id": "moscow",
+      "lon": 37.62,
+      "lat": 55.75,
+      "dir": "right",
+      "name": {
+        "fr": "Moscou",
+        "en": "Moscow"
+      },
+      "sub": {
+        "fr": "Russie",
+        "en": "Russia"
+      }
+    },
+    {
+      "id": "cantu",
+      "lon": 9.13,
+      "lat": 45.74,
+      "dir": "left",
+      "name": {
+        "fr": "Cantù",
+        "en": "Cantù"
+      },
+      "sub": {
+        "fr": "Lombardie · Italie",
+        "en": "Lombardy · Italy"
+      }
+    },
+    {
+      "id": "luxembourg",
+      "lon": 6.13,
+      "lat": 49.61,
+      "dir": "left",
+      "name": {
+        "fr": "Luxembourg",
+        "en": "Luxembourg"
+      },
+      "sub": {
+        "fr": "Grand-Duché de Luxembourg",
+        "en": "Grand Duchy of Luxembourg"
+      }
+    },
+    {
+      "id": "monaco",
+      "lon": 7.42,
+      "lat": 43.73,
+      "dir": "down",
+      "name": {
+        "fr": "Monaco",
+        "en": "Monaco"
+      },
+      "sub": {
+        "fr": "Principauté de Monaco",
+        "en": "Principality of Monaco"
+      }
+    }
+  ],
+  "links": [
+    {
+      "city": "dubai",
+      "cat": "imm",
+      "cert": "5",
+      "year": "2014",
+      "srcKey": "istories",
+      "people": [
+        "shahr"
+      ],
+      "evasion": true,
+      "sourceNote": {
+        "fr": "Montant 14,4 M$ : acte de vente de déc. 2022 (IStories).",
+        "en": "$14.4M figure: Dec 2022 sale deed (IStories)."
+      },
+      "label": {
+        "fr": "Villa Palm Jumeirah (14,4 M$) · « ambassade officieuse »",
+        "en": "Palm Jumeirah villa ($14.4M) · “unofficial embassy”"
+      }
+    },
+    {
+      "city": "dubai",
+      "cat": "imm",
+      "cert": "4",
+      "year": "2022",
+      "srcKey": "occrpjet",
+      "people": [
+        "shahr"
+      ],
+      "evasion": true,
+      "sourceNote": {
+        "fr": ">20 M$ et l’A319 : registres immobiliers/aériens des ÉAU (IStories/OCCRP).",
+        "en": ">$20M and the A319: UAE property/aircraft registries (IStories/OCCRP)."
+      },
+      "label": {
+        "fr": "Sh. Edilgiriev · 4 villas (>20 M$) + Airbus A319",
+        "en": "Sh. Edilgiriev · 4 villas (>$20M) + Airbus A319"
+      }
+    },
+    {
+      "city": "dubai",
+      "cat": "imm",
+      "cert": "4",
+      "year": "2020",
+      "srcKey": "occrp",
+      "people": [
+        "baisarov"
+      ],
+      "evasion": true,
+      "sourceNote": {
+        "fr": ">10 M$ : OCCRP « Dubai Uncovered ».",
+        "en": ">$10M: OCCRP “Dubai Uncovered”."
+      },
+      "label": {
+        "fr": "R. Baisarov · 5 appartements + villa Palm Jumeirah (>10 M$)",
+        "en": "R. Baisarov · 5 flats + Palm Jumeirah villa (>$10M)"
+      }
+    },
+    {
+      "city": "dubai",
+      "cat": "imm",
+      "cert": "4",
+      "year": "2024",
+      "srcKey": "dubaiunlocked",
+      "people": [
+        "taymas"
+      ],
+      "evasion": true,
+      "sourceNote": {
+        "fr": ">6 M$ : fuite « Dubai Unlocked » (2024).",
+        "en": ">$6M: “Dubai Unlocked” leak (2024)."
+      },
+      "label": {
+        "fr": "K.-M. Taymaskhanov · 4 appartements (>6 M$)",
+        "en": "K.-M. Taymaskhanov · 4 flats (>$6M)"
+      }
+    },
+    {
+      "city": "dubai",
+      "cat": "imm",
+      "cert": "4",
+      "year": "2012",
+      "srcKey": "ocmedia",
+      "people": [
+        "medni",
+        "aishat"
+      ],
+      "evasion": true,
+      "label": {
+        "fr": "Maison de mode Firdaws · lancée à Dubaï",
+        "en": "Firdaws fashion house · launched in Dubai"
+      }
+    },
+    {
+      "city": "dubai",
+      "cat": "rep",
+      "cert": "5",
+      "year": "2009",
+      "srcKey": "aljazeera",
+      "people": [
+        "delim"
+      ],
+      "label": {
+        "fr": "Assassinat de Sulim Yamadayev (A. Delimkhanov accusé)",
+        "en": "Killing of Sulim Yamadayev (A. Delimkhanov accused)"
+      }
+    },
+    {
+      "city": "abudhabi",
+      "cat": "dipl",
+      "cert": "4",
+      "year": "2023",
+      "srcKey": "ocmedia",
+      "url": "https://oc-media.org/kadyrov-reportedly-in-conflict-with-the-kremlin/",
+      "label": {
+        "fr": "Rencontre avec le président des ÉAU (MBZ), « frère aîné »",
+        "en": "Meeting with UAE President (MBZ), “elder brother”"
+      }
+    },
+    {
+      "city": "abudhabi",
+      "cat": "dipl",
+      "cert": "3",
+      "year": "2025",
+      "srcKey": "ocmedia",
+      "label": {
+        "fr": "Invité au mariage du fils de l’ambassadeur Al Jaber",
+        "en": "Guest at the wedding of ambassador Al Jaber’s son"
+      }
+    },
+    {
+      "city": "riyadh",
+      "cat": "dipl",
+      "cert": "5",
+      "year": "2018",
+      "srcKey": "alarabiya",
+      "label": {
+        "fr": "Reçu par le prince héritier MBS (palais de Mina)",
+        "en": "Received by Crown Prince MBS (Mina palace)"
+      }
+    },
+    {
+      "city": "riyadh",
+      "cat": "dipl",
+      "cert": "4",
+      "year": "2016",
+      "srcKey": "moscowtimes",
+      "label": {
+        "fr": "Excuses à Riyad après la conférence de Grozny (wahhabisme)",
+        "en": "Apology to Riyadh after Grozny conference (Wahhabism)"
+      }
+    },
+    {
+      "city": "mecca",
+      "cat": "dipl",
+      "cert": "5",
+      "year": "2007",
+      "srcKey": "jamestown",
+      "label": {
+        "fr": "Lavage de la Kaaba avec le roi Abdallah (fragment de kiswa)",
+        "en": "Washing of the Kaaba with King Abdullah (kiswa fragment)"
+      }
+    },
+    {
+      "city": "mecca",
+      "cat": "dipl",
+      "cert": "4",
+      "year": "2007",
+      "srcKey": "arabnews",
+      "label": {
+        "fr": "Pèlerinages (hajj) répétés : 2007, 2011, 2018, 2023",
+        "en": "Repeated hajj pilgrimages: 2007, 2011, 2018, 2023"
+      }
+    },
+    {
+      "city": "doha",
+      "cat": "dipl",
+      "cert": "4",
+      "year": "2025",
+      "srcKey": "caucasianknot",
+      "url": "https://www.eng.kavkaz-uzel.eu/articles/72381",
+      "label": {
+        "fr": "Émir du Qatar (2016) ; pourparlers russo-qataris (2025)",
+        "en": "Emir of Qatar (2016); Russia–Qatar talks (2025)"
+      }
+    },
+    {
+      "city": "doha",
+      "cat": "rep",
+      "cert": "3",
+      "year": "2004",
+      "srcKey": "riddle",
+      "label": {
+        "fr": "Assassinat de Z. Iandarbiev (contexte, antérieur à Kadyrov)",
+        "en": "Killing of Z. Yandarbiyev (context, pre-Kadyrov)"
+      }
+    },
+    {
+      "city": "aleppo",
+      "cat": "hum",
+      "cert": "3",
+      "year": "2016",
+      "srcKey": "tass",
+      "people": [
+        "aimani"
+      ],
+      "sourceNote": {
+        "fr": "Tonnages d’aide : revendications TASS (média d’État), non vérifiées de façon indépendante.",
+        "en": "Aid tonnage: TASS (state media) claims, not independently verified."
+      },
+      "label": {
+        "fr": "Fondation A. Kadyrov · aide & restauration de mosquées (Alep, Homs)",
+        "en": "A. Kadyrov Foundation · aid & mosque restoration (Aleppo, Homs)"
+      }
+    },
+    {
+      "city": "aleppo",
+      "cat": "dipl",
+      "cert": "5",
+      "year": "2020",
+      "srcKey": "ofac",
+      "url": "https://home.treasury.gov/news/press-releases/sm1208",
+      "people": [
+        "sabsabi"
+      ],
+      "label": {
+        "fr": "Ziyad Sabsabi (né à Alep) · coordinateur MENA, désigné OFAC",
+        "en": "Ziyad Sabsabi (born in Aleppo) · MENA coordinator, OFAC-listed"
+      }
+    },
+    {
+      "city": "abughosh",
+      "cat": "hum",
+      "cert": "5",
+      "year": "2014",
+      "srcKey": "toi",
+      "sourceNote": {
+        "fr": "≈10 M$ dont 60 % financé par la Tchétchénie : Times of Israel (2014).",
+        "en": "~$10M, 60% Chechnya-funded: Times of Israel (2014)."
+      },
+      "label": {
+        "fr": "Mosquée Akhmad Kadyrov (≈10 M$, 60 % tchétchène)",
+        "en": "Akhmad Kadyrov Mosque (~$10M, 60% Chechen-funded)"
+      }
+    },
+    {
+      "city": "abughosh",
+      "cat": "hum",
+      "cert": "4",
+      "year": "2014",
+      "srcKey": "toi",
+      "url": "https://www.timesofisrael.com/chechen-president-to-dedicate-abu-ghosh-mosque/",
+      "sourceNote": {
+        "fr": "NIS 5 M : Times of Israel.",
+        "en": "NIS 5M: Times of Israel."
+      },
+      "label": {
+        "fr": "Skate-park financé à Jérusalem-Ouest (NIS 5 M)",
+        "en": "Funded skate-park in West Jerusalem (NIS 5M)"
+      }
+    },
+    {
+      "city": "gaza",
+      "cat": "hum",
+      "cert": "4",
+      "year": "2025",
+      "srcKey": "ocmedia_gaza",
+      "people": [
+        "adamk",
+        "aimani"
+      ],
+      "sourceNote": {
+        "fr": "600 M₽ (~7,4 M$) d’aide revendiqués par Grozny ; circuits financiers invérifiables, fonds collectés via la fondation Akhmat Kadyrov (sanctionnée UE/OFAC) et les fonds Khayra, Daimohk et Ayub.",
+        "en": "₽600M (~$7.4M) of aid claimed by Grozny; unverifiable financial channels, funds raised via the Akhmat Kadyrov Foundation (EU/OFAC-sanctioned) and the Khayra, Daimohk and Ayub funds."
+      },
+      "label": {
+        "fr": "Adam Kadyrov · curateur de l’aide tchétchène à Gaza (2025)",
+        "en": "Adam Kadyrov · curator of Chechen aid to Gaza (2025)"
+      }
+    },
+    {
+      "city": "amman",
+      "cat": "dyn",
+      "cert": "4",
+      "year": "1900",
+      "srcKey": "jordantimes",
+      "sourceNote": {
+        "fr": "~9-15 000 personnes : Jordan Times / Univ. de Jena.",
+        "en": "~9-15k people: Jordan Times / Univ. of Jena."
+      },
+      "label": {
+        "fr": "Diaspora tchétchène-circassienne (~9-15 000) ; lien hachémite",
+        "en": "Chechen-Circassian diaspora (~9-15k); Hashemite ties"
+      }
+    },
+    {
+      "city": "berlin",
+      "cat": "rep",
+      "cert": "5",
+      "year": "2019",
+      "srcKey": "bellingcat",
+      "label": {
+        "fr": "Assassinat de Z. Khangoshvili · « terrorisme d’État » (jugement)",
+        "en": "Killing of Z. Khangoshvili · “state terrorism” (ruling)"
+      }
+    },
+    {
+      "city": "berlin",
+      "cat": "rep",
+      "cert": "5",
+      "year": "2018",
+      "srcKey": "spiegel",
+      "people": [
+        "dugaz"
+      ],
+      "label": {
+        "fr": "Timur Dugazaev · « représentant » de Kadyrov ; ordre d’enlèvement d’un garde du corps depuis Berlin (2018)",
+        "en": "Timur Dugazaev · Kadyrov’s “representative”; ordered a bodyguard’s abduction from Berlin (2018)"
+      }
+    },
+    {
+      "city": "vienna",
+      "cat": "rep",
+      "cert": "4",
+      "year": "2020",
+      "srcKey": "meduza",
+      "label": {
+        "fr": "Assassinat de Mamikhan Umarov (« Anzor de Vienne »)",
+        "en": "Killing of Mamikhan Umarov (“Anzor of Vienna”)"
+      }
+    },
+    {
+      "city": "vienna",
+      "cat": "rep",
+      "cert": "5",
+      "year": "2009",
+      "srcKey": "nyt",
+      "people": [
+        "dadaev"
+      ],
+      "label": {
+        "fr": "Assassinat d’Umar Israilov (ex-garde, témoin anti-torture) · 3 condamnés ; le parquet de Vienne désigne Kadyrov « commanditaire »",
+        "en": "Killing of Umar Israilov (ex-guard, anti-torture witness) · 3 convicted; Vienna prosecutor named Kadyrov the “mastermind”"
+      }
+    },
+    {
+      "city": "hanover",
+      "cat": "dipl",
+      "cert": "5",
+      "year": "2025",
+      "srcKey": "istories_afd",
+      "url": "https://istories.media/en/stories/2025/12/09/the-first-chechen-of-german-nationalism/",
+      "people": [
+        "dadaev"
+      ],
+      "label": {
+        "fr": "Mourad Dadaev (« Noah Krieger ») · figure de l’AfD à Hanovre, relais pro-Kadyrov et pro-Russie",
+        "en": "Murad Dadaev (“Noah Krieger”) · AfD figure in Hanover, pro-Kadyrov / pro-Russia relay"
+      }
+    },
+    {
+      "city": "hanover",
+      "cat": "imm",
+      "cert": "4",
+      "year": "2025",
+      "srcKey": "istories_afd",
+      "url": "https://istories.media/en/stories/2025/12/09/the-first-chechen-of-german-nationalism/",
+      "people": [
+        "dadaev"
+      ],
+      "sourceNote": {
+        "fr": "~850 m² ; loyer estimé 17-25 k€/mois : IStories / CORRECTIV (2025).",
+        "en": "~850 m²; est. rent EUR 17-25k/month: IStories / CORRECTIV (2025)."
+      },
+      "label": {
+        "fr": "Villa néo-baroque (~850 m²) · QG officieux de l’AfD Hanovre",
+        "en": "Neo-baroque villa (~850 m²) · unofficial AfD Hanover HQ"
+      }
+    },
+    {
+      "city": "hanover",
+      "cat": "rep",
+      "cert": "5",
+      "year": "2009",
+      "srcKey": "istories_afd",
+      "url": "https://istories.media/en/stories/2025/12/09/the-first-chechen-of-german-nationalism/",
+      "people": [
+        "dadaev"
+      ],
+      "label": {
+        "fr": "Frère Souleiman Dadaev · condamné (19 ans) pour l’assassinat d’Israilov à Vienne ; libéré et rentré en Russie en 2022",
+        "en": "Brother Suleiman Dadaev · convicted (19 yrs) for the Israilov killing in Vienna; freed and back in Russia in 2022"
+      }
+    },
+    {
+      "city": "lille",
+      "cat": "rep",
+      "cert": "4",
+      "year": "2020",
+      "srcKey": "rferl",
+      "label": {
+        "fr": "Assassinat du blogueur Imran Aliyev (135 coups de couteau)",
+        "en": "Killing of blogger Imran Aliyev (135 stab wounds)"
+      }
+    },
+    {
+      "city": "paris",
+      "cat": "imm",
+      "cert": "4",
+      "year": "2020",
+      "srcKey": "ocmedia",
+      "people": [
+        "medni",
+        "aishat"
+      ],
+      "evasion": true,
+      "label": {
+        "fr": "Défilé Firdaws à Paris (présence européenne de la marque)",
+        "en": "Firdaws fashion show in Paris (brand’s EU presence)"
+      }
+    },
+    {
+      "city": "istanbul",
+      "cat": "rep",
+      "cert": "3",
+      "year": "2015",
+      "srcKey": "jamestown",
+      "label": {
+        "fr": "Assassinat d’A. Edilgeriev (Kavkazcenter) ; série de meurtres",
+        "en": "Killing of A. Edilgeriev (Kavkazcenter); series of murders"
+      }
+    },
+    {
+      "city": "prague",
+      "cat": "imm",
+      "cert": "3",
+      "year": "2022",
+      "srcKey": "europarl",
+      "evasion": true,
+      "sourceNote": {
+        "fr": "Transfert de l’étalon à un conseiller équin avant l’entrée en vigueur des sanctions : question parlementaire (PE, 2022).",
+        "en": "Stallion transferred to an equine adviser before sanctions took effect: parliamentary question (EP, 2022)."
+      },
+      "label": {
+        "fr": "Étalon « Dux Scholar » transféré (contournement de sanctions)",
+        "en": "Stallion “Dux Scholar” transferred (sanctions evasion)"
+      }
+    },
+    {
+      "city": "moscow",
+      "cat": "imm",
+      "cert": "5",
+      "year": "2015",
+      "srcKey": "checko",
+      "people": [
+        "padaev",
+        "skvortsov"
+      ],
+      "sourceNote": {
+        "fr": "Coquille sans activité : aucun mouvement de fonds ni comptes déposés (attestations FNS du 21.09.2017) ; radiée d’office le 22.01.2018.",
+        "en": "Inactive shell: no fund movements, no accounts filed (FNS certificates of 21.09.2017); struck off ex officio on 22.01.2018."
+      },
+      "label": {
+        "fr": "IndustriyaStroyInvest · antécédent corporel de Z. Padaev (coquille radiée)",
+        "en": "IndustriyaStroyInvest · Z. Padaev’s corporate antecedent (struck-off shell)"
+      }
+    },
+    {
+      "city": "cantu",
+      "cat": "imm",
+      "cert": "4",
+      "year": "2026",
+      "srcKey": "groznyinform",
+      "people": [
+        "brambilla",
+        "padaev"
+      ],
+      "sourceNote": {
+        "fr": "Question de conformité UE 833/2014 (biens de luxe > 300 €, services d’architecture) soulevée, non tranchée : aucune sanction ne vise ONIRO ; hypothèses de structuration à instruire.",
+        "en": "EU 833/2014 compliance question (luxury goods >€300, architecture services) raised, unresolved: no sanctions target ONIRO; structuring hypotheses to investigate."
+      },
+      "label": {
+        "fr": "ONIRO Group · concept d’intérieur « Roberto Cavalli Home » du Bellagio (Grozny)",
+        "en": "ONIRO Group · “Roberto Cavalli Home” interior concept for the Bellagio (Grozny)"
+      }
+    },
+    {
+      "city": "dubai",
+      "cat": "imm",
+      "cert": "4",
+      "year": "2019",
+      "srcKey": "prnews",
+      "people": [
+        "sajwani"
+      ],
+      "sourceNote": {
+        "fr": "~160 M€, rachat à Clessidra : communiqués officiels et presse financière concordants (A2). Même place de marché que le cluster EAU existant.",
+        "en": "~€160M, bought from Clessidra: concordant official releases and financial press (A2). Same marketplace as the existing UAE cluster."
+      },
+      "label": {
+        "fr": "Vision Investment (H. Sajwani / DAMAC) · propriétaire de la marque Roberto Cavalli",
+        "en": "Vision Investment (H. Sajwani / DAMAC) · owner of the Roberto Cavalli brand"
+      }
+    },
+    {
+      "city": "luxembourg",
+      "cat": "imm",
+      "cert": "5",
+      "year": "2019",
+      "srcKey": "istories_agayevs",
+      "people": [
+        "batyr-agayev"
+      ],
+      "evasion": true,
+      "sourceNote": {
+        "fr": "Enquête OpenLux (IStories × Le Monde × OCCRP, 24/06/2026) : registres luxembourgeois + fuites ICIJ.",
+        "en": "OpenLux investigation (IStories × Le Monde × OCCRP, 24/06/2026): Luxembourg registries + ICIJ leaks."
+      },
+      "label": {
+        "fr": "Fonds Everest One (Luxembourg, ~65 M€) · Batyr Agayev 56,16 % — enquête OpenLux",
+        "en": "Everest One fund (Luxembourg, ~€65M) · Batyr Agayev 56.16% — OpenLux investigation"
+      }
+    },
+    {
+      "city": "berlin",
+      "cat": "dyn",
+      "cert": "5",
+      "year": "2026",
+      "srcKey": "istories_agayevs",
+      "people": [
+        "batyr-agayev"
+      ],
+      "label": {
+        "fr": "Batyr Agayev · réside entre Berlin et Monaco (citoyen belge)",
+        "en": "Batyr Agayev · lives between Berlin and Monaco (Belgian citizen)"
+      }
+    },
+    {
+      "city": "monaco",
+      "cat": "dyn",
+      "cert": "5",
+      "year": "2026",
+      "srcKey": "istories_agayevs",
+      "people": [
+        "batyr-agayev"
+      ],
+      "label": {
+        "fr": "Batyr Agayev · réside entre Berlin et Monaco",
+        "en": "Batyr Agayev · lives between Berlin and Monaco"
+      }
+    }
+  ],
+  "sites": [
+    {
+      "id": "palm",
+      "lon": 55.138,
+      "lat": 25.112,
+      "k": 30,
+      "cat": "imm",
+      "cert": "5",
+      "srcKey": "istories",
+      "short": {
+        "fr": "Palm Jumeirah",
+        "en": "Palm Jumeirah"
+      },
+      "name": {
+        "fr": "Villa Zabeel Saray n°21 · Palm Jumeirah",
+        "en": "Zabeel Saray Villa 21 · Palm Jumeirah"
+      },
+      "coords": "25.112° N · 55.138° E",
+      "what": {
+        "fr": "Villa de 1 026 m² achetée 14,4 M$ (déc. 2022) par le cousin Sh. Edilgiriev ; « ambassade tchétchène officieuse » depuis 2014 (Kadyrov y reçoit Mike Tyson en 2017).",
+        "en": "1,026 m² villa bought for $14.4M (Dec 2022) via cousin Sh. Edilgiriev; “unofficial Chechen embassy” since 2014 (Kadyrov hosted Mike Tyson there in 2017)."
+      }
+    },
+    {
+      "id": "mosque",
+      "lon": 35.1108,
+      "lat": 31.8049,
+      "k": 28,
+      "cat": "hum",
+      "cert": "5",
+      "srcKey": "toi",
+      "short": {
+        "fr": "Mosquée Abou Ghosh",
+        "en": "Abu Ghosh Mosque"
+      },
+      "name": {
+        "fr": "Mosquée Akhmad Kadyrov · Abou Ghosh",
+        "en": "Akhmad Kadyrov Mosque · Abu Ghosh"
+      },
+      "coords": "31.805° N · 35.111° E",
+      "what": {
+        "fr": "2e plus grande mosquée d’Israël (≈10 M$, dont 60 % financé par la Tchétchénie), inaugurée par Kadyrov en 2014 ; terrain donné par l’État.",
+        "en": "Israel’s 2nd-largest mosque (~$10M, 60% Chechen-funded), opened by Kadyrov in 2014; land donated by the state."
+      }
+    },
+    {
+      "id": "tiergarten",
+      "lon": 13.3596,
+      "lat": 52.5286,
+      "k": 30,
+      "cat": "rep",
+      "cert": "5",
+      "srcKey": "bellingcat",
+      "short": {
+        "fr": "Tiergarten (Berlin)",
+        "en": "Tiergarten (Berlin)"
+      },
+      "name": {
+        "fr": "Kleiner Tiergarten · assassinat Khangoshvili",
+        "en": "Kleiner Tiergarten · Khangoshvili killing"
+      },
+      "coords": "52.529° N · 13.360° E",
+      "what": {
+        "fr": "Z. Khangoshvili abattu le 23/08/2019 par un agent du FSB ; le Kammergericht de Berlin a qualifié l’acte de « terrorisme d’État ».",
+        "en": "Z. Khangoshvili shot on 23 Aug 2019 by an FSB agent; Berlin’s Kammergericht called it “state terrorism”."
+      }
+    },
+    {
+      "id": "akhmat",
+      "lon": 45.6945,
+      "lat": 43.3178,
+      "k": 22,
+      "cat": "imm",
+      "cert": "3",
+      "srcKey": "rusi",
+      "short": {
+        "fr": "Akhmat Tower",
+        "en": "Akhmat Tower"
+      },
+      "name": {
+        "fr": "Akhmat Tower · Grozny",
+        "en": "Akhmat Tower · Grozny"
+      },
+      "coords": "43.318° N · 45.695° E",
+      "what": {
+        "fr": "Gratte-ciel emblématique au financement émirati présumé ; exploité par Address Hotels + Resorts (Dubaï).",
+        "en": "Flagship tower with alleged UAE financing; operated by Address Hotels + Resorts (Dubai)."
+      }
+    },
+    {
+      "id": "bellagio",
+      "lon": 45.703,
+      "lat": 43.324,
+      "k": 22,
+      "cat": "imm",
+      "cert": "4",
+      "srcKey": "groznyinform",
+      "short": {
+        "fr": "Bellagio (Grozny)",
+        "en": "Bellagio (Grozny)"
+      },
+      "name": {
+        "fr": "Bellagio Residences · Grozny",
+        "en": "Bellagio Residences · Grozny"
+      },
+      "coords": "43.324° N · 45.703° E",
+      "what": {
+        "fr": "Premier complexe résidentiel premium de Tchétchénie (72 appartements, bd Esambaeva 1), présenté le 27/06/2026 avec un concept d’intérieur « Roberto Cavalli Home » (ONIRO Group, Cantù). Vente adossée à des certificats de mobilier de 10 à 25 k€ et à un paiement échelonné sans banque (« halal, sans riba ») — flux acheteurs hors du filtre LCB-FT bancaire. Promoteur : SPV SK « Triumf » (capital 15 000 ₽, UBO unique Z. Padaev).",
+        "en": "Chechnya’s first premium residential complex (72 flats, 1 Esambaeva Blvd), unveiled on 27/06/2026 with a “Roberto Cavalli Home” interior concept (ONIRO Group, Cantù). Sales backed by €10-25k furniture certificates and bank-free instalment payment (“halal, riba-free”) — buyer flows outside the banking AML/CFT filter. Developer: SPV SK “Triumf” (₽15,000 capital, sole UBO Z. Padaev)."
+      }
+    }
+  ],
+  "people": [
+    {
+      "id": "ramzan",
+      "label": "Ramzan",
+      "full": "Ramzan Kadyrov",
+      "center": true,
+      "cluster": null,
+      "cert": "5",
+      "srcKey": "ofac",
+      "sanc": [
+        "OFAC 2017",
+        "UE 2014",
+        "R.-U.",
+        "Canada 2014",
+        "Suisse",
+        "Japon"
+      ],
+      "ctx": {
+        "fr": "Cible des principaux régimes de sanctions occidentaux.",
+        "en": "Target of the main Western sanctions regimes."
+      },
+      "role": {
+        "fr": "Chef de la Tchétchénie (depuis 2007)",
+        "en": "Head of Chechnya (since 2007)"
+      }
+    },
+    {
+      "id": "aimani",
+      "label": "Aimani",
+      "full": "Aimani Kadyrova",
+      "cluster": "famille",
+      "cert": "5",
+      "srcKey": "caucasianknot",
+      "sanc": [
+        "OFAC 2023",
+        "UE 2024",
+        "R.-U. 2025",
+        "Canada 2026"
+      ],
+      "ctx": {
+        "fr": "Présidente de la Fondation Akhmat Kadyrov.",
+        "en": "Head of the Akhmat Kadyrov Foundation."
+      },
+      "role": {
+        "fr": "Mère · présidente de la Fondation Akhmat Kadyrov",
+        "en": "Mother · head of the Akhmat Kadyrov Foundation"
+      }
+    },
+    {
+      "id": "medni",
+      "label": "Medni",
+      "full": "Medni Kadyrova",
+      "cluster": "famille",
+      "cert": "5",
+      "srcKey": "ofac",
+      "sanc": [
+        "É.-U. 2020 (visa)",
+        "OFAC 2022",
+        "Japon 2022"
+      ],
+      "ctx": {
+        "fr": "Cofondatrice de la marque Firdaws.",
+        "en": "Co-founder of the Firdaws label."
+      },
+      "role": {
+        "fr": "Épouse · cofondatrice de Firdaws",
+        "en": "Wife · Firdaws co-founder"
+      }
+    },
+    {
+      "id": "aishat",
+      "label": "Aishat",
+      "full": "Aishat Kadyrova",
+      "cluster": "famille",
+      "cert": "5",
+      "srcKey": "ocmedia",
+      "sanc": [
+        "OFAC 2022",
+        "UE 2022",
+        "Japon 2022"
+      ],
+      "ctx": {
+        "fr": "Dirige la maison de mode Firdaws.",
+        "en": "Runs the Firdaws fashion label."
+      },
+      "role": {
+        "fr": "Fille · dirige la maison Firdaws",
+        "en": "Daughter · runs the Firdaws label"
+      }
+    },
+    {
+      "id": "adamk",
+      "label": "Adam K.",
+      "full": "Adam Kadyrov",
+      "cluster": "famille",
+      "cert": "3",
+      "srcKey": "ocmedia",
+      "sanc": [],
+      "ctx": {
+        "fr": "Curateur de l’aide à Gaza (fondation Daimohk).",
+        "en": "Curator of Gaza aid (Daimohk foundation)."
+      },
+      "role": {
+        "fr": "Fils",
+        "en": "Son"
+      }
+    },
+    {
+      "id": "delim",
+      "label": "Delimkhanov",
+      "full": "Adam Delimkhanov",
+      "cluster": "exec",
+      "cert": "5",
+      "srcKey": "caucasianknot",
+      "sanc": [
+        "OFAC 2014",
+        "UE 2022"
+      ],
+      "ctx": {
+        "fr": "Accusé par la police de Dubaï du meurtre Yamadayev (2009).",
+        "en": "Accused by Dubai police of the 2009 Yamadayev killing."
+      },
+      "role": {
+        "fr": "Cousin · bras droit · chaîne paramilitaire",
+        "en": "Cousin · right hand · paramilitary chain"
+      }
+    },
+    {
+      "id": "alaud",
+      "label": "Alaudinov",
+      "full": "Apti Alaudinov",
+      "cluster": "exec",
+      "cert": "5",
+      "srcKey": "ofac",
+      "sanc": [
+        "OFAC 2014",
+        "R.-U. 2020",
+        "Canada 2023",
+        "Pologne"
+      ],
+      "ctx": {
+        "fr": "Commande les forces « Akhmat » (Syrie, Ukraine).",
+        "en": "Commands the “Akhmat” forces (Syria, Ukraine)."
+      },
+      "role": {
+        "fr": "Commandant des forces « Akhmat »",
+        "en": "Commander of the “Akhmat” forces"
+      }
+    },
+    {
+      "id": "daudov",
+      "label": "Daudov",
+      "full": "Magomed Daudov",
+      "cluster": "exec",
+      "cert": "5",
+      "srcKey": "ofac",
+      "sanc": [
+        "OFAC 2014",
+        "R.-U. 2020",
+        "Canada 2023"
+      ],
+      "ctx": {
+        "fr": "Allié politique (« Lord »).",
+        "en": "Political ally (“Lord”)."
+      },
+      "role": {
+        "fr": "Ex-président du Parlement tchétchène",
+        "en": "Ex-Speaker of the Chechen Parliament"
+      }
+    },
+    {
+      "id": "vismuradov",
+      "label": "Vismuradov",
+      "full": "Abuzayed Vismuradov",
+      "cluster": "exec",
+      "cert": "4",
+      "srcKey": "caucasianknot",
+      "sanc": [
+        "OFAC 2020",
+        "UE 2021",
+        "Canada 2023"
+      ],
+      "ctx": {
+        "fr": "Vice-Premier ministre ; ex-chef de l’unité « Terek ».",
+        "en": "Deputy PM; ex-head of the “Terek” unit."
+      },
+      "role": {
+        "fr": "Chef de l’unité spéciale « Terek »",
+        "en": "Head of the “Terek” special unit"
+      }
+    },
+    {
+      "id": "kataev",
+      "label": "Kataev",
+      "full": "Ayub Kataev",
+      "cluster": "exec",
+      "cert": "5",
+      "srcKey": "ofac",
+      "sanc": [
+        "OFAC 2017",
+        "UE 2021",
+        "R.-U. 2020",
+        "Canada 2023"
+      ],
+      "ctx": {
+        "fr": "Officiel sécurité (MVD, Argoun).",
+        "en": "Security official (MVD, Argun)."
+      },
+      "role": {
+        "fr": "Officiel sécurité (MVD, Argoun)",
+        "en": "Security official (MVD, Argun)"
+      }
+    },
+    {
+      "id": "shahr",
+      "label": "Edilgiriev",
+      "full": "Shahruddi Edilgiriev",
+      "cluster": "affaires",
+      "cert": "4",
+      "srcKey": "istories",
+      "sanc": [],
+      "evasion": true,
+      "ctx": {
+        "fr": "Prête-nom enregistré (EAU) : 4 villas (>20 M$) + Airbus A319.",
+        "en": "Registered nominee (UAE): 4 villas (>$20M) + Airbus A319."
+      },
+      "role": {
+        "fr": "Cousin · prête-nom enregistré",
+        "en": "Cousin · registered nominee"
+      }
+    },
+    {
+      "id": "baisarov",
+      "label": "Baisarov",
+      "full": "Ruslan Baisarov",
+      "cluster": "affaires",
+      "cert": "4",
+      "srcKey": "occrp",
+      "sanc": [],
+      "evasion": true,
+      "ctx": {
+        "fr": "« Le portefeuille de Kadyrov » · biens à Palm Jumeirah.",
+        "en": "“Kadyrov’s wallet” · Palm Jumeirah assets."
+      },
+      "role": {
+        "fr": "Partenaire d’affaires",
+        "en": "Business partner"
+      }
+    },
+    {
+      "id": "taymas",
+      "label": "Taymaskh.",
+      "full": "Khas-Magomed Taymaskhanov",
+      "cluster": "affaires",
+      "cert": "4",
+      "srcKey": "dubaiunlocked",
+      "sanc": [],
+      "evasion": true,
+      "ctx": {
+        "fr": "4 appartements à Dubaï (>6 M$).",
+        "en": "4 Dubai flats (>$6M)."
+      },
+      "role": {
+        "fr": "Neveu d’un proche · biens à Dubaï",
+        "en": "Aide’s nephew · Dubai assets"
+      }
+    },
+    {
+      "id": "seemar",
+      "label": "Seemar",
+      "full": "Satish Seemar",
+      "cluster": "affaires",
+      "cert": "5",
+      "srcKey": "ofac",
+      "sanc": [
+        "OFAC 2020 · radié 2023"
+      ],
+      "ctx": {
+        "fr": "Entraîneur de chevaux de Kadyrov (EAU), désigné OFAC en déc. 2020 ; radié de la liste SDN le 3 août 2023.",
+        "en": "Kadyrov’s racehorse trainer (UAE), OFAC-designated Dec 2020; removed from the SDN list on 3 Aug 2023."
+      },
+      "role": {
+        "fr": "Entraîneur de chevaux (EAU)",
+        "en": "Racehorse trainer (UAE)"
+      }
+    },
+    {
+      "id": "sabsabi",
+      "label": "Sabsabi",
+      "full": "Ziyad Sabsabi",
+      "cluster": "intermed",
+      "cert": "5",
+      "srcKey": "ofac",
+      "url": "https://home.treasury.gov/news/press-releases/sm1208",
+      "sanc": [
+        "OFAC 2020"
+      ],
+      "ctx": {
+        "fr": "Né à Alep · coordinateur de l’aide Syrie/Irak.",
+        "en": "Born in Aleppo · Syria/Iraq aid coordinator."
+      },
+      "role": {
+        "fr": "Envoyé MENA",
+        "en": "MENA envoy"
+      }
+    },
+    {
+      "id": "dugaz",
+      "label": "Dugazaev",
+      "full": "Timur Dugazaev",
+      "cluster": "intermed",
+      "cert": "5",
+      "srcKey": "ofac",
+      "url": "https://home.treasury.gov/news/press-releases/sm1208",
+      "sanc": [
+        "OFAC 2020"
+      ],
+      "ctx": {
+        "fr": "Cofondateur du centre Terek (Hambourg) · désormais EAU/Arabie.",
+        "en": "Co-founder of the Terek centre (Hamburg) · now UAE/Saudi."
+      },
+      "role": {
+        "fr": "Ancien « représentant » de Kadyrov en Europe",
+        "en": "Former Kadyrov “representative” in Europe"
+      }
+    },
+    {
+      "id": "martynov",
+      "label": "Martynov",
+      "full": "Daniil Martynov",
+      "cluster": "intermed",
+      "cert": "5",
+      "srcKey": "ofac",
+      "url": "https://home.treasury.gov/news/press-releases/sm1208",
+      "sanc": [
+        "OFAC 2020"
+      ],
+      "ctx": {
+        "fr": "Conseiller sécurité.",
+        "en": "Security adviser."
+      },
+      "role": {
+        "fr": "Conseiller sécurité",
+        "en": "Security adviser"
+      }
+    },
+    {
+      "id": "dadaev",
+      "label": "Dadaev",
+      "full": "Mourad Dadaev (« Noah Krieger »)",
+      "cluster": "intermed",
+      "cert": "5",
+      "srcKey": "istories_afd",
+      "url": "https://istories.media/en/stories/2025/12/09/the-first-chechen-of-german-nationalism/",
+      "sanc": [],
+      "ctx": {
+        "fr": "Allemagne (Hanovre) ; frère lié à l’affaire Israilov.",
+        "en": "Germany (Hanover); brother tied to the Israilov case."
+      },
+      "role": {
+        "fr": "Figure de l’AfD · relais pro-Kadyrov",
+        "en": "AfD figure · pro-Kadyrov relay"
+      }
+    },
+    {
+      "id": "zakriev",
+      "label": "Zakriev",
+      "full": "Yakub Zakriev",
+      "cluster": "intermed",
+      "cert": "3",
+      "srcKey": "moscowtimes",
+      "sanc": [
+        "OFAC 2023",
+        "R.-U. 2024"
+      ],
+      "evasion": true,
+      "ctx": {
+        "fr": "Nommé à la tête de Danone Russie après la saisie des actifs.",
+        "en": "Installed atop Danone Russia after the asset seizure."
+      },
+      "role": {
+        "fr": "Neveu · saisie d’actifs étrangers",
+        "en": "Nephew · foreign-asset seizure"
+      }
+    },
+    {
+      "id": "padaev",
+      "label": "Padaev",
+      "full": "Zhandar Padaev",
+      "cluster": "facade",
+      "cert": "5",
+      "srcKey": "egrul",
+      "sanc": [],
+      "ctx": {
+        "fr": "DG et associé unique (100 %) de la SPV SK « Triumf » (capital 15 000 ₽), promoteur du Bellagio (Grozny). Financement du chantier non expliqué par son parcours documenté — question ouverte, à instruire.",
+        "en": "CEO and sole shareholder (100%) of SPV SK “Triumf” (₽15,000 capital), developer of the Bellagio (Grozny). Project financing unexplained by his documented track record — open question, to be investigated."
+      },
+      "role": {
+        "fr": "Promoteur (SPV « Triumf ») · UBO du Bellagio",
+        "en": "Developer (SPV “Triumf”) · Bellagio UBO"
+      }
+    },
+    {
+      "id": "brambilla",
+      "label": "Brambilla",
+      "full": "Moreno Brambilla",
+      "cluster": "facade",
+      "cert": "5",
+      "srcKey": "oniro",
+      "sanc": [],
+      "ctx": {
+        "fr": "PDG d’ONIRO Group (licence Roberto Cavalli Home Interiors) ; présent à Grozny le 27/06/2026. Aucune sanction ne le vise.",
+        "en": "CEO of ONIRO Group (Roberto Cavalli Home Interiors licence); attended the Grozny launch on 27/06/2026. Not sanctioned."
+      },
+      "role": {
+        "fr": "PDG ONIRO Group · licencié de la marque",
+        "en": "ONIRO Group CEO · brand licensee"
+      }
+    },
+    {
+      "id": "sajwani",
+      "label": "Sajwani",
+      "full": "Hussain Sajwani",
+      "cluster": "facade",
+      "cert": "5",
+      "srcKey": "prnews",
+      "sanc": [],
+      "ctx": {
+        "fr": "Fondateur de DAMAC (Dubaï) ; contrôle Vision Investment, propriétaire de la marque Roberto Cavalli depuis 2019. Aucune sanction ne le vise.",
+        "en": "Founder of DAMAC (Dubai); controls Vision Investment, owner of the Roberto Cavalli brand since 2019. Not sanctioned."
+      },
+      "role": {
+        "fr": "DAMAC · propriétaire de la marque Cavalli (Dubaï)",
+        "en": "DAMAC · Cavalli brand owner (Dubai)"
+      }
+    },
+    {
+      "id": "skvortsov",
+      "label": "Skvortsov",
+      "full": "Vladimir Skvortsov",
+      "cluster": "facade",
+      "cert": "5",
+      "srcKey": "checko",
+      "sanc": [],
+      "ctx": {
+        "fr": "Associé 50/50 de Padaev dans IndustriyaStroyInvest (2015-2018). Aucun lien apparent avec la sphère Kadyrov — nœud contextuel, non structurant.",
+        "en": "Padaev’s 50/50 partner in IndustriyaStroyInvest (2015-2018). No apparent link to the Kadyrov sphere — contextual, non-structural node."
+      },
+      "role": {
+        "fr": "Opérateur immobilier moscovite · nœud contextuel",
+        "en": "Moscow real-estate operator · contextual node"
+      }
+    },
+    {
+      "id": "vakha-agayev",
+      "label": "V. Agayev",
+      "full": "Vakha Agayev",
+      "cluster": "agayev",
+      "cert": "5",
+      "srcKey": "istories_agayevs",
+      "url": "https://istories.media/en/stories/2026/06/24/agayevs/",
+      "sanc": [],
+      "ctx": {
+        "fr": "Patriarche · fondateur de Yug-Nefteprodukt (1998) · « cher frère » de Kadyrov · Citoyen d’honneur de Tchétchénie (2013). Décédé (Covid-19, 2020) avant les vagues de sanctions de 2022. Nœud contextuel.",
+        "en": "Patriarch · founder of Yug-Nefteprodukt (1998) · Kadyrov’s “dear brother” · Honorary Citizen of Chechnya (2013). Died (Covid-19, 2020) before the 2022 sanctions waves. Contextual node."
+      },
+      "role": {
+        "fr": "Patriarche · fondateur Yug-Nefteprodukt (†2020)",
+        "en": "Patriarch · Yug-Nefteprodukt founder (†2020)"
+      }
+    },
+    {
+      "id": "bekkhan-agayev",
+      "label": "B. Agayev",
+      "full": "Bekkhan Agayev",
+      "cluster": "agayev",
+      "cert": "5",
+      "srcKey": "opensanctions",
+      "url": "https://www.opensanctions.org/entities/Q86830849/",
+      "sanc": [
+        "OFAC 2022",
+        "UE 2022",
+        "France",
+        "R.-U. 2022",
+        "Suisse",
+        "Canada",
+        "Japon",
+        "Australie",
+        "N.-Zélande",
+        "Monaco"
+      ],
+      "ctx": {
+        "fr": "Fils aîné · député de la Douma d’État (Russie Unie, 2011-2016 et 2021-). Sanctionné dans 10 juridictions.",
+        "en": "Eldest son · State Duma deputy (United Russia, 2011-2016 and 2021-). Sanctioned in 10 jurisdictions."
+      },
+      "role": {
+        "fr": "Fils aîné · député de la Douma",
+        "en": "Eldest son · Duma deputy"
+      }
+    },
+    {
+      "id": "batyr-agayev",
+      "label": "Batyr A.",
+      "full": "Batyr Agayev",
+      "cluster": "agayev",
+      "cert": "5",
+      "srcKey": "istories_agayevs",
+      "url": "https://istories.media/en/stories/2026/06/24/agayevs/",
+      "sanc": [],
+      "evasion": true,
+      "ctx": {
+        "fr": "Fils cadet · citoyen belge (Berlin/Monaco) · détient 56,16 % du fonds Everest One (Luxembourg) + 43,5 % de Mimco Real Estate Holding. Non sanctionné — angle mort des régimes (fonctions visées, pas les patrimoines familiaux).",
+        "en": "Younger son · Belgian citizen (Berlin/Monaco) · holds 56.16% of the Everest One fund (Luxembourg) + 43.5% of Mimco Real Estate Holding. Unsanctioned — sanctions blind spot (functions targeted, not family wealth)."
+      },
+      "role": {
+        "fr": "Fils cadet · 56,16 % du fonds Everest One (Lux.)",
+        "en": "Younger son · 56.16% of the Everest One fund (Lux.)"
+      }
+    },
+    {
+      "id": "ruslan-agayev",
+      "label": "Ruslan A.",
+      "full": "Ruslan Agayev",
+      "cluster": "agayev",
+      "cert": "5",
+      "srcKey": "istories_agayevs",
+      "url": "https://istories.media/en/stories/2026/06/24/agayevs/",
+      "sanc": [],
+      "evasion": true,
+      "ctx": {
+        "fr": "Fils de Bekkhan · propriétaire actuel de Yug-Nefteprodukt (depuis 2021). Non sanctionné — deuxième génération, même mécanique de transmission familiale.",
+        "en": "Bekkhan’s son · current owner of Yug-Nefteprodukt (since 2021). Unsanctioned — second generation, same family-transmission mechanism."
+      },
+      "role": {
+        "fr": "Fils de Bekkhan · propriétaire de Yug-Nefteprodukt",
+        "en": "Bekkhan’s son · owner of Yug-Nefteprodukt"
+      }
+    }
+  ],
+  "civil": {
+    "vakha-agayev": {
+      "nom": "Agayev",
+      "prenom": "Vakha",
+      "sexe": "M",
+      "photo": null,
+      "naissance": {
+        "fr": "† 2020 (Covid-19)",
+        "en": "† 2020 (Covid-19)"
+      },
+      "lien": {
+        "fr": "Patriarche · « cher frère » de Kadyrov",
+        "en": "Patriarch · Kadyrov’s “dear brother”"
+      },
+      "origine": {
+        "fr": "Urus-Martan, Tchétchénie",
+        "en": "Urus-Martan, Chechnya"
+      }
+    },
+    "bekkhan-agayev": {
+      "nom": "Agayev",
+      "prenom": "Bekkhan",
+      "sexe": "M",
+      "photo": null,
+      "naissance": {
+        "fr": "29 mars 1975 · Grozny",
+        "en": "29 March 1975 · Grozny"
+      },
+      "lien": {
+        "fr": "Fils aîné · député de la Douma",
+        "en": "Eldest son · Duma deputy"
+      },
+      "origine": {
+        "fr": "Grozny, Tchétchénie",
+        "en": "Grozny, Chechnya"
+      }
+    },
+    "batyr-agayev": {
+      "nom": "Agayev",
+      "prenom": "Batyr",
+      "sexe": "M",
+      "photo": null,
+      "naissance": {
+        "fr": "—",
+        "en": "—"
+      },
+      "lien": {
+        "fr": "Fils cadet · citoyen belge",
+        "en": "Younger son · Belgian citizen"
+      },
+      "origine": {
+        "fr": "Berlin / Monaco",
+        "en": "Berlin / Monaco"
+      }
+    },
+    "ruslan-agayev": {
+      "nom": "Agayev",
+      "prenom": "Ruslan",
+      "sexe": "M",
+      "photo": null,
+      "naissance": {
+        "fr": "—",
+        "en": "—"
+      },
+      "lien": {
+        "fr": "Fils de Bekkhan",
+        "en": "Bekkhan’s son"
+      },
+      "origine": {
+        "fr": "Tchétchénie · Russie",
+        "en": "Chechnya · Russia"
+      }
+    },
+    "ramzan": {
+      "nom": "Kadyrov",
+      "prenom": "Ramzan Akhmatovitch",
+      "sexe": "M",
+      "photo": "uploads/kadyrov.jpeg",
+      "naissance": {
+        "fr": "5 octobre 1976",
+        "en": "5 October 1976"
+      },
+      "lien": {
+        "fr": "Sujet central du réseau",
+        "en": "Central subject of the network"
+      },
+      "origine": {
+        "fr": "Tsentaroï, Tchétchénie",
+        "en": "Tsentaroy, Chechnya"
+      }
+    },
+    "aimani": {
+      "nom": "Kadyrova",
+      "prenom": "Aimani Nesievna",
+      "sexe": "F",
+      "photo": "uploads/aymani.jpg",
+      "naissance": {
+        "fr": "1953",
+        "en": "1953"
+      },
+      "lien": {
+        "fr": "Mère · Fondation Akhmat Kadyrov",
+        "en": "Mother · Akhmat Kadyrov Foundation"
+      },
+      "origine": {
+        "fr": "Tchétchénie",
+        "en": "Chechnya"
+      }
+    },
+    "medni": {
+      "nom": "Kadyrova",
+      "prenom": "Medni Moussaïevna",
+      "sexe": "F",
+      "photo": "uploads/medni.jpeg",
+      "naissance": {
+        "fr": "1979",
+        "en": "1979"
+      },
+      "lien": {
+        "fr": "Épouse officielle",
+        "en": "Official wife"
+      },
+      "origine": {
+        "fr": "Tchétchénie",
+        "en": "Chechnya"
+      }
+    },
+    "aishat": {
+      "nom": "Kadyrova",
+      "prenom": "Aishat Ramzanovna",
+      "sexe": "F",
+      "photo": "uploads/aishat kadyrov.jpeg",
+      "naissance": {
+        "fr": "31 décembre 1998",
+        "en": "31 December 1998"
+      },
+      "lien": {
+        "fr": "Fille aînée",
+        "en": "Eldest daughter"
+      },
+      "origine": {
+        "fr": "Tchétchénie",
+        "en": "Chechnya"
+      }
+    },
+    "adamk": {
+      "nom": "Kadyrov",
+      "prenom": "Adam Ramzanovitch",
+      "sexe": "M",
+      "photo": "uploads/adam.avif",
+      "naissance": {
+        "fr": "24 novembre 2007",
+        "en": "24 November 2007"
+      },
+      "lien": {
+        "fr": "Fils",
+        "en": "Son"
+      },
+      "origine": {
+        "fr": "Grozny, Tchétchénie",
+        "en": "Grozny, Chechnya"
+      }
+    },
+    "delim": {
+      "nom": "Delimkhanov",
+      "prenom": "Adam Sultanovitch",
+      "sexe": "M",
+      "photo": "uploads/delimkhanov.jpeg",
+      "naissance": {
+        "fr": "25 septembre 1969",
+        "en": "25 September 1969"
+      },
+      "lien": {
+        "fr": "Cousin · bras droit",
+        "en": "Cousin · right hand"
+      },
+      "origine": {
+        "fr": "Benoy, Tchétchénie",
+        "en": "Benoy, Chechnya"
+      }
+    },
+    "alaud": {
+      "nom": "Alaudinov",
+      "prenom": "Apti Aronovitch",
+      "sexe": "M",
+      "photo": "uploads/alaud.jpeg",
+      "naissance": {
+        "fr": "5 avril 1973",
+        "en": "5 April 1973"
+      },
+      "lien": {
+        "fr": "Commandant des forces « Akhmat »",
+        "en": "Commander of the “Akhmat” forces"
+      },
+      "origine": {
+        "fr": "Tchétchénie",
+        "en": "Chechnya"
+      }
+    },
+    "daudov": {
+      "nom": "Daudov",
+      "prenom": "Magomed Khozhakhmedovitch",
+      "sexe": "M",
+      "photo": "uploads/Даудов_Магомед.jpg",
+      "naissance": {
+        "fr": "26 février 1980",
+        "en": "26 February 1980"
+      },
+      "lien": {
+        "fr": "Allié politique (« Lord »)",
+        "en": "Political ally (“Lord”)"
+      },
+      "origine": {
+        "fr": "Tchétchénie",
+        "en": "Chechnya"
+      }
+    },
+    "vismuradov": {
+      "nom": "Vismuradov",
+      "prenom": "Abuzayed Dzhandarovitch",
+      "sexe": "M",
+      "naissance": {
+        "fr": "24 décembre 1975",
+        "en": "24 December 1975"
+      },
+      "lien": {
+        "fr": "Garde rapprochée · vice-Premier ministre",
+        "en": "Inner security circle · deputy PM"
+      },
+      "origine": {
+        "fr": "Tchétchénie",
+        "en": "Chechnya"
+      }
+    },
+    "kataev": {
+      "nom": "Kataev",
+      "prenom": "Ayub",
+      "sexe": "M",
+      "naissance": null,
+      "lien": {
+        "fr": "Officiel sécurité (MVD, Argoun)",
+        "en": "Security official (MVD, Argun)"
+      },
+      "origine": {
+        "fr": "Tchétchénie",
+        "en": "Chechnya"
+      }
+    },
+    "shahr": {
+      "nom": "Edilgiriev",
+      "prenom": "Shahruddi",
+      "sexe": "M",
+      "naissance": null,
+      "lien": {
+        "fr": "Cousin · prête-nom enregistré (ÉAU)",
+        "en": "Cousin · registered nominee (UAE)"
+      },
+      "origine": {
+        "fr": "Tchétchénie",
+        "en": "Chechnya"
+      }
+    },
+    "baisarov": {
+      "nom": "Baïsarov",
+      "prenom": "Ruslan Sulimovitch",
+      "sexe": "M",
+      "naissance": {
+        "fr": "9 août 1968",
+        "en": "9 August 1968"
+      },
+      "lien": {
+        "fr": "Partenaire d’affaires (« portefeuille »)",
+        "en": "Business partner (“wallet”)"
+      },
+      "origine": {
+        "fr": "District de Grozny, Tchétchénie",
+        "en": "Grozny district, Chechnya"
+      }
+    },
+    "taymas": {
+      "nom": "Taïmaskhanov",
+      "prenom": "Khas-Magomed",
+      "sexe": "M",
+      "naissance": null,
+      "lien": {
+        "fr": "Neveu d’un proche · biens à Dubaï",
+        "en": "Aide’s nephew · Dubai assets"
+      },
+      "origine": {
+        "fr": "Tchétchénie",
+        "en": "Chechnya"
+      }
+    },
+    "seemar": {
+      "nom": "Seemar",
+      "prenom": "Satish",
+      "sexe": "M",
+      "naissance": null,
+      "lien": {
+        "fr": "Intermédiaire (chevaux de course)",
+        "en": "Intermediary (racehorses)"
+      },
+      "origine": {
+        "fr": "Inde · établi aux ÉAU",
+        "en": "India · based in the UAE"
+      }
+    },
+    "sabsabi": {
+      "nom": "Sabsabi",
+      "prenom": "Ziyad Moukhamedovitch",
+      "sexe": "M",
+      "naissance": null,
+      "lien": {
+        "fr": "Envoyé MENA · ex-sénateur",
+        "en": "MENA envoy · former senator"
+      },
+      "origine": {
+        "fr": "Alep, Syrie",
+        "en": "Aleppo, Syria"
+      }
+    },
+    "dugaz": {
+      "nom": "Dugazaev",
+      "prenom": "Timur",
+      "sexe": "M",
+      "naissance": {
+        "fr": "1985",
+        "en": "1985"
+      },
+      "lien": {
+        "fr": "Ex-« représentant » en Europe",
+        "en": "Former “representative” in Europe"
+      },
+      "origine": {
+        "fr": "Tchétchénie",
+        "en": "Chechnya"
+      }
+    },
+    "martynov": {
+      "nom": "Martynov",
+      "prenom": "Daniil Vassilievitch",
+      "sexe": "M",
+      "naissance": null,
+      "lien": {
+        "fr": "Conseiller sécurité",
+        "en": "Security adviser"
+      },
+      "origine": {
+        "fr": "Russie (ex-FSB)",
+        "en": "Russia (ex-FSB)"
+      }
+    },
+    "zakriev": {
+      "nom": "Zakriev",
+      "prenom": "Yakub (Ibragim)",
+      "sexe": "M",
+      "naissance": {
+        "fr": "1991",
+        "en": "1991"
+      },
+      "lien": {
+        "fr": "Neveu (fils de Zulay) · Danone Russie",
+        "en": "Nephew (son of Zulay) · Danone Russia"
+      },
+      "origine": {
+        "fr": "Tchétchénie",
+        "en": "Chechnya"
+      }
+    },
+    "dadaev": {
+      "nom": "Dadaev",
+      "prenom": "Mourad (« Noah Krieger »)",
+      "sexe": "M",
+      "photo": "uploads/noah kruger-c3f8beea.jpeg",
+      "naissance": {
+        "fr": "1989",
+        "en": "1989"
+      },
+      "lien": {
+        "fr": "Relais AfD pro-Kadyrov",
+        "en": "Pro-Kadyrov AfD relay"
+      },
+      "origine": {
+        "fr": "Grozny · Samachki, Tchétchénie · installé à Hanovre",
+        "en": "Grozny · Samashki, Chechnya · based in Hanover"
+      }
+    },
+    "padaev": {
+      "nom": "Padaev",
+      "prenom": "Zhandar Khozh-Akhmadovitch",
+      "sexe": "M",
+      "naissance": {
+        "fr": "probable : 02.07.1974 (inférence e-mail registre) · INN 201400092853",
+        "en": "likely 02.07.1974 (registry e-mail inference) · INN 201400092853"
+      },
+      "lien": {
+        "fr": "UBO unique de SK « Triumf » · promoteur du Bellagio",
+        "en": "Sole UBO of SK “Triumf” · Bellagio developer"
+      },
+      "origine": {
+        "fr": "Tchétchénie · antécédent moscovite (2015-2018)",
+        "en": "Chechnya · Moscow antecedent (2015-2018)"
+      }
+    },
+    "brambilla": {
+      "nom": "Brambilla",
+      "prenom": "Moreno",
+      "sexe": "M",
+      "naissance": null,
+      "lien": {
+        "fr": "PDG ONIRO Group (licence Cavalli Home)",
+        "en": "ONIRO Group CEO (Cavalli Home licence)"
+      },
+      "origine": {
+        "fr": "Cantù, Lombardie, Italie",
+        "en": "Cantù, Lombardy, Italy"
+      }
+    },
+    "sajwani": {
+      "nom": "Sajwani",
+      "prenom": "Hussain Ali Habib",
+      "sexe": "M",
+      "naissance": {
+        "fr": "1953",
+        "en": "1953"
+      },
+      "lien": {
+        "fr": "Fondateur DAMAC · contrôle Vision Investment (marque Cavalli)",
+        "en": "DAMAC founder · controls Vision Investment (Cavalli brand)"
+      },
+      "origine": {
+        "fr": "Dubaï, Émirats arabes unis",
+        "en": "Dubai, United Arab Emirates"
+      }
+    },
+    "skvortsov": {
+      "nom": "Skvortsov",
+      "prenom": "Vladimir Sergueïevitch",
+      "sexe": "M",
+      "naissance": {
+        "fr": "n/d (INN 772971037247)",
+        "en": "n/a (INN 772971037247)"
+      },
+      "lien": {
+        "fr": "Associé historique 50/50 de Padaev · hors sphère Kadyrov",
+        "en": "Padaev’s historical 50/50 partner · outside Kadyrov sphere"
+      },
+      "origine": {
+        "fr": "Moscou, Russie",
+        "en": "Moscow, Russia"
+      }
+    }
+  },
+  "bios": {
+    "ramzan": {
+      "bio": {
+        "fr": "Ramzan Kadyrov dirige la République tchétchène depuis 2007, après l’assassinat de son père Akhmat Kadyrov en 2004. Il y exerce un pouvoir personnel quasi absolu, fondé sur un arrangement non écrit avec Vladimir Poutine qui confère à la Tchétchénie une autonomie sans équivalent dans la Fédération de Russie. Son régime est associé à de graves violations des droits humains documentées par de nombreuses organisations : torture, exécutions extrajudiciaires, persécutions. Il est la cible des principaux régimes de sanctions occidentaux (OFAC depuis 2017, UE, Royaume-Uni, Canada, Suisse, Japon). Des rapports récurrents font état d’une maladie grave et évolutive, ce qui alimente depuis plusieurs années la question de sa succession.",
+        "en": "Ramzan Kadyrov has ruled the Chechen Republic since 2007, following the 2004 assassination of his father Akhmat Kadyrov. He wields near-absolute personal power, grounded in an unwritten arrangement with Vladimir Putin that grants Chechnya a degree of autonomy unmatched within the Russian Federation. His regime is associated with grave human-rights violations documented by numerous organisations: torture, extrajudicial killings, persecution. He is targeted by the main Western sanctions regimes (OFAC since 2017, EU, UK, Canada, Switzerland, Japan). Recurring reports of a serious and progressive illness have for several years fuelled the question of his succession."
+      },
+      "sources": [
+        {
+          "label": "OFAC / US Treasury",
+          "url": "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions",
+          "note": {
+            "fr": "Désignation de sanctions, 2017.",
+            "en": "Sanctions designation, 2017."
+          }
+        },
+        {
+          "label": "OC Media",
+          "url": "https://oc-media.org/kadyrov-sanctioned-by-us-treasury/",
+          "note": {
+            "fr": "Kadyrov sanctionné par le Trésor américain.",
+            "en": "Kadyrov sanctioned by the US Treasury."
+          }
+        },
+        {
+          "label": "OSW — Centre for Eastern Studies",
+          "url": "https://www.osw.waw.pl/en/publikacje/osw-commentary/2026-03-19/more-life-stake-uncertain-future-kadyrov-regime-chechnya",
+          "note": {
+            "fr": "Analyse de la succession, 2026.",
+            "en": "Succession analysis, 2026."
+          }
+        }
+      ]
+    },
+    "delim": {
+      "bio": {
+        "fr": "Adam Delimkhanov, né en 1969 à Benoy, est le cousin et le plus proche associé de Ramzan Kadyrov, souvent décrit comme son « bras droit » et pressenti un temps comme son successeur. Ancien chauffeur du commandant Salman Radouïev, il rejoint la garde rapprochée d’Akhmat Kadyrov en 2000, dirige le « régiment pétrolier » chargé de protéger les installations gazières et pétrolières tchétchènes, puis devient vice-Premier ministre en 2006 et député à la Douma d’État en 2007. Il est sous sanctions américaines depuis 2014, pour ses liens avec le crime organisé transnational (réseau « Brotherly Circle ») ; l’UE et le Canada l’ont sanctionné en 2022. Il est associé à de nombreux assassinats d’opposants. En 2009, la police de Dubaï l’a désigné comme commanditaire de l’assassinat de Sulim Yamadayev.",
+        "en": "Adam Delimkhanov, born in 1969 in Benoy, is the cousin and closest associate of Ramzan Kadyrov, often called his \"right hand\" and once seen as his likely successor. A former driver for commander Salman Raduyev, he joined Akhmat Kadyrov’s security detail in 2000, led the \"oil regiment\" protecting Chechen oil and gas facilities, became deputy prime minister in 2006 and was elected to the State Duma in 2007. He has been under US sanctions since 2014 for ties to transnational organised crime (the \"Brotherly Circle\" network); the EU and Canada sanctioned him in 2022. He is linked to numerous assassinations of opponents. In 2009, Dubai police named him as the organiser of Sulim Yamadayev’s assassination."
+      },
+      "sources": [
+        {
+          "label": "OpenSanctions",
+          "url": "https://www.opensanctions.org/entities/Q351025/",
+          "note": {
+            "fr": "Fiche de sanctions consolidée.",
+            "en": "Consolidated sanctions record."
+          }
+        },
+        {
+          "label": "Riddle Russia",
+          "url": "https://ridl.io/the-stakeholders-of-the-kadyrov-regime/",
+          "note": {
+            "fr": "Les piliers du régime Kadyrov.",
+            "en": "The stakeholders of the Kadyrov regime."
+          }
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Adam_Delimkhanov",
+          "note": {
+            "fr": "Synthèse biographique (accusation de Dubaï).",
+            "en": "Biographical overview (Dubai accusation)."
+          }
+        }
+      ]
+    },
+    "baisarov": {
+      "bio": {
+        "fr": "Ruslan Baïsarov, né en 1968 dans le district de Grozny, est un homme d’affaires russe d’origine tchétchène. Il dirige le groupe Bamtonnelstroï-Most (BTS-Most), l’une des plus grandes entreprises russes de construction d’infrastructures de transport, et possède la Tuva Energy Industrial Corporation. En 2019, Forbes l’a classé parmi les 200 hommes d’affaires les plus riches de Russie (fortune estimée à 500 M$). Sa proximité avec Kadyrov lui a valu le surnom de « portefeuille de Kadyrov » : il a financé la station de ski de Veduchi et soutenu plusieurs projets du dirigeant. D’après la fuite « Dubai Uncovered » (OCCRP) et l’enquête d’IStories, il figurait en 2020 comme propriétaire de cinq appartements et d’une villa sur Palm Jumeirah. Le Royaume-Uni l’a sanctionné le 29 juin 2022.",
+        "en": "Ruslan Baisarov, born in 1968 in the Grozny district, is a Russian businessman of Chechen origin. He heads the Bamtonnelstroy-Most Group (BTS-Most), one of Russia’s largest transport-infrastructure construction companies, and owns the Tuva Energy Industrial Corporation. In 2019, Forbes ranked him among Russia’s 200 richest businessmen (estimated wealth $500M). His closeness to Kadyrov earned him the nickname \"Kadyrov’s wallet\": he financed the Veduchi ski resort and backed several of the leader’s projects. Per the \"Dubai Uncovered\" leak (OCCRP) and IStories’ investigation, as of 2020 he owned five apartments and a villa on Palm Jumeirah. The UK sanctioned him on 29 June 2022."
+      },
+      "sources": [
+        {
+          "label": "OCCRP — Dubai Uncovered",
+          "url": "https://www.occrp.org/en/investigation/dubai-uncovered-data-leak-exposes-how-criminals-officials-and-sanctioned-politicians-poured-money-into-dubai-real-estate",
+          "note": {
+            "fr": "Fuite immobilière de Dubaï.",
+            "en": "Dubai real-estate leak."
+          }
+        },
+        {
+          "label": "OpenSanctions",
+          "url": "https://www.opensanctions.org/entities/Q66459292/",
+          "note": {
+            "fr": "Fiche de sanctions.",
+            "en": "Sanctions record."
+          }
+        },
+        {
+          "label": "Caucasus Watch / IStories",
+          "url": "https://caucasuswatch.de/en/news/officials-from-chechnya-and-dagestan-amongst-owners-of-expensive-real-estate-in-dubai.html",
+          "note": {
+            "fr": "Biens à Dubaï des proches du régime.",
+            "en": "Dubai property of regime insiders."
+          }
+        }
+      ]
+    },
+    "zakriev": {
+      "bio": {
+        "fr": "Yakub (Ibragim) Zakriev, né en 1991, est le fils de Zulay, sœur aînée de Ramzan Kadyrov. Sa carrière est fulgurante : maire de Grozny à 27 ans (2018), puis chef de l’administration du dirigeant tchétchène (2020), vice-Premier ministre et ministre de l’Agriculture. En juillet 2023, après que Poutine a placé la filiale russe de Danone sous gestion temporaire de l’État, Zakriev en prend la tête : cas emblématique de captation d’un actif occidental par l’entourage de Kadyrov (l’entreprise sera renommée H&N). Il a été sanctionné par les États-Unis (novembre 2023) et le Royaume-Uni (juin 2024). En 2024-2026, il a obtenu puis s’est vu révoquer la citoyenneté serbe (« menace pour la sécurité publique »).",
+        "en": "Yakub (Ibragim) Zakriev, born in 1991, is the son of Zulay, Ramzan Kadyrov’s elder sister. His rise has been meteoric: mayor of Grozny at 27 (2018), then head of the Chechen leader’s administration (2020), deputy prime minister and agriculture minister. In July 2023, after Putin placed Danone’s Russian subsidiary under temporary state management, Zakriev took it over — a textbook case of a Western asset captured by Kadyrov’s circle (the company was renamed H&N). He was sanctioned by the US (November 2023) and the UK (June 2024). In 2024-2026 he obtained, then had revoked, Serbian citizenship (\"threat to public security\")."
+      },
+      "sources": [
+        {
+          "label": "RFE/RL",
+          "url": "https://www.rferl.org/a/chechnya-russia-danone-chief-zakriyev-/32510322.html",
+          "note": {
+            "fr": "Le neveu de Kadyrov prend la tête de Danone Russie.",
+            "en": "Kadyrov’s nephew takes over Danone Russia."
+          }
+        },
+        {
+          "label": "OC Media",
+          "url": "https://oc-media.org/serbia-revokes-decision-to-grant-citizenship-to-kadyrovs-nephew/",
+          "note": {
+            "fr": "La Serbie révoque sa citoyenneté.",
+            "en": "Serbia revokes his citizenship."
+          }
+        },
+        {
+          "label": "Caucasian Knot",
+          "url": "https://www.eng.kavkaz-uzel.eu/articles/63410",
+          "note": {
+            "fr": "Gendre et neveu de Kadyrov sous sanctions US.",
+            "en": "Kadyrov’s son-in-law and nephew under US sanctions."
+          }
+        }
+      ]
+    },
+    "aimani": {
+      "bio": {
+        "fr": "Aimani Kadyrova, mère de Ramzan Kadyrov et veuve d’Akhmat Kadyrov, préside la Fondation Akhmat Kadyrov, présentée comme une organisation caritative. Selon plusieurs enquêtes, cette fondation constitue en réalité l’institution financière centrale du régime : elle accumule des sommes considérables — « dons » obligatoires imposés aux fonctionnaires et entrepreneurs, subventions fédérales — et les dépense à la discrétion de la famille. Elle fonctionne de fait comme un budget parallèle échappant au Trésor fédéral. Aimani Kadyrova a été sanctionnée par les États-Unis (août 2023), l’UE (2024) et le Royaume-Uni (2025). Kadyrov a publiquement déclaré qu’il ne « pardonnerait pas » ces sanctions visant sa mère.",
+        "en": "Aimani Kadyrova, mother of Ramzan Kadyrov and widow of Akhmat Kadyrov, heads the Akhmat Kadyrov Foundation, presented as a charity. According to several investigations, the foundation is in fact the regime’s central financial institution: it accumulates vast sums — compulsory \"donations\" imposed on officials and businesspeople, and federal subsidies — and spends them at the family’s discretion. It effectively operates as a parallel budget beyond the federal treasury. Aimani Kadyrova was sanctioned by the US (August 2023), the EU (2024) and the UK (2025). Kadyrov publicly declared he would \"not forgive\" these sanctions targeting his mother."
+      },
+      "sources": [
+        {
+          "label": "OC Media",
+          "url": "https://oc-media.org/keeping-up-with-the-kadyrovs-whos-who-in-chechnyas-ruling-family/",
+          "note": {
+            "fr": "La famille dirigeante de Tchétchénie.",
+            "en": "Who’s who in Chechnya’s ruling family."
+          }
+        },
+        {
+          "label": "OpenSanctions",
+          "url": "https://www.opensanctions.org/entities/NK-mLTieiUr3id3zvBNmkHKzy/",
+          "note": {
+            "fr": "Fondation Akhmat Kadyrov (motif UE 2024).",
+            "en": "Akhmat Kadyrov Foundation (EU 2024 grounds)."
+          }
+        },
+        {
+          "label": "Caucasian Knot",
+          "url": "https://www.eng.kavkaz-uzel.eu/articles/74793",
+          "note": {
+            "fr": "Contexte des sanctions.",
+            "en": "Sanctions context."
+          }
+        }
+      ]
+    },
+    "medni": {
+      "bio": {
+        "fr": "Medni Kadyrova est l’épouse officielle de Ramzan Kadyrov. Longtemps en retrait, engagée dans des projets culturels et caritatifs, elle est considérée comme la gardienne du foyer familial et de son patrimoine substantiel. En 2009, elle a fondé la maison de mode islamique Firdaws, ensuite dirigée par sa fille Aishat. La marque, qui a défilé à Paris (février 2020) et régulièrement à Dubaï, a soulevé des questions sur l’origine de son financement alors que la pauvreté en Tchétchénie reste élevée.",
+        "en": "Medni Kadyrova is the official wife of Ramzan Kadyrov. Long in the background, engaged in cultural and charitable projects, she is regarded as the keeper of the family home and its substantial wealth. In 2009 she founded the Islamic fashion house Firdaws, later headed by her daughter Aishat. The brand — which showed in Paris (February 2020) and regularly in Dubai — has raised questions about the source of its funding given persistently high poverty in Chechnya."
+      },
+      "sources": [
+        {
+          "label": "OC Media",
+          "url": "https://oc-media.org/keeping-up-with-the-kadyrovs-whos-who-in-chechnyas-ruling-family/",
+          "note": {
+            "fr": "La famille dirigeante de Tchétchénie.",
+            "en": "Who’s who in Chechnya’s ruling family."
+          }
+        },
+        {
+          "label": "The Moscow Times",
+          "url": "https://www.themoscowtimes.com/2020/02/28/kadyrov-daughters-parisian-fashion-debut-is-a-slap-in-the-face-a69458",
+          "note": {
+            "fr": "Le défilé parisien de la maison Firdaws.",
+            "en": "Firdaws’ Parisian fashion debut."
+          }
+        }
+      ]
+    },
+    "aishat": {
+      "bio": {
+        "fr": "Aishat Kadyrova, fille aînée de Ramzan Kadyrov, a été la première de ses héritiers nommée à un poste officiel. En 2020, à 21 ans, elle devient vice-ministre de la Culture, puis ministre l’année suivante — la plus jeune ministre régionale de la Culture de Russie. En 2023, elle est nommée vice-Première ministre en charge du secteur social. Elle dirige par ailleurs la maison de mode Firdaws fondée par sa mère. Elle a été sanctionnée par l’UE en décembre 2022 (9e paquet), avec sa sœur Khadizhat.",
+        "en": "Aishat Kadyrova, Ramzan Kadyrov’s eldest daughter, was the first of his heirs appointed to an official post. In 2020, aged 21, she became deputy culture minister, then minister the following year — Russia’s youngest regional culture minister. In 2023 she was appointed deputy prime minister for the social sector. She also heads the Firdaws fashion house founded by her mother. She was sanctioned by the EU in December 2022 (ninth package), alongside her sister Khadizhat."
+      },
+      "sources": [
+        {
+          "label": "OC Media",
+          "url": "https://oc-media.org/keeping-up-with-the-kadyrovs-whos-who-in-chechnyas-ruling-family/",
+          "note": {
+            "fr": "La famille dirigeante de Tchétchénie.",
+            "en": "Who’s who in Chechnya’s ruling family."
+          }
+        },
+        {
+          "label": "Caucasian Knot",
+          "url": "https://www.eng.kavkaz-uzel.eu/articles/61832/",
+          "note": {
+            "fr": "Filles et cousin de Kadyrov sous sanctions UE.",
+            "en": "Kadyrov’s daughters and cousin under EU sanctions."
+          }
+        }
+      ]
+    },
+    "adamk": {
+      "bio": {
+        "fr": "Adam Kadyrov, né le 24 novembre 2007, est le troisième fils de Ramzan Kadyrov — et celui que les médias indépendants russes décrivent comme son successeur pressenti. Sa notoriété nationale date de septembre 2023, quand son père a publié une vidéo le montrant en train de frapper Nikita Zhuravel, détenu accusé d’avoir brûlé un Coran ; loin d’être sanctionné, l’adolescent a depuis reçu plus d’une dizaine de décorations, dont le titre de Héros de la Tchétchénie et l’ordre Kadyrov. À 15 ans, il devient chef de la garde personnelle de son père ; en avril 2025, « curateur » du ministère tchétchène de l’Intérieur (poste créé pour lui), puis secrétaire du Conseil de sécurité de la république — le tout mineur et sans expérience. Côté Moyen-Orient : en août 2025, il est nommé curateur de l’aide humanitaire tchétchène à Gaza, canalisée via la fondation Akhmat Kadyrov (sanctionnée UE/OFAC) et les fonds Khaira, Daimohk et Ayub — des circuits dont la traçabilité financière est invérifiable. Il a accompagné son père lors de séjours aux Émirats et lors de la omra à La Mecque, où il a été reçu avec les honneurs. Il n’est pas visé personnellement par les sanctions occidentales ; l’Ukraine l’a en revanche sanctionné.",
+        "en": "Adam Kadyrov, born 24 November 2007, is Ramzan Kadyrov’s third son — and the one independent Russian media describe as his presumed successor. He gained national notoriety in September 2023 when his father published a video of him beating Nikita Zhuravel, a detainee accused of burning a Quran; far from being punished, the teenager has since collected over a dozen decorations, including Hero of Chechnya and the Kadyrov Order. At 15 he became head of his father’s personal security service; in April 2025 he was made “curator” of the Chechen Interior Ministry (a post created for him), then secretary of the republic’s Security Council — all while underage and with no experience. On the Middle East side: in August 2025 he was appointed curator of Chechnya’s humanitarian aid to Gaza, channelled through the Akhmat Kadyrov Foundation (EU/OFAC-sanctioned) and the Khaira, Daimohk and Ayub funds — circuits whose financial traceability is unverifiable. He accompanied his father on stays in the UAE and on umrah to Mecca, where he was received with honours. He is not personally targeted by Western sanctions; Ukraine, however, has sanctioned him."
+      },
+      "sources": [
+        {
+          "label": "OC Media",
+          "url": "https://oc-media.org/ramzan-kadyrovs-17-year-old-son-adam-appointed-coordinator-of-chechnyas-humanitarian-aid-to-gaza/",
+          "note": {
+            "fr": "Nommé coordinateur de l’aide à Gaza ; cumul de postes à 17 ans.",
+            "en": "Named Gaza aid coordinator; accumulation of posts at 17."
+          }
+        },
+        {
+          "label": "The Moscow Times",
+          "url": "https://www.themoscowtimes.com/2025/08/05/kadyrovs-teenage-son-tapped-to-oversee-gaza-aid-distribution-a90096",
+          "note": {
+            "fr": "Aide à Gaza via la fondation Akhmat Kadyrov, « portefeuille personnel » du clan.",
+            "en": "Gaza aid via the Akhmat Kadyrov Foundation, the clan’s “personal wallet.”"
+          }
+        },
+        {
+          "label": "Novaya Gazeta Europe",
+          "url": "https://novayagazeta.eu/articles/2025/08/05/youngest-kadyrov-son-appointed-head-of-chechnyas-humanitarian-aid-effort-to-gaza-en-news",
+          "note": {
+            "fr": "Postes, ordre Kadyrov (2024), Héros de la Tchétchénie, affaire Zhuravel.",
+            "en": "Posts, Kadyrov Order (2024), Hero of Chechnya, Zhuravel case."
+          }
+        },
+        {
+          "label": "Caucasian Knot",
+          "url": "https://www.eng.kavkaz-uzel.eu/articles/67014",
+          "note": {
+            "fr": "Curateur de l’aide à la Palestine ; liste des fonctions et décorations.",
+            "en": "Curator of aid to Palestine; list of posts and awards."
+          }
+        }
+      ]
+    },
+    "daudov": {
+      "bio": {
+        "fr": "Magomed Daudov, surnommé « Lord », est l’un des plus proches associés de Ramzan Kadyrov depuis plus d’une décennie. Ancien combattant devenu Héros de la Russie, il a longtemps présidé le Parlement tchétchène avant d’accéder au poste de Premier ministre. Responsable de la situation intérieure de la Tchétchénie, il est associé à des enlèvements de masse, à la torture et à d’autres violations des droits humains, y compris dans les « prisons secrètes » visant les personnes LGBT+. En mars 2019, il a proféré une menace publique de vendetta contre le blogueur en exil Tumso Abdurakhmanov. Plusieurs analystes le citent comme possible « régent » dans une hypothèse de transition.",
+        "en": "Magomed Daudov, nicknamed \"Lord,\" has been one of Ramzan Kadyrov’s closest associates for over a decade. A former fighter turned Hero of Russia, he long chaired the Chechen Parliament before becoming Prime Minister. Responsible for Chechnya’s internal situation, he is linked to mass abductions, torture and other human-rights violations, including in the secret \"gay prisons.\" In March 2019 he issued a public vendetta threat against exiled blogger Tumso Abdurakhmanov. Several analysts cite him as a possible \"regent\" in a transition scenario."
+      },
+      "sources": [
+        {
+          "label": "Riddle Russia",
+          "url": "https://ridl.io/the-stakeholders-of-the-kadyrov-regime/",
+          "note": {
+            "fr": "Les piliers du régime Kadyrov.",
+            "en": "The stakeholders of the Kadyrov regime."
+          }
+        },
+        {
+          "label": "BESA Center",
+          "url": "https://besacenter.org/chechnya-the-problem-of-succession-and-the-future-after-kadyrov/",
+          "note": {
+            "fr": "Tchétchénie : le problème de la succession.",
+            "en": "Chechnya: the problem of succession."
+          }
+        },
+        {
+          "label": "OCCRP",
+          "url": "https://www.occrp.org/en/news/sweden-sentences-two-russians-for-attempted-murder-of-chechen-blogger",
+          "note": {
+            "fr": "Menace contre Abdurakhmanov (contexte).",
+            "en": "Threat against Abdurakhmanov (context)."
+          }
+        }
+      ]
+    },
+    "alaud": {
+      "bio": {
+        "fr": "Apti Alaudinov (né en 1973) commande les forces spéciales « Akhmat ». Général de division de police et ancien vice-ministre de l’Intérieur tchétchène (responsable notamment de la répression interne), il était tombé en disgrâce et avait quitté la république en 2021 avant de relancer sa carrière. En 2024, il est nommé adjoint à la Direction militaro-politique des forces armées russes et élevé au rang de lieutenant-général. Il figure sur la liste OFAC (SDN) et est sous sanctions du Royaume-Uni (depuis 2020), du Canada et de la Pologne. Une décision de disqualification de dirigeant a été prononcée au Royaume-Uni le 9 avril 2025.",
+        "en": "Apti Alaudinov (born 1973) commands the \"Akhmat\" special forces. A police major general and former deputy interior minister of Chechnya (responsible among other things for internal repression), he had fallen from favour and left the republic in 2021 before reviving his career. In 2024 he was appointed deputy head of the Armed Forces’ Main Military-Political Directorate and promoted to lieutenant general. He is on the OFAC (SDN) list and under sanctions from the UK (since 2020), Canada and Poland. A director disqualification was issued in the UK on 9 April 2025."
+      },
+      "sources": [
+        {
+          "label": "OpenSanctions",
+          "url": "https://www.opensanctions.org/entities/Q112993665/",
+          "note": {
+            "fr": "Fiche de sanctions consolidée.",
+            "en": "Consolidated sanctions record."
+          }
+        },
+        {
+          "label": "OSW — Centre for Eastern Studies",
+          "url": "https://www.osw.waw.pl/en/publikacje/osw-commentary/2026-03-19/more-life-stake-uncertain-future-kadyrov-regime-chechnya",
+          "note": {
+            "fr": "Succession du régime Kadyrov.",
+            "en": "Kadyrov regime succession."
+          }
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Apti_Alaudinov",
+          "note": {
+            "fr": "Synthèse biographique.",
+            "en": "Biographical overview."
+          }
+        }
+      ]
+    },
+    "vismuradov": {
+      "bio": {
+        "fr": "Abuzayed Vismuradov, surnommé « Patriot », est un haut responsable sécuritaire tchétchène, ancien chef de l’unité d’intervention rapide « Terek » et garde du corps de longue date de Kadyrov, devenu vice-Premier ministre. Il appartient au premier cercle sécuritaire du régime : désigné par l’OFAC (Global Magnitsky, avec l’unité « Terek »), puis par l’UE (22 mars 2021, régime droits de l’homme) et le Canada (8 déc. 2023). Au Royaume-Uni, c’est l’unité « Terek » — et non lui personnellement — qui est listée (déc. 2020).",
+        "en": "Abuzayed Vismuradov, nicknamed \"Patriot,\" is a senior Chechen security official, former head of the \"Terek\" rapid-response unit and a longtime bodyguard of Kadyrov, who became deputy prime minister. He belongs to the regime’s innermost security circle: designated by OFAC (Global Magnitsky, with the “Terek” unit), then by the EU (22 March 2021, human-rights regime) and Canada (8 Dec 2023). In the UK, it is the “Terek” unit — not him personally — that is listed (Dec 2020)."
+      },
+      "sources": [
+        {
+          "label": "OpenSanctions",
+          "url": "https://www.opensanctions.org/search/?q=Abuzayed%20Vismuradov",
+          "note": {
+            "fr": "Recherche de sa fiche de sanctions.",
+            "en": "Search for his sanctions record."
+          }
+        }
+      ]
+    },
+    "shahr": {
+      "bio": {
+        "fr": "Shahruddi Edilgiriev est présenté comme un cousin de Ramzan Kadyrov et apparaît, dans les enquêtes d’IStories et d’OCCRP, comme le propriétaire enregistré de plusieurs actifs de grande valeur à Dubaï : la villa de Palm Jumeirah (Zabeel Saray) décrite comme « ambassade officieuse » de Kadyrov depuis 2014, d’autres villas et un jet privé (Airbus A319). Ce schéma de détention par un proche est un exemple typique de l’usage de prête-noms pour masquer le bénéficiaire effectif réel.",
+        "en": "Shahruddi Edilgiriev is described as a cousin of Ramzan Kadyrov and appears, in IStories and OCCRP investigations, as the registered owner of several high-value Dubai assets: the Palm Jumeirah villa (Zabeel Saray) described as Kadyrov’s \"unofficial embassy\" since 2014, other villas and a private jet (Airbus A319). This pattern of holding through a relative is a textbook example of nominee ownership used to mask the true beneficial owner."
+      },
+      "sources": [
+        {
+          "label": "IStories — Unofficial Embassy",
+          "url": "https://istories.media/en/",
+          "note": {
+            "fr": "Enquête « ambassade officieuse » de Dubaï.",
+            "en": "\"Unofficial embassy\" Dubai investigation."
+          }
+        },
+        {
+          "label": "OCCRP — Dubai Uncovered",
+          "url": "https://www.occrp.org/en/investigation/dubai-uncovered-data-leak-exposes-how-criminals-officials-and-sanctioned-politicians-poured-money-into-dubai-real-estate",
+          "note": {
+            "fr": "Fuite immobilière de Dubaï.",
+            "en": "Dubai real-estate leak."
+          }
+        }
+      ]
+    },
+    "taymas": {
+      "bio": {
+        "fr": "Khas-Magomed Taïmaskhanov est présenté comme un neveu du chef de l’administration de Ramzan Kadyrov. Selon la fuite de données immobilières de Dubaï, il possède quatre appartements valant plus de 6 M$ (achetés ~4,6 M$), dont trois dans le complexe Tiara Diamond sur Palm Jumeirah, acquis dès 2013. Le clan Taïmaskhanov est l’un des plus proches de Kadyrov, plusieurs de ses membres occupant de hautes fonctions en Tchétchénie depuis au moins 2008.",
+        "en": "Khas-Magomed Taimaskhanov is described as a nephew of the head of Ramzan Kadyrov’s administration. According to the Dubai real-estate leak, he owns four apartments worth over $6M (purchased for ~$4.6M), three of them in the Tiara Diamond complex on Palm Jumeirah, acquired as early as 2013. The Taimaskhanov clan is one of the closest to Kadyrov, with several members holding senior posts in Chechnya since at least 2008."
+      },
+      "sources": [
+        {
+          "label": "Caucasus Watch / IStories",
+          "url": "https://caucasuswatch.de/en/news/officials-from-chechnya-and-dagestan-amongst-owners-of-expensive-real-estate-in-dubai.html",
+          "note": {
+            "fr": "Biens immobiliers à Dubaï des proches du régime.",
+            "en": "Dubai real estate of regime insiders."
+          }
+        }
+      ]
+    },
+    "sabsabi": {
+      "bio": {
+        "fr": "Ziyad Sabsabi, ancien sénateur représentant la Tchétchénie au Conseil de la Fédération de Russie, a joué un rôle de coordinateur des relations de Kadyrov avec le monde arabe et de représentant de la Fondation Akhmat Kadyrov à l’international (actions « humanitaires » au Moyen-Orient). Il a été désigné par l’OFAC le 10 décembre 2020, dans le cadre du Global Magnitsky Act, au motif qu’il est « un représentant de Kadyrov » ayant agi pour son compte. Son fils, Mohammed Sabsabi, apparaît également dans la fuite immobilière de Dubaï.",
+        "en": "Ziyad Sabsabi, a former senator representing Chechnya in Russia’s Federation Council, coordinated Kadyrov’s relations with the Arab world and represented the Akhmat Kadyrov Foundation abroad (\"humanitarian\" activities in the Middle East). He was designated by OFAC on 10 December 2020, under the Global Magnitsky Act, on the grounds that he is \"a representative of Kadyrov\" who acted on his behalf. His son, Mohammed Sabsabi, also appears in the Dubai real-estate leak."
+      },
+      "sources": [
+        {
+          "label": "US Treasury / OFAC",
+          "url": "https://home.treasury.gov/news/press-releases/sm1208",
+          "note": {
+            "fr": "Désignations Journée des droits de l’homme, 10 déc. 2020.",
+            "en": "Human Rights Day designations, 10 Dec 2020."
+          }
+        },
+        {
+          "label": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2021/01/04/2020-29015/global-magnitsky-human-rights-accountability-act-annual-report",
+          "note": {
+            "fr": "Rapport annuel Global Magnitsky.",
+            "en": "Global Magnitsky annual report."
+          }
+        },
+        {
+          "label": "Caucasus Watch / IStories",
+          "url": "https://caucasuswatch.de/en/news/officials-from-chechnya-and-dagestan-amongst-owners-of-expensive-real-estate-in-dubai.html",
+          "note": {
+            "fr": "Biens du fils à Dubaï.",
+            "en": "Son’s Dubai property."
+          }
+        }
+      ]
+    },
+    "dugaz": {
+      "bio": {
+        "fr": "Timur Dugazaev (né en 1985) est présenté par le Trésor américain comme « le représentant de Kadyrov en Europe ». Il a été désigné par l’OFAC le 10 décembre 2020, dans le cadre du Global Magnitsky Act, pour avoir agi pour le compte de Kadyrov, dans un paquet de sanctions visant cinq proches du dirigeant tchétchène ainsi que plusieurs entités (FC Akhmat, Fondation Akhmat Kadyrov, club d’arts martiaux ASA).",
+        "en": "Timur Dugazaev (born 1985) is described by the US Treasury as \"Kadyrov’s representative in Europe.\" He was designated by OFAC on 10 December 2020 under the Global Magnitsky Act, for acting on Kadyrov’s behalf, in a package of sanctions targeting five of the Chechen leader’s associates as well as several entities (FC Akhmat, Akhmat Kadyrov Foundation, the ASA martial-arts club)."
+      },
+      "sources": [
+        {
+          "label": "US Treasury / OFAC",
+          "url": "https://home.treasury.gov/news/press-releases/sm1208",
+          "note": {
+            "fr": "Désignations Journée des droits de l’homme, 10 déc. 2020.",
+            "en": "Human Rights Day designations, 10 Dec 2020."
+          }
+        },
+        {
+          "label": "OpenSanctions",
+          "url": "https://www.opensanctions.org/entities/Q19562185/",
+          "note": {
+            "fr": "Fiche de sanctions.",
+            "en": "Sanctions record."
+          }
+        },
+        {
+          "label": "Caucasian Knot",
+          "url": "https://eng.kavkaz-uzel.eu/articles/53041",
+          "note": {
+            "fr": "Sanctions US sur cinq proches de Kadyrov.",
+            "en": "US sanctions on five Kadyrov associates."
+          }
+        }
+      ]
+    },
+    "martynov": {
+      "bio": {
+        "fr": "Daniil Vassilievitch Martynov est un conseiller personnel en matière de sécurité de Ramzan Kadyrov, présenté comme un ancien officier des forces spéciales du FSB russe. Il aurait joué un rôle dans l’entraînement des forces spéciales tchétchènes et le renforcement des liens entre l’appareil sécuritaire tchétchène et les structures fédérales russes. Il a été désigné par l’OFAC le 10 décembre 2020, dans le cadre du Global Magnitsky Act.",
+        "en": "Daniil Vasilievich Martynov is a personal security adviser to Ramzan Kadyrov, described as a former officer of Russia’s FSB special forces. He is said to have helped train Chechen special forces and to have strengthened links between the Chechen security apparatus and Russian federal structures. He was designated by OFAC on 10 December 2020 under the Global Magnitsky Act."
+      },
+      "sources": [
+        {
+          "label": "US Treasury / OFAC",
+          "url": "https://home.treasury.gov/news/press-releases/sm1208",
+          "note": {
+            "fr": "Désignations Journée des droits de l’homme, 10 déc. 2020.",
+            "en": "Human Rights Day designations, 10 Dec 2020."
+          }
+        },
+        {
+          "label": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2021/01/04/2020-29015/global-magnitsky-human-rights-accountability-act-annual-report",
+          "note": {
+            "fr": "Rapport annuel Global Magnitsky.",
+            "en": "Global Magnitsky annual report."
+          }
+        }
+      ]
+    },
+    "kataev": {
+      "bio": {
+        "fr": "Ayub (Aïoub) Vakhaïevitch Kataev a dirigé le service du ministère de l’Intérieur (MVD) à Argoun, en Tchétchénie, jusqu’en 2018. En avril 2017, l’enquête de Novaya Gazeta sur les purges anti-LGBT l’a mis en cause : selon plusieurs témoignages recoupés, il aurait personnellement supervisé et participé à des actes de torture visant des dizaines d’hommes détenus dans une « prison secrète » d’Argoun, soupçonnés d’homosexualité. Il figure, aux côtés de Ramzan Kadyrov, parmi les cinq premières personnes désignées par le Trésor américain au titre du Global Magnitsky Act (décembre 2017). L’UE l’a sanctionné en mars 2021 et le Canada en décembre 2023 — aux côtés de Daudov, Alaudinov et Vismuradov — pour son rôle dans la supervision des services de sécurité et de police responsables d’arrestations massives, de tortures et d’exécutions extrajudiciaires de personnes LGBTQI+ depuis 2017.",
+        "en": "Ayub (Aiub) Vakhaevich Kataev headed the Ministry of Internal Affairs (MVD) service in Argun, Chechnya, until 2018. In April 2017, Novaya Gazeta’s investigation into the anti-gay purges named him: according to several corroborated accounts, he personally supervised and took part in torture against dozens of men held in a “secret prison” in Argun on suspicion of homosexuality. He was one of the first five people designated by the US Treasury under the Global Magnitsky Act (December 2017), alongside Ramzan Kadyrov. The EU sanctioned him in March 2021, and Canada in December 2023 — together with Daudov, Alaudinov and Vismuradov — for his role overseeing security and police agencies responsible for the mass arrest, torture and extrajudicial killing of LGBTQI+ people since 2017."
+      },
+      "sources": [
+        {
+          "label": "US Treasury / OFAC",
+          "url": "https://home.treasury.gov/news/press-releases/sm0240",
+          "note": {
+            "fr": "Désignations Magnitsky, déc. 2017.",
+            "en": "Magnitsky designations, Dec 2017."
+          }
+        },
+        {
+          "label": "Caucasian Knot",
+          "url": "https://eng.kavkaz-uzel.eu/articles/44277/",
+          "note": {
+            "fr": "Enquête sur les tortures à Argoun.",
+            "en": "Investigation into torture in Argun."
+          }
+        },
+        {
+          "label": "Canada Gazette",
+          "url": "https://gazette.gc.ca/rp-pr/p2/2023/2023-12-20/html/sor-dors262-eng.html",
+          "note": {
+            "fr": "Désignation canadienne, déc. 2023.",
+            "en": "Canadian designation, Dec 2023."
+          }
+        }
+      ]
+    },
+    "dadaev": {
+      "bio": {
+        "fr": "Né Mourad Dadaev en 1989 à Grozny, il a grandi à Samachki, village marqué par le siège meurtrier de 1995 (plus de 200 morts). Installé en Allemagne, il s’est fait naturaliser sous le nom de son épouse, Noah Krieger, sans renoncer à sa nationalité russe. À Hanovre, il s’est imposé comme une figure locale de l’AfD, avec près de 440 000 abonnés sur Instagram — davantage que nombre de députés du parti — se mettant en scène en patriote depuis une villa cossue de Herrenhausen. Une enquête de CORRECTIV et IStories (déc. 2025) a révélé qu’il y recevait des proches du régime tchétchène et qu’il aurait repris, selon des défenseurs des droits humains, le rôle de « représentant » de Kadyrov en Europe autrefois tenu par Timur Dugazaev. Son frère Souleiman Dadaev a été condamné à Vienne en 2011 à 19 ans de prison pour complicité dans l’assassinat de l’opposant tchétchène Oumar Israilov (2009) ; Mourad, cité comme témoin au procès, avait refusé de déposer. En mars 2026, un voyage en Tchétchénie — entraînement au tir avec des forces spéciales, rencontre avec Kadyrov et son premier cercle, remise d’un poignard frappé d’un symbole nazi à un responsable — a précipité une procédure d’exclusion de l’AfD, prononcée en avril 2026. Il fait aussi l’objet d’une enquête en Allemagne pour participation présumée à des rodéos automobiles illégaux ; sa villa de Hanovre a été saisie mi-décembre 2025 pour loyers impayés.",
+        "en": "Born Murad Dadaev in 1989 in Grozny, he grew up in Samashki, a village marked by the deadly 1995 siege (over 200 killed). Having settled in Germany, he was naturalised under his wife’s surname, Noah Krieger, without giving up his Russian citizenship. In Hanover he became a local AfD figure, with nearly 440,000 Instagram followers — more than many of the party’s MPs — presenting himself as a patriot from a lavish villa in Herrenhausen. A CORRECTIV/IStories investigation (Dec 2025) found he hosted regime-linked Chechens there and, according to human-rights advocates, had taken over the role of Kadyrov’s European “representative” once held by Timur Dugazaev. His brother Suleiman Dadaev was sentenced in Vienna in 2011 to 19 years for complicity in the 2009 assassination of Chechen dissident Umar Israilov; Murad, called as a witness at the trial, refused to testify. In March 2026 a trip to Chechnya — shooting training with special forces, a meeting with Kadyrov and his inner circle, and the gifting of a Nazi-symbol dagger to an official — triggered an AfD expulsion procedure, completed in April 2026. He is also under investigation in Germany over alleged involvement in illegal street racing; his Hanover villa was seized in mid-December 2025 over unpaid rent."
+      },
+      "sources": [
+        {
+          "label": "CORRECTIV / IStories",
+          "url": "https://correctiv.org/aktuelles/russland-ukraine-2/2025/12/09/afd-hannover-noah-krieger-tschetschenien-kadyrow-netzwerk/",
+          "note": {
+            "fr": "Enquête sur son réseau tchétchène.",
+            "en": "Investigation into his Chechen network."
+          }
+        },
+        {
+          "label": "CORRECTIV (avril 2026)",
+          "url": "https://correctiv.org/aktuelles/russland-ukraine-2/2026/04/08/noah-krieger-afd-parteiausschluss-tschetschenien/",
+          "note": {
+            "fr": "Voyage en Tchétchénie et procédure d’exclusion.",
+            "en": "Trip to Chechnya and expulsion proceedings."
+          }
+        },
+        {
+          "label": "Junge Freiheit",
+          "url": "https://jungefreiheit.de/politik/deutschland/2026/afd-schmeisst-tschetschenischen-influencer-raus/",
+          "note": {
+            "fr": "Exclusion prononcée par l’AfD.",
+            "en": "Expulsion confirmed by the AfD."
+          }
+        }
+      ]
+    },
+    "padaev": {
+      "bio": {
+        "fr": "Zhandar Khozh-Akhmadovitch Padaev est le directeur général et l’associé unique (100 %) de OOO SK « Triumf », SPV enregistrée à Grozny le 22 janvier 2025 avec un capital de 15 000 ₽ (~150 €), qui porte le Bellagio Residences : 72 appartements premium « furnished by Roberto Cavalli Home Interiors », présentés le 27 juin 2026. Son seul antécédent corporel documenté est OOO « IndustriyaStroyInvest », coquille moscovite détenue à parité avec V. Skvortsov (2015-2018), jamais opérationnelle (aucun mouvement de fonds, aucun compte déposé) et radiée d’office en 2018. Rien dans ce parcours n’explique la capacité de financement d’un chantier premium avec partenariat italien : l’origine des fonds est une question ouverte à instruire, formulée comme telle et non comme une allégation. Le dispositif de vente (certificats de mobilier Cavalli de 10 à 25 k€, paiement échelonné jusqu’à 2 ans sans banque, présenté comme « halal, sans riba ») sort par ailleurs les flux acheteurs du filtre LCB-FT bancaire. L’interdiction triennale de l’art. 23.1 de la loi 129-FZ (2018-2021) était close avant la création de Triumf : aucune anomalie de ce côté.",
+        "en": "Zhandar Khozh-Akhmadovich Padaev is the CEO and sole shareholder (100%) of OOO SK “Triumf”, an SPV registered in Grozny on 22 January 2025 with ₽15,000 (~€150) in capital, which carries the Bellagio Residences: 72 premium flats “furnished by Roberto Cavalli Home Interiors”, unveiled on 27 June 2026. His only documented corporate antecedent is OOO “IndustriyaStroyInvest”, a Moscow shell held 50/50 with V. Skvortsov (2015-2018), never operational (no fund movements, no accounts filed) and struck off in 2018. Nothing in this record explains the capacity to finance a premium development with an Italian partnership: the origin of the funds is an open question to investigate, framed as such and not as an allegation. The sales scheme (Cavalli furniture certificates of €10-25k, instalment payment up to 2 years with no bank, marketed as “halal, riba-free”) also takes buyer flows outside the banking AML/CFT filter. The three-year ban under art. 23.1 of law 129-FZ (2018-2021) had lapsed before Triumf’s creation: no anomaly there."
+      },
+      "sources": [
+        {
+          "label": "EGRUL — OOO SK « Триумф » (FNS, 04.07.2026)",
+          "url": "https://pb.nalog.ru/",
+          "note": {
+            "fr": "Extrait officiel № ЮЭ9965-26-123308047 — A1.",
+            "en": "Official extract № ЮЭ9965-26-123308047 — A1."
+          }
+        },
+        {
+          "label": "EGRUL — OOO « ИндустрияСтройИнвест » (FNS, 05.07.2026)",
+          "url": "https://checko.ru/",
+          "note": {
+            "fr": "Extrait officiel № ЮЭ9965-26-123790597 — A1.",
+            "en": "Official extract № ЮЭ9965-26-123790597 — A1."
+          }
+        },
+        {
+          "label": "Grozny-Inform",
+          "url": "https://www.grozny-inform.ru/",
+          "note": {
+            "fr": "Présentation officielle du 27/06/2026 — A3/B2.",
+            "en": "Official launch of 27/06/2026 — A3/B2."
+          }
+        }
+      ]
+    },
+    "brambilla": {
+      "bio": {
+        "fr": "Moreno Brambilla est le président-directeur général d’ONIRO Group (ex-Jumbo Group, Cantù, Lombardie), titulaire de la licence Roberto Cavalli Home Interiors depuis 2011 — le groupe détient aussi les licences Gianfranco Ferré Home (2014) et ETRO Home Interiors (2017). Son équipe conçoit le concept d’intérieur de chaque appartement du Bellagio de Grozny, et il s’est déplacé en personne à la présentation du 27 juin 2026. En 2021, il déclarait publiquement que la Chine et la Russie étaient les principaux marchés du groupe — un débouché russe assumé avant les sanctions de 2022. La fourniture d’un concept d’intérieur et de mobilier de luxe (> 300 €) à un projet russe soulève une question de conformité au règlement UE 833/2014 (art. 3h, annexe XVIII ; interdiction des services d’architecture depuis oct. 2022) ; les hypothèses de structuration (entité non-UE, contrat via le propriétaire dubaïote, réexportation via pays tiers) restent à tester. Réserve importante : aucune sanction ne vise ONIRO ni Brambilla, et rien ne prouve à ce stade une violation — ce qui est établi est un montage qui mérite une due diligence, pas une infraction constatée.",
+        "en": "Moreno Brambilla is the CEO of ONIRO Group (formerly Jumbo Group, Cantù, Lombardy), holder of the Roberto Cavalli Home Interiors licence since 2011 — the group also holds the Gianfranco Ferré Home (2014) and ETRO Home Interiors (2017) licences. His team designs the interior concept of every flat in Grozny’s Bellagio, and he attended the 27 June 2026 launch in person. In 2021 he publicly stated that China and Russia were the group’s main markets — an assumed Russian outlet before the 2022 sanctions. Supplying an interior concept and luxury furniture (>€300) to a Russian project raises a compliance question under EU Regulation 833/2014 (art. 3h, Annex XVIII; architecture services banned since Oct 2022); the structuring hypotheses (non-EU entity, contracting via the Dubai brand owner, third-country re-export) remain to be tested. Important caveat: no sanctions target ONIRO or Brambilla, and nothing proves a violation at this stage — what is established is an arrangement that warrants due diligence, not a recorded offence."
+      },
+      "sources": [
+        {
+          "label": "ONIRO Group",
+          "url": "https://onirogroup.it/",
+          "note": {
+            "fr": "Site du groupe (licences, direction) — A2.",
+            "en": "Group site (licences, leadership) — A2."
+          }
+        },
+        {
+          "label": "IFDM / presse sectorielle italienne",
+          "url": "https://www.ifdm.design/",
+          "note": {
+            "fr": "Rebranding Jumbo → ONIRO (2022) ; marchés 2021 — B2.",
+            "en": "Jumbo → ONIRO rebrand (2022); 2021 markets — B2."
+          }
+        },
+        {
+          "label": "Grozny-Inform",
+          "url": "https://www.grozny-inform.ru/",
+          "note": {
+            "fr": "Présence à la présentation du 27/06/2026 — A3/B2.",
+            "en": "Presence at the 27/06/2026 launch — A3/B2."
+          }
+        }
+      ]
+    },
+    "sajwani": {
+      "bio": {
+        "fr": "Hussain Sajwani, fondateur et président de DAMAC Properties (Dubaï), contrôle Vision Investment Co. LLC (DICO Group), propriétaire de la marque Roberto Cavalli SpA depuis le 28 novembre 2019 (~160 M€, rachetée à la société de private equity italienne Clessidra). Le partenariat DICO ↔ Cavalli remonte à 2017 (hôtels « AYKON with interior design by Roberto Cavalli »). Sa pertinence pour cette carte est géographique : la marque qui habille le premier complexe premium de Grozny est détenue depuis Dubaï — la même place de marché que le cluster EAU existant (Edilgiriev, Baisarov, Taymaskhanov, Sabsabi). Aucune sanction ne vise Sajwani, DAMAC ou Vision Investment, et aucun lien direct avec la sphère Kadyrov n’est documenté à ce stade.",
+        "en": "Hussain Sajwani, founder and chairman of DAMAC Properties (Dubai), controls Vision Investment Co. LLC (DICO Group), owner of the Roberto Cavalli SpA brand since 28 November 2019 (~€160M, bought from Italian private-equity firm Clessidra). The DICO ↔ Cavalli partnership dates back to 2017 (“AYKON with interior design by Roberto Cavalli” hotels). His relevance to this map is geographic: the brand dressing Grozny’s first premium complex is owned from Dubai — the same marketplace as the existing UAE cluster (Edilgiriev, Baisarov, Taymaskhanov, Sabsabi). No sanctions target Sajwani, DAMAC or Vision Investment, and no direct link to the Kadyrov sphere is documented at this stage."
+      },
+      "sources": [
+        {
+          "label": "PRNewswire",
+          "url": "https://www.prnewswire.com/",
+          "note": {
+            "fr": "Communiqué d’acquisition (2019) — A2.",
+            "en": "Acquisition release (2019) — A2."
+          }
+        },
+        {
+          "label": "Business of Fashion",
+          "url": "https://www.businessoffashion.com/",
+          "note": {
+            "fr": "Rachat Cavalli par DICO/Vision Investment — A2/B2.",
+            "en": "Cavalli buyout by DICO/Vision Investment — A2/B2."
+          }
+        },
+        {
+          "label": "Arabian Business / Gulf News",
+          "url": "https://www.arabianbusiness.com/",
+          "note": {
+            "fr": "Contexte DAMAC/AYKON — B2.",
+            "en": "DAMAC/AYKON context — B2."
+          }
+        }
+      ]
+    },
+    "skvortsov": {
+      "bio": {
+        "fr": "Vladimir Sergueïevitch Skvortsov est un opérateur immobilier moscovite établi et toujours actif (gestion immobilière, OKVED 68.32) : sociétés КСГ (CA ~150,9 M ₽), РТК (CA ~112 M ₽, créée en 2014) et ИСГ « ИнвестСервисГрупп » (CA ~18,6 M ₽), qu’il dirige. Il a détenu 50 % d’IndustriyaStroyInvest à parité avec Z. Padaev (2015-2018), coquille jamais opérationnelle radiée d’office, et fut actionnaire de ЗАО СК « Индустрия-Р » (construction) jusqu’au 04.01.2022 — une proximité de nom qui suggère (lecture Probable, B2) que la coquille commune était un véhicule satellite d’un projet non réalisé de sa sphère « Industriya ». Aucun lien apparent avec la sphère Kadyrov : nœud contextuel, non structurant, qui documente le seul antécédent corporel de l’UBO du Bellagio.",
+        "en": "Vladimir Sergeyevich Skvortsov is an established, still-active Moscow real-estate operator (property management, OKVED 68.32): companies KSG (~₽150.9M revenue), RTK (~₽112M, founded 2014) and ISG “InvestServisGrupp” (~₽18.6M), which he runs. He held 50% of IndustriyaStroyInvest at parity with Z. Padaev (2015-2018), a never-operational shell struck off ex officio, and was a shareholder of ZAO SK “Industriya-R” (construction) until 04.01.2022 — a name proximity suggesting (Probable reading, B2) that the joint shell was a satellite vehicle of an unrealised project in his “Industriya” sphere. No apparent link to the Kadyrov sphere: a contextual, non-structural node that documents the sole corporate antecedent of the Bellagio’s UBO."
+      },
+      "sources": [
+        {
+          "label": "Checko.ru — fiche personne",
+          "url": "https://checko.ru/",
+          "note": {
+            "fr": "Sociétés actives et historique — A1/A2.",
+            "en": "Active companies and history — A1/A2."
+          }
+        },
+        {
+          "label": "EGRUL — OOO « ИндустрияСтройИнвест »",
+          "url": "https://pb.nalog.ru/",
+          "note": {
+            "fr": "Parité 50/50 avec Padaev, radiation 2018 — A1.",
+            "en": "50/50 parity with Padaev, 2018 strike-off — A1."
+          }
+        }
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "y": "2004",
+      "cat": "rep",
+      "fr": "Doha · Iandarbiev (contexte)",
+      "en": "Doha · Yandarbiyev (context)"
+    },
+    {
+      "y": "2007",
+      "cat": "dipl",
+      "fr": "La Mecque · lavage de la Kaaba",
+      "en": "Mecca · washing of the Kaaba"
+    },
+    {
+      "y": "2009",
+      "cat": "rep",
+      "fr": "Dubaï · assassinat Yamadayev",
+      "en": "Dubai · Yamadayev killing"
+    },
+    {
+      "y": "2014",
+      "cat": "imm",
+      "fr": "Villa Palm Jumeirah + mosquée Abou Ghosh",
+      "en": "Palm Jumeirah villa + Abu Ghosh mosque"
+    },
+    {
+      "y": "2016",
+      "cat": "hum",
+      "fr": "Alep · aide de la Fondation Kadyrov",
+      "en": "Aleppo · Kadyrov Foundation aid"
+    },
+    {
+      "y": "2019",
+      "cat": "rep",
+      "fr": "Berlin · « terrorisme d’État »",
+      "en": "Berlin · “state terrorism”"
+    },
+    {
+      "y": "2020",
+      "cat": "rep",
+      "fr": "Vienne · Lille · sanctions",
+      "en": "Vienna · Lille · sanctions"
+    },
+    {
+      "y": "2023",
+      "cat": "dipl",
+      "fr": "Abou Dabi (MBZ) · sanctions",
+      "en": "Abu Dhabi (MBZ) · sanctions"
+    },
+    {
+      "y": "2025",
+      "cat": "dipl",
+      "fr": "AfD Hanovre · R.-U. (Fondation)",
+      "en": "AfD Hanover · UK (Foundation)"
+    },
+    {
+      "y": "2025",
+      "cat": "hum",
+      "fr": "Gaza · Adam K. curateur de l’aide",
+      "en": "Gaza · Adam K. aid curator"
+    },
+    {
+      "y": "2026",
+      "cat": "imm",
+      "fr": "Grozny · Bellagio « Cavalli » (SPV Triumf)",
+      "en": "Grozny · Bellagio “Cavalli” (Triumf SPV)"
+    },
+    {
+      "y": "2026",
+      "cat": "dyn",
+      "fr": "Luxembourg · enquête OpenLux (Agayev)",
+      "en": "Luxembourg · OpenLux investigation (Agayev)"
+    }
+  ],
+  "sourceNames": [
+    "IStories",
+    "Le Monde",
+    "OpenLux",
+    "OpenSanctions",
+    "CORRECTIV",
+    "OCCRP",
+    "Dubai Unlocked",
+    "Ukrainska Pravda",
+    "OC Media",
+    "Bellingcat",
+    "RFE/RL",
+    "New York Times",
+    "Caucasian Knot",
+    "Meduza",
+    "Times of Israel",
+    "OFAC",
+    "Al Jazeera",
+    "RUSI",
+    "EGRUL / FNS",
+    "Checko",
+    "Grozny-Inform",
+    "PRNewswire"
+  ],
+  "regions": [
+    {
+      "lon": 6,
+      "lat": 47.5,
+      "fr": "EUROPE",
+      "en": "EUROPE",
+      "sz": 14,
+      "op": 0.32
+    },
+    {
+      "lon": 49,
+      "lat": 53,
+      "fr": "RUSSIE",
+      "en": "RUSSIA",
+      "sz": 13,
+      "op": 0.34
+    },
+    {
+      "lon": 34,
+      "lat": 39,
+      "fr": "TURQUIE",
+      "en": "TÜRKİYE",
+      "sz": 11,
+      "op": 0.32
+    },
+    {
+      "lon": 41.5,
+      "lat": 33.5,
+      "fr": "SYRIE · IRAK",
+      "en": "SYRIA · IRAQ",
+      "sz": 9.5,
+      "op": 0.3
+    },
+    {
+      "lon": 44,
+      "lat": 22.5,
+      "fr": "ARABIE SAOUDITE",
+      "en": "SAUDI ARABIA",
+      "sz": 11,
+      "op": 0.32
+    },
+    {
+      "lon": 55.5,
+      "lat": 31,
+      "fr": "IRAN",
+      "en": "IRAN",
+      "sz": 11,
+      "op": 0.3
+    },
+    {
+      "lon": 30,
+      "lat": 26.5,
+      "fr": "ÉGYPTE",
+      "en": "EGYPT",
+      "sz": 10,
+      "op": 0.28
+    },
+    {
+      "lon": 21,
+      "lat": 34.5,
+      "fr": "MÉDITERRANÉE",
+      "en": "MEDITERRANEAN",
+      "sz": 10,
+      "op": 0.34,
+      "sea": true
+    },
+    {
+      "lon": 51.5,
+      "lat": 42,
+      "fr": "MER CASPIENNE",
+      "en": "CASPIAN SEA",
+      "sz": 9,
+      "op": 0.34,
+      "sea": true
+    },
+    {
+      "lon": 52.8,
+      "lat": 27.7,
+      "fr": "GOLFE PERSIQUE",
+      "en": "PERSIAN GULF",
+      "sz": 8.5,
+      "op": 0.34,
+      "sea": true
+    }
+  ],
+  "hotCountries": [
+    "Russia",
+    "United Arab Emirates",
+    "Saudi Arabia",
+    "Syria",
+    "Germany",
+    "France",
+    "Austria",
+    "Turkey",
+    "Israel",
+    "Jordan",
+    "Qatar",
+    "Czechia",
+    "Italy",
+    "Palestine"
+  ],
+  "statGroups": [
+    {
+      "accent": "#ffb347",
+      "title": {
+        "fr": "Empreinte financière",
+        "en": "Financial footprint"
+      },
+      "items": [
+        {
+          "value": "≈ 50 M$",
+          "label": {
+            "fr": "de biens immobiliers documentés dans le Golfe",
+            "en": "of documented Gulf real estate"
+          }
+        },
+        {
+          "value": "20+",
+          "label": {
+            "fr": "appartements et villas identifiés à Dubaï",
+            "en": "flats and villas identified in Dubai"
+          }
+        },
+        {
+          "value": "72",
+          "label": {
+            "fr": "appartements « Cavalli » (Bellagio Grozny) portés par une SPV au capital de 15 000 ₽",
+            "en": "“Cavalli” flats (Bellagio Grozny) carried by a ₽15,000-capital SPV"
+          }
+        }
+      ]
+    },
+    {
+      "accent": "#e74c3c",
+      "title": {
+        "fr": "Exposition aux sanctions",
+        "en": "Sanctions exposure"
+      },
+      "items": [
+        {
+          "value": "13",
+          "label": {
+            "fr": "entités du réseau sous sanctions internationales",
+            "en": "network entities under international sanctions"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "fr": "régimes concernés : États-Unis, UE, R.-U., Canada",
+            "en": "regimes involved: US, EU, UK, Canada"
+          }
+        }
+      ]
+    },
+    {
+      "accent": "#53c2da",
+      "title": {
+        "fr": "Portée géographique",
+        "en": "Geographic reach"
+      },
+      "items": [
+        {
+          "value": "14",
+          "label": {
+            "fr": "pays et juridictions reliés au réseau",
+            "en": "countries and jurisdictions linked to the network"
+          }
+        },
+        {
+          "value": "6",
+          "label": {
+            "fr": "villes visées par un assassinat ou une tentative",
+            "en": "cities targeted by a killing or attempt"
+          }
+        }
+      ]
+    }
+  ],
+  "sanctions": {
+    "$doc": {
+      "description": "Calque SANCTIONS — une entrée par personne/entité de la carte. Rempli par recherche OpenSanctions + sources officielles (audit complet des mentions « à confirmer » : 17 juil. 2026). Chaque sanction porte un champ 'verified' : true = confirmé sur base consolidée/source officielle ; false = à confirmer (date ou programme incertain).",
+      "jurisdictions": {
+        "US": {
+          "label": "États-Unis (OFAC SDN)",
+          "color": "#e74c3c",
+          "authority": "OFAC / US Treasury",
+          "search": "https://sanctionssearch.ofac.treas.gov/"
+        },
+        "EU": {
+          "label": "Union européenne",
+          "color": "#4a7fd4",
+          "authority": "Conseil UE / DG FISMA",
+          "search": "https://data.europa.eu/apps/eusanctionstracker/"
+        },
+        "UK": {
+          "label": "Royaume-Uni (OFSI/FCDO)",
+          "color": "#9b6dd6",
+          "authority": "FCDO / OFSI",
+          "search": "https://search-uk-sanctions-list.service.gov.uk/"
+        },
+        "CA": {
+          "label": "Canada (SEMA)",
+          "color": "#d4726a",
+          "authority": "Affaires mondiales Canada",
+          "search": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/consolidated-consolide.aspx"
+        },
+        "CH": {
+          "label": "Suisse (SECO)",
+          "color": "#c94f4f",
+          "authority": "SECO",
+          "search": "https://www.seco.admin.ch/seco/fr/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos.html"
+        },
+        "PL": {
+          "label": "Pologne (MSWiA)",
+          "color": "#b06fc9",
+          "authority": "MSWiA",
+          "search": "https://www.gov.pl/web/mswia/lista-osob-i-podmiotow-objetych-sankcjami"
+        },
+        "JP": {
+          "label": "Japon (MoF)",
+          "color": "#5aa88f",
+          "authority": "Ministère des Finances (Japon)",
+          "search": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/list.html"
+        },
+        "FR": {
+          "label": "France (DG Trésor)",
+          "color": "#5b8def",
+          "authority": "Direction générale du Trésor — Registre national des gels d'avoirs",
+          "search": "https://gels-avoirs.dgtresor.gouv.fr/"
+        },
+        "AU": {
+          "label": "Australie (DFAT)",
+          "color": "#e0a44f",
+          "authority": "DFAT — Consolidated List",
+          "search": "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list"
+        },
+        "NZ": {
+          "label": "Nouvelle-Zélande",
+          "color": "#4fb0a0",
+          "authority": "Russia Sanctions Act 2022",
+          "search": "https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions"
+        },
+        "MC": {
+          "label": "Monaco",
+          "color": "#c96f9b",
+          "authority": "Liste monégasque de gel des fonds",
+          "search": "https://geldesfonds.gouv.mc/"
+        }
+      },
+      "entry_schema": {
+        "id": "id du nœud existant dans la carte",
+        "sanctions": [
+          {
+            "jur": "US|EU|UK|CA|CH|PL|JP",
+            "program": "ex. Global Magnitsky, Règl. (UE) 269/2014, SEMA (Russie)…",
+            "date": "AAAA-MM-JJ (\"\" si inconnue)",
+            "reason_fr": "motif résumé",
+            "reason_en": "summary reason",
+            "source_url": "lien source officielle (OFAC / EUR-Lex / OFSI / gov)",
+            "verified": true
+          }
+        ]
+      }
+    },
+    "entries": [
+      {
+        "id": "ramzan",
+        "sanctions": [
+          {
+            "jur": "US",
+            "program": "Global Magnitsky (E.O. 13818) — OFAC SDN",
+            "date": "2017-12-20",
+            "reason_fr": "Violations graves des droits humains en Tchétchénie (affaire Magnitsky, purges).",
+            "reason_en": "Gross human-rights violations in Chechnya (Magnitsky case, purges).",
+            "source_url": "https://home.treasury.gov/news/press-releases/sm0240",
+            "verified": true
+          },
+          {
+            "jur": "EU",
+            "program": "Règl. (UE) 269/2014 — intégrité territoriale de l'Ukraine",
+            "date": "2014-07-25",
+            "reason_fr": "Soutien à l'annexion illégale de la Crimée ; création et déploiement d'unités militaires en Ukraine.",
+            "reason_en": "Support for the illegal annexation of Crimea; creation and deployment of military units in Ukraine.",
+            "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0571",
+            "verified": true
+          },
+          {
+            "jur": "UK",
+            "program": "Russia (Sanctions) (EU Exit) Regulations 2019 + Director Disqualification 2025",
+            "date": "",
+            "reason_fr": "Désignation reprise du régime UE ; restrictions sur les services de trusts (2023) ; interdiction de direction de société imposée le 09/04/2025.",
+            "reason_en": "Carried over from the EU regime; trust-services restrictions (2023); director disqualification imposed 09/04/2025.",
+            "source_url": "https://search-uk-sanctions-list.service.gov.uk/",
+            "verified": true
+          },
+          {
+            "jur": "CA",
+            "program": "SEMA — Règlement sur la Russie",
+            "date": "2014-08-06",
+            "reason_fr": "Mesures liées à la violation de la souveraineté de l'Ukraine.",
+            "reason_en": "Measures tied to the violation of Ukraine's sovereignty.",
+            "source_url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/consolidated-consolide.aspx",
+            "verified": true
+          },
+          {
+            "jur": "CH",
+            "program": "Ordonnance Ukraine (SECO) — alignement UE",
+            "date": "2014-08-27",
+            "reason_fr": "Reprise de la désignation UE (gel des avoirs, interdiction d'entrée).",
+            "reason_en": "Mirror of the EU designation (asset freeze, travel ban).",
+            "source_url": "https://www.opensanctions.org/entities/Q217115/",
+            "verified": true
+          },
+          {
+            "jur": "JP",
+            "program": "Loi sur les changes (gel des avoirs) — MoF",
+            "date": "2022-03-15",
+            "reason_fr": "Gel des avoirs lié à l'agression contre l'Ukraine.",
+            "reason_en": "Asset freeze tied to the aggression against Ukraine.",
+            "source_url": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/list.html",
+            "verified": true
+          }
+        ],
+        "not_listed": [
+          "PL"
+        ],
+        "note_fr": "Absent de la liste polonaise MSWiA (constat OpenSanctions, juin 2026 — à re-vérifier).",
+        "note_en": "Not on the Polish MSWiA list (OpenSanctions check, June 2026 — recheck)."
+      },
+      {
+        "id": "delim",
+        "sanctions": [
+          {
+            "jur": "US",
+            "program": "E.O. 13581 (organisations criminelles transnationales) — OFAC SDN",
+            "date": "2014-12-09",
+            "reason_fr": "Liens avec le groupe criminel « Brothers' Circle ».",
+            "reason_en": "Ties to the \"Brothers' Circle\" criminal network.",
+            "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=16992",
+            "verified": true
+          },
+          {
+            "jur": "EU",
+            "program": "Règl. (UE) 269/2014",
+            "date": "2022-07-21",
+            "reason_fr": "Mise en place des forces tchétchènes dans le Donbass ; direction du siège de Marioupol (mars 2022).",
+            "reason_en": "Set up Chechen forces in Donbas; led the siege of Mariupol (March 2022).",
+            "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2022:193:FULL&from=EN",
+            "verified": true
+          },
+          {
+            "jur": "CH",
+            "program": "Ordonnance Ukraine (SECO)",
+            "date": "2022-08-03",
+            "reason_fr": "Reprise de la désignation UE.",
+            "reason_en": "Mirror of the EU designation.",
+            "source_url": "https://www.opensanctions.org/entities/Q351025/",
+            "verified": true
+          },
+          {
+            "jur": "CA",
+            "program": "SEMA — Règlement sur la Russie",
+            "date": "",
+            "reason_fr": "Désignation liée à l'agression contre l'Ukraine (présence confirmée, jeu ca-sema / OpenSanctions).",
+            "reason_en": "Designation tied to the aggression against Ukraine (presence confirmed, ca-sema dataset / OpenSanctions).",
+            "source_url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/consolidated-consolide.aspx",
+            "verified": true
+          }
+        ],
+        "not_listed": [
+          "UK",
+          "JP",
+          "PL"
+        ],
+        "note_fr": "R.-U. et Japon : signalés par le portail ukrainien GUR, mais absents de sa fiche consolidée OpenSanctions (11 jeux de sanctions : OFAC, UE, SECO, Canada, NZ, France, Belgique, Monaco, Ukraine…) — mentions retirées après vérification (juil. 2026).",
+        "note_en": "UK and Japan: reported by Ukraine's GUR portal but absent from his consolidated OpenSanctions record (11 sanction datasets) — removed after verification (Jul 2026)."
+      },
+      {
+        "id": "alaud",
+        "sanctions": [
+          {
+            "jur": "UK",
+            "program": "Global Human Rights Sanctions Regulations 2020",
+            "date": "2020-12-10",
+            "reason_fr": "Vague GHR du 10 déc. 2020 (avec Daudov, Kataev et l'unité « Terek ») — purges anti-LGBT.",
+            "reason_en": "GHR wave of 10 Dec 2020 (with Daudov, Kataev and the “Terek” unit) — anti-LGBT purges.",
+            "source_url": "https://www.gov.uk/government/publications/financial-sanctions-consolidated-list-of-targets",
+            "verified": true
+          },
+          {
+            "jur": "PL",
+            "program": "Liste nationale MSWiA (loi du 13 avril 2022)",
+            "date": "",
+            "reason_fr": "Commandant des forces « Akhmat » engagées en Ukraine ; liens directs avec des soutiens de l'agression.",
+            "reason_en": "Commander of the \"Akhmat\" forces in Ukraine; direct links to backers of the aggression.",
+            "source_url": "https://www.gov.pl/web/mswia/lista-osob-i-podmiotow-objetych-sankcjami",
+            "verified": true
+          },
+          {
+            "jur": "US",
+            "program": "Magnitsky Act (MAGNIT) — OFAC SDN",
+            "date": "2014-12-29",
+            "reason_fr": "Désignation Magnitsky du 29.12.2014 (avec M. Daudov), alors vice-ministre de l'Intérieur tchétchène ; id OFAC 17446.",
+            "reason_en": "Magnitsky designation of 29 Dec 2014 (with M. Daudov), then Chechen deputy interior minister; OFAC id 17446.",
+            "source_url": "https://ofac.treasury.gov/recent-actions/20141229",
+            "verified": true
+          },
+          {
+            "jur": "CA",
+            "program": "Loi de Magnitski canadienne (LJVCE / JVCFOA)",
+            "date": "2023-12-08",
+            "reason_fr": "Vague du 8 déc. 2023 (avec Daudov, Vismuradov, Kataev) : violations graves visant les personnes LGBTQI+ depuis 2017.",
+            "reason_en": "8 Dec 2023 wave (with Daudov, Vismuradov, Kataev): gross violations targeting LGBTQI+ people since 2017.",
+            "source_url": "https://www.canada.ca/en/global-affairs/news/2023/12/backgrounder-sanctions-in-response-to-long-standing-human-rights-violations-in-russia-iran-and-myanmar.html",
+            "verified": true
+          }
+        ],
+        "not_listed": [
+          "EU",
+          "CH",
+          "JP"
+        ],
+        "note_fr": "La notice polonaise souligne explicitement qu'il n'est PAS listé par l'UE — asymétrie notable.",
+        "note_en": "The Polish notice explicitly stresses he is NOT EU-listed — a notable asymmetry."
+      },
+      {
+        "id": "daudov",
+        "sanctions": [
+          {
+            "jur": "UK",
+            "program": "Global Human Rights Sanctions Regulations 2020",
+            "date": "2020-12-10",
+            "reason_fr": "Vague GHR du 10 déc. 2020 (avec Kataev, Alaudinov et l'unité « Terek ») — persécutions des personnes LGBT.",
+            "reason_en": "GHR wave of 10 Dec 2020 (with Kataev, Alaudinov and the “Terek” unit) — persecution of LGBT people.",
+            "source_url": "https://www.gov.uk/government/publications/financial-sanctions-consolidated-list-of-targets",
+            "verified": true
+          },
+          {
+            "jur": "US",
+            "program": "Magnitsky Act (MAGNIT) — OFAC SDN",
+            "date": "2014-12-29",
+            "reason_fr": "Désignation Magnitsky du 29.12.2014 (avec A. Alaudinov), alors chef de l'administration du dirigeant tchétchène.",
+            "reason_en": "Magnitsky designation of 29 Dec 2014 (with A. Alaudinov), then chief of staff of the Chechen leader.",
+            "source_url": "https://ofac.treasury.gov/recent-actions/20141229",
+            "verified": true
+          },
+          {
+            "jur": "CA",
+            "program": "Loi de Magnitski canadienne (LJVCE / JVCFOA)",
+            "date": "2023-12-08",
+            "reason_fr": "Vague du 8 déc. 2023 (avec Alaudinov, Vismuradov, Kataev) : violations graves visant les personnes LGBTQI+ depuis 2017.",
+            "reason_en": "8 Dec 2023 wave (with Alaudinov, Vismuradov, Kataev): gross violations targeting LGBTQI+ people since 2017.",
+            "source_url": "https://www.canada.ca/en/global-affairs/news/2023/12/backgrounder-sanctions-in-response-to-long-standing-human-rights-violations-in-russia-iran-and-myanmar.html",
+            "verified": true
+          }
+        ],
+        "not_listed": [
+          "PL",
+          "CH",
+          "JP"
+        ],
+        "note_fr": "Pologne : non retrouvé sur la liste MSWiA — mention retirée après vérification (juil. 2026).",
+        "note_en": "Poland: not found on the MSWiA list — removed after verification (Jul 2026)."
+      },
+      {
+        "id": "kataev",
+        "sanctions": [
+          {
+            "jur": "US",
+            "program": "Global Magnitsky (E.O. 13818) — OFAC SDN",
+            "date": "2017-12-20",
+            "reason_fr": "Chef du MVD à Argoun ; détentions et tortures lors des purges anti-LGBT.",
+            "reason_en": "Head of the Argun MVD; detentions and torture during anti-LGBT purges.",
+            "source_url": "https://home.treasury.gov/news/press-releases/sm0240",
+            "verified": true
+          },
+          {
+            "jur": "EU",
+            "program": "Règl. (UE) 2020/1998 (régime droits de l'homme)",
+            "date": "2021-03-22",
+            "reason_fr": "Responsable, comme chef du MVD à Argoun, de tortures, détentions arbitraires et exécutions extrajudiciaires visant des personnes LGBTI.",
+            "reason_en": "As head of the Argun MVD, responsible for torture, arbitrary detention and extrajudicial killings targeting LGBTI people.",
+            "source_url": "https://www.opensanctions.org/entities/NK-jC49SAJ22XD2hdbBB3hc8d/",
+            "verified": true
+          },
+          {
+            "jur": "UK",
+            "program": "Global Human Rights Sanctions Regulations 2020",
+            "date": "2020-12-10",
+            "reason_fr": "Vague GHR du 10 déc. 2020 (avec Daudov, Alaudinov et l'unité « Terek ») — purges anti-LGBT.",
+            "reason_en": "GHR wave of 10 Dec 2020 (with Daudov, Alaudinov and the “Terek” unit) — anti-LGBT purges.",
+            "source_url": "https://www.gov.uk/government/publications/financial-sanctions-consolidated-list-of-targets",
+            "verified": true
+          },
+          {
+            "jur": "CA",
+            "program": "Loi de Magnitski canadienne (LJVCE / JVCFOA)",
+            "date": "2023-12-08",
+            "reason_fr": "Comme chef du MVD tchétchène à Argoun, responsable des services de sécurité de l'État et de la police impliqués dans l'arrestation massive, la torture et le meurtre de personnes LGBTQI+ depuis 2017.",
+            "reason_en": "As Head of the Chechen MVD in Argun, responsible for state security and police agencies involved in the mass arrest, torture and murder of LGBTQI+ people since 2017.",
+            "source_url": "https://www.canada.ca/en/global-affairs/news/2023/12/backgrounder-sanctions-in-response-to-long-standing-human-rights-violations-in-russia-iran-and-myanmar.html",
+            "verified": true
+          }
+        ],
+        "not_listed": [
+          "CH",
+          "PL",
+          "JP"
+        ],
+        "note_fr": "Correction (juil. 2026) : contrairement à une hypothèse initiale, Kataev figure bien sur la liste canadienne (Gazette du Canada, 8 déc. 2023, aux côtés de Daudov, Alaudinov et Vismuradov).",
+        "note_en": "Correction (Jul 2026): contrary to an initial assumption, Kataev IS on Canada's list (Canada Gazette, 8 Dec 2023, alongside Daudov, Alaudinov and Vismuradov)."
+      },
+      {
+        "id": "aimani",
+        "sanctions": [
+          {
+            "jur": "US",
+            "program": "E.O. 14024 — OFAC SDN (lié à la Fondation Akhmat Kadyrov)",
+            "date": "2023-08-24",
+            "reason_fr": "Présidente de la Fondation Akhmat Kadyrov (elle-même déjà sous sanctions US), véhicule financier du réseau.",
+            "reason_en": "Head of the Akhmat Kadyrov Foundation (itself already US-sanctioned), a financial vehicle of the network.",
+            "source_url": "https://ofac.treasury.gov/recent-actions/20230824",
+            "verified": true
+          },
+          {
+            "jur": "EU",
+            "program": "Règl. (UE) 269/2014 — 14e paquet",
+            "date": "2024-06-24",
+            "reason_fr": "Programmes de « rééducation » d'enfants ukrainiens et soutien financier aux combattants via la Fondation (14e paquet, avec la Fondation elle-même).",
+            "reason_en": "“Re-education” programmes for Ukrainian children and financial support to fighters via the Foundation (14th package, together with the Foundation itself).",
+            "source_url": "https://eur-lex.europa.eu/",
+            "verified": true
+          },
+          {
+            "jur": "UK",
+            "program": "Russia (Sanctions) Regulations",
+            "date": "2025-09-03",
+            "reason_fr": "Déportation, endoctrinement et militarisation d'enfants ukrainiens (désignée avec la Fondation, 3 sept. 2025).",
+            "reason_en": "Deportation, indoctrination and militarisation of Ukrainian children (designated with the Foundation, 3 Sept 2025).",
+            "source_url": "https://www.themoscowtimes.com/2025/09/03/uk-imposes-sanctions-on-akhmat-kadyrov-foundation-kremlin-backed-youth-group-a90416",
+            "verified": true
+          },
+          {
+            "jur": "CA",
+            "program": "SEMA — Règlement sur la Russie",
+            "date": "2026-05-08",
+            "reason_fr": "Endoctrinement idéologique et militarisation d'enfants ukrainiens (n° 1595 de la liste consolidée, mise à jour du 8 mai 2026).",
+            "reason_en": "Ideological indoctrination and militarisation of Ukrainian children (No. 1595 of the consolidated list, 8 May 2026 update).",
+            "source_url": "https://www.eng.kavkaz-uzel.eu/articles/75160",
+            "verified": true
+          }
+        ],
+        "not_listed": [
+          "CH",
+          "PL",
+          "JP"
+        ]
+      },
+      {
+        "id": "medni",
+        "sanctions": [
+          {
+            "jur": "US",
+            "program": "E.O. 14024 — OFAC SDN (facilitateurs de l'agression)",
+            "date": "2022-09-15",
+            "reason_fr": "Épouse de Kadyrov ; vague « facilitateurs » de sept. 2022 (précédée d'une désignation publique visa du Département d'État en juillet 2020).",
+            "reason_en": "Kadyrov's wife; Sept 2022 “facilitators” wave (preceded by a State Department public visa designation in July 2020).",
+            "source_url": "https://home.treasury.gov/news/press-releases/jy0954",
+            "verified": true
+          },
+          {
+            "jur": "JP",
+            "program": "Gel des avoirs — MoF (liste consolidée Ukraine/Russie)",
+            "date": "",
+            "reason_fr": "Entrée n° 566 de la liste individus du MOF japonais (màj 12/09/2025) : « Medni (Medny) Kadyrova, épouse de Ramzan Kadyrov, née le 07/09/1978 » — source directe vérifiée dans le PDF officiel.",
+            "reason_en": "Entry No. 566 in Japan's MOF individuals list (updated 2025-09-12): “Medni (Medny) Kadyrova, wife of Ramzan Kadyrov, DOB 1978-09-07” — verified in the official PDF.",
+            "source_url": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/ukraine_list_russia_20250912.pdf",
+            "verified": true
+          }
+        ],
+        "not_listed": [
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL"
+        ],
+        "note_fr": "UE : aucune désignation retrouvée (aucun jeu eu-fsf sur sa fiche OpenSanctions) — mention UE retirée après vérification (juil. 2026).",
+        "note_en": "EU: no designation found (no eu-fsf dataset on her OpenSanctions record) — EU mention removed after verification (Jul 2026)."
+      },
+      {
+        "id": "aishat",
+        "sanctions": [
+          {
+            "jur": "US",
+            "program": "E.O. 14024 — OFAC SDN",
+            "date": "2022-09-15",
+            "reason_fr": "Fille de Kadyrov ; dirige Firdaws ; vague « facilitateurs » sept. 2022.",
+            "reason_en": "Kadyrov's daughter; runs Firdaws; Sept 2022 \"facilitators\" wave.",
+            "source_url": "https://home.treasury.gov/news/press-releases/jy0954",
+            "verified": true
+          },
+          {
+            "jur": "EU",
+            "program": "Règl. (UE) 269/2014",
+            "date": "2022-12-16",
+            "reason_fr": "9e paquet (16 déc. 2022), avec sa sœur Karina (Khadizhat) : ministre de la Culture, propriétaire de Firdaws, associée à son père.",
+            "reason_en": "9th package (16 Dec 2022), with her sister Karina (Khadizhat): culture minister, owner of Firdaws, associated with her father.",
+            "source_url": "https://eur-lex.europa.eu/",
+            "verified": true
+          },
+          {
+            "jur": "JP",
+            "program": "Gel des avoirs — MoF",
+            "date": "",
+            "reason_fr": "Présence confirmée (jeu ja-mof / OpenSanctions), dans la foulée de la vague américaine de sept. 2022.",
+            "reason_en": "Presence confirmed (ja-mof dataset / OpenSanctions), following the Sept 2022 US wave.",
+            "source_url": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/list.html",
+            "verified": true
+          }
+        ],
+        "not_listed": [
+          "UK",
+          "CA",
+          "CH",
+          "PL"
+        ]
+      },
+      {
+        "id": "vismuradov",
+        "sanctions": [
+          {
+            "jur": "EU",
+            "program": "Règl. (UE) 2020/1998 (droits de l'homme)",
+            "date": "2021-03-22",
+            "reason_fr": "Chef de l'unité « Terek » ; tortures lors des purges anti-LGBT.",
+            "reason_en": "Head of the \"Terek\" unit; torture during anti-LGBT purges.",
+            "source_url": "https://meduza.io/en/news/2021/03/22/eu-imposes-sanctions-on-chechen-officials-for-involvement-in-lgbtq-repressions-and-extrajudicial-killings",
+            "verified": true
+          },
+          {
+            "jur": "CA",
+            "program": "Loi de Magnitski canadienne (LJVCE / JVCFOA)",
+            "date": "2023-12-08",
+            "reason_fr": "Vague du 8 déc. 2023 (avec Daudov, Alaudinov, Kataev) : violations graves visant les personnes LGBTQI+ depuis 2017.",
+            "reason_en": "8 Dec 2023 wave (with Daudov, Alaudinov, Kataev): gross violations targeting LGBTQI+ people since 2017.",
+            "source_url": "https://www.canada.ca/en/global-affairs/news/2023/12/backgrounder-sanctions-in-response-to-long-standing-human-rights-violations-in-russia-iran-and-myanmar.html",
+            "verified": true
+          },
+          {
+            "jur": "US",
+            "program": "Global Magnitsky (E.O. 13818) — OFAC SDN",
+            "date": "",
+            "reason_fr": "Inscrit au SDN avant mars 2021 (vague GLOMAG de juillet 2020 avec l'unité « Terek », selon la presse) ; présence confirmée sur sa fiche OpenSanctions.",
+            "reason_en": "On the SDN list before March 2021 (July 2020 GLOMAG wave with the “Terek” unit, per press reports); presence confirmed on his OpenSanctions record.",
+            "source_url": "https://sanctionssearch.ofac.treas.gov/",
+            "verified": true
+          }
+        ],
+        "not_listed": [
+          "UK",
+          "CH",
+          "PL",
+          "JP"
+        ],
+        "note_fr": "R.-U. : c'est l'unité « Terek » (déc. 2020) — et non Vismuradov personnellement — qui figure sur la liste britannique ; mention retirée après vérification (juil. 2026).",
+        "note_en": "UK: the “Terek” unit (Dec 2020) — not Vismuradov personally — is on the UK list; removed after verification (Jul 2026)."
+      },
+      {
+        "id": "sabsabi",
+        "sanctions": [
+          {
+            "jur": "US",
+            "program": "Global Magnitsky (E.O. 13818) — OFAC SDN",
+            "date": "2020-12-10",
+            "reason_fr": "Réseau financier de Kadyrov (vague sm1208 du 10 déc. 2020, Journée des droits de l’homme : Sabsabi, Dugazaev, Martynov + entités).",
+            "reason_en": "Kadyrov's financial network (sm1208 wave: Sabsabi, Dugazaev, Martynov + entities).",
+            "source_url": "https://home.treasury.gov/news/press-releases/sm1208",
+            "verified": true
+          }
+        ],
+        "not_listed": [
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ]
+      },
+      {
+        "id": "dugaz",
+        "sanctions": [
+          {
+            "jur": "US",
+            "program": "Global Magnitsky (E.O. 13818) — OFAC SDN",
+            "date": "2020-12-10",
+            "reason_fr": "Réseau financier de Kadyrov (vague sm1208 du 10 déc. 2020, Journée des droits de l’homme).",
+            "reason_en": "Kadyrov's financial network (sm1208 wave).",
+            "source_url": "https://home.treasury.gov/news/press-releases/sm1208",
+            "verified": true
+          }
+        ],
+        "not_listed": [
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ]
+      },
+      {
+        "id": "martynov",
+        "sanctions": [
+          {
+            "jur": "US",
+            "program": "Global Magnitsky (E.O. 13818) — OFAC SDN",
+            "date": "2020-12-10",
+            "reason_fr": "Réseau financier de Kadyrov (vague sm1208 du 10 déc. 2020, Journée des droits de l’homme).",
+            "reason_en": "Kadyrov's financial network (sm1208 wave).",
+            "source_url": "https://home.treasury.gov/news/press-releases/sm1208",
+            "verified": true
+          }
+        ],
+        "not_listed": [
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ]
+      },
+      {
+        "id": "seemar",
+        "sanctions": [
+          {
+            "jur": "US",
+            "program": "Global Magnitsky (E.O. 13818) — OFAC SDN",
+            "date": "2020-12-10",
+            "reason_fr": "Entraîneur de chevaux de Kadyrov (EAU), désigné le 10 déc. 2020 (vague sm1208) ; RADIÉ de la liste SDN le 3 août 2023 (Federal Register 2023-17432).",
+            "reason_en": "Kadyrov's horse trainer (UAE), designated 10 Dec 2020 (sm1208 wave); REMOVED from the SDN list on 3 Aug 2023 (Federal Register 2023-17432).",
+            "source_url": "https://home.treasury.gov/news/press-releases/sm1208",
+            "verified": true,
+            "delisted": "2023-08-03"
+          }
+        ],
+        "not_listed": [
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ],
+        "note_fr": "Radiation (délisting OFAC) du 3 août 2023 — il n'est plus sous sanctions aujourd'hui ; sa licence d'entraîneur avait été suspendue par l'Emirates Racing Authority en 2021.",
+        "note_en": "OFAC delisting of 3 Aug 2023 — no longer sanctioned today; his training licence had been suspended by the Emirates Racing Authority in 2021."
+      },
+      {
+        "id": "adamk",
+        "sanctions": [],
+        "not_listed": [
+          "US",
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ]
+      },
+      {
+        "id": "shahr",
+        "sanctions": [],
+        "not_listed": [
+          "US",
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ]
+      },
+      {
+        "id": "baisarov",
+        "sanctions": [],
+        "not_listed": [
+          "US",
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ],
+        "note_fr": "Non listé malgré le surnom de « portefeuille » — angle mort des régimes de sanctions.",
+        "note_en": "Unlisted despite the \"wallet\" nickname — a sanctions blind spot."
+      },
+      {
+        "id": "taymas",
+        "sanctions": [],
+        "not_listed": [
+          "US",
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ]
+      },
+      {
+        "id": "dadaev",
+        "sanctions": [],
+        "not_listed": [
+          "US",
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ]
+      },
+      {
+        "id": "zakriev",
+        "sanctions": [
+          {
+            "jur": "US",
+            "program": "E.O. 14024 — OFAC SDN",
+            "date": "",
+            "reason_fr": "Désigné en novembre 2023, après sa prise de contrôle de Danone Russie (renommée H&N) à la suite de la mise sous gestion d'État.",
+            "reason_en": "Designated in November 2023, after taking over Danone Russia (renamed H&N) following the state-management seizure.",
+            "source_url": "https://www.eng.kavkaz-uzel.eu/articles/63410",
+            "verified": true
+          },
+          {
+            "jur": "UK",
+            "program": "Russia (Sanctions) Regulations",
+            "date": "",
+            "reason_fr": "Désigné en juin 2024.",
+            "reason_en": "Designated in June 2024.",
+            "source_url": "https://search-uk-sanctions-list.service.gov.uk/",
+            "verified": true
+          }
+        ],
+        "not_listed": [
+          "EU",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ],
+        "note_fr": "Correction (juil. 2026) : le calque indiquait à tort « non listé » — il est désigné par les É.-U. (nov. 2023) et le R.-U. (juin 2024), en cohérence avec sa fiche biographique.",
+        "note_en": "Correction (Jul 2026): the layer wrongly said “unlisted” — he is designated by the US (Nov 2023) and the UK (Jun 2024), consistent with his dossier."
+      },
+      {
+        "id": "padaev",
+        "sanctions": [],
+        "not_listed": [
+          "US",
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ]
+      },
+      {
+        "id": "skvortsov",
+        "sanctions": [],
+        "not_listed": [
+          "US",
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ],
+        "note_fr": "Aucun lien apparent avec la sphère Kadyrov — nœud contextuel documentant l'antécédent corporel de Padaev.",
+        "note_en": "No apparent link to the Kadyrov sphere — contextual node documenting Padaev's corporate antecedent."
+      },
+      {
+        "id": "brambilla",
+        "sanctions": [],
+        "not_listed": [
+          "US",
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ],
+        "note_fr": "Aucune sanction ne vise ONIRO ou son dirigeant ; la question UE 833/2014 (biens de luxe, services) est une question de conformité à instruire, pas une infraction constatée.",
+        "note_en": "No sanctions target ONIRO or its CEO; the EU 833/2014 question (luxury goods, services) is a compliance question to investigate, not a recorded offence."
+      },
+      {
+        "id": "sajwani",
+        "sanctions": [],
+        "not_listed": [
+          "US",
+          "EU",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP"
+        ],
+        "note_fr": "Aucune sanction ne vise Sajwani, DAMAC ou Vision Investment.",
+        "note_en": "No sanctions target Sajwani, DAMAC or Vision Investment."
+      },
+      {
+        "id": "bekkhan-agayev",
+        "sanctions": [
+          {
+            "jur": "US",
+            "program": "OFAC SDN (Douma, E.O. 14024) — réf. 35536",
+            "date": "2022-03-24",
+            "reason_fr": "Membre de la Douma d'État (vague du 24/03/2022 visant la Douma).",
+            "reason_en": "State Duma member (24/03/2022 wave targeting the Duma).",
+            "source_url": "https://home.treasury.gov/news/press-releases/jy0677",
+            "verified": true
+          },
+          {
+            "jur": "EU",
+            "program": "Règl. (UE) — liste consolidée FSF (réf. eu-7186-48)",
+            "date": "2022-02-23",
+            "reason_fr": "Député ayant voté la résolution 58243-8 (reconnaissance de Donetsk/Louhansk).",
+            "reason_en": "Deputy who voted resolution 58243-8 (recognition of Donetsk/Luhansk).",
+            "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R1529",
+            "verified": true
+          },
+          {
+            "jur": "FR",
+            "program": "Registre national des gels d'avoirs (id 4002)",
+            "date": "2022",
+            "reason_fr": "Transposition des mesures UE — gel des avoirs en France.",
+            "reason_en": "Transposition of EU measures — asset freeze in France.",
+            "source_url": "https://gels-avoirs.dgtresor.gouv.fr/Gels/RegistreDetail?idRegistre=4002",
+            "verified": true
+          },
+          {
+            "jur": "UK",
+            "program": "UK Sanctions List (réf. RUS0541) + Director Disqualification 09/04/2025",
+            "date": "2022",
+            "reason_fr": "Membre de la Douma · interdiction de diriger une société (09/04/2025).",
+            "reason_en": "Duma member · director disqualification (09/04/2025).",
+            "source_url": "https://www.opensanctions.org/entities/Q86830849/",
+            "verified": true
+          },
+          {
+            "jur": "CH",
+            "program": "SECO (réf. 48850)",
+            "date": "2022",
+            "reason_fr": "Alignement suisse sur les mesures UE.",
+            "reason_en": "Swiss alignment with EU measures.",
+            "source_url": "https://www.opensanctions.org/entities/Q86830849/",
+            "verified": true
+          },
+          {
+            "jur": "CA",
+            "program": "SEMA — liste consolidée canadienne",
+            "date": "2022",
+            "reason_fr": "Mesures économiques spéciales (Russie).",
+            "reason_en": "Special Economic Measures (Russia).",
+            "source_url": "https://www.opensanctions.org/entities/Q86830849/",
+            "verified": true
+          },
+          {
+            "jur": "JP",
+            "program": "MoF — sanctions économiques japonaises",
+            "date": "2022",
+            "reason_fr": "Membre de la Douma.",
+            "reason_en": "Duma member.",
+            "source_url": "https://www.opensanctions.org/entities/Q86830849/",
+            "verified": true
+          },
+          {
+            "jur": "AU",
+            "program": "DFAT — liste consolidée australienne",
+            "date": "2022",
+            "reason_fr": "Membre de la Douma.",
+            "reason_en": "Duma member.",
+            "source_url": "https://www.opensanctions.org/entities/Q86830849/",
+            "verified": true
+          },
+          {
+            "jur": "NZ",
+            "program": "Russia Sanctions Act 2022",
+            "date": "2022",
+            "reason_fr": "Membre de la Douma.",
+            "reason_en": "Duma member.",
+            "source_url": "https://www.opensanctions.org/entities/Q86830849/",
+            "verified": true
+          },
+          {
+            "jur": "MC",
+            "program": "Liste monégasque de gel des fonds",
+            "date": "2022",
+            "reason_fr": "Alignement de Monaco sur les mesures UE.",
+            "reason_en": "Monaco alignment with EU measures.",
+            "source_url": "https://www.opensanctions.org/entities/Q86830849/",
+            "verified": true
+          }
+        ]
+      },
+      {
+        "id": "batyr-agayev",
+        "sanctions": [],
+        "not_listed": [
+          "US",
+          "EU",
+          "FR",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP",
+          "AU",
+          "NZ",
+          "MC"
+        ],
+        "note_fr": "Aucune sanction ne vise Batyr Agayev (vérifié OpenSanctions, 19/07/2026). Citoyen belge. L'enquête OpenLux ne démontre aucune infraction de sa part — le fait notable est l'angle mort structurel des régimes de sanctions (fonctions visées, pas les patrimoines familiaux).",
+        "note_en": "No sanctions target Batyr Agayev (OpenSanctions check, 19/07/2026). Belgian citizen. The OpenLux investigation proves no offence on his part — the notable point is the structural blind spot of sanctions regimes (functions targeted, not family wealth)."
+      },
+      {
+        "id": "ruslan-agayev",
+        "sanctions": [],
+        "not_listed": [
+          "US",
+          "EU",
+          "FR",
+          "UK",
+          "CA",
+          "CH",
+          "PL",
+          "JP",
+          "AU",
+          "NZ",
+          "MC"
+        ],
+        "note_fr": "Aucune sanction ne vise Ruslan Agayev, propriétaire actuel de Yug-Nefteprodukt (vérifié OpenSanctions, 19/07/2026). Deuxième génération — même mécanique de transmission familiale.",
+        "note_en": "No sanctions target Ruslan Agayev, current owner of Yug-Nefteprodukt (OpenSanctions check, 19/07/2026). Second generation — same family-transmission mechanism."
+      },
+      {
+        "id": "vakha-agayev",
+        "sanctions": [],
+        "not_listed": [],
+        "note_fr": "Décédé (Covid-19, 2020) avant les vagues de sanctions de 2022. Référencé comme PEP (OpenSanctions Q20090063), jamais sanctionné. Statut : contextuel.",
+        "note_en": "Died (Covid-19, 2020) before the 2022 sanctions waves. Referenced as a PEP (OpenSanctions Q20090063), never sanctioned. Status: contextual."
+      }
+    ]
+  },
+  "finance": {
+    "$doc": {
+      "description": "Calque STRUCTURES FINANCIÈRES — entités juridiques (sociétés, fondations, actifs) + relations typées vers les personnes de la carte. Cotation identique au reste : 5 = avéré (trait plein), 4 = probable (tireté), 3 = allégué (pointillé).",
+      "entity_schema": {
+        "id": "identifiant unique (nouveau nœud, forme losange/carré)",
+        "kind": "company | foundation | asset",
+        "name_fr": "…",
+        "name_en": "…",
+        "legal_form": "ex. OOO, fondation, bien immobilier ('' si n/a)",
+        "jurisdiction": "code pays d'enregistrement (RU, AE…)",
+        "registry_id": "n° de registre si disponible ('' sinon)",
+        "geo": "uae | ru — pour le filtre géographique EAU",
+        "sanctioned": "true si l'entité elle-même est désignée",
+        "sources": [
+          {
+            "label": "…",
+            "url": "…"
+          }
+        ]
+      },
+      "relation_schema": {
+        "from": "id personne (nœud existant)",
+        "to": "id entité",
+        "type": "proprietaire | beneficiaire_presume | dirigeant | flux_allegue",
+        "cert": "5 | 4 | 3",
+        "note_fr": "…",
+        "note_en": "…",
+        "source_url": "…"
+      }
+    },
+    "entities": [
+      {
+        "id": "fond_akhmat",
+        "kind": "foundation",
+        "name_fr": "Fondation Akhmat Kadyrov",
+        "name_en": "Akhmat Kadyrov Foundation",
+        "legal_form": "Fondation publique régionale",
+        "jurisdiction": "RU",
+        "registry_id": "OGRN 1042000001713 · INN 2005504830",
+        "reg_date": "2004-09-17",
+        "reg_place": "Goudermes, Tchétchénie",
+        "geo": "ru",
+        "sanctioned": true,
+        "registry_note_fr": "Enregistrée le 17/09/2004 (min. de la Justice). Données sur les fondateurs retirées de l'EGRUL en janv. 2022 (décret FNS d'août 2020 dispensant NCO/fondations de déclarer leurs fondateurs).",
+        "registry_note_en": "Registered 17/09/2004 (Min. of Justice). Founder data removed from EGRUL in Jan 2022 (Aug-2020 FNS order lets NGOs/foundations omit founders).",
+        "sources": [
+          {
+            "label": "OFAC — sm1208 (20/07/2020)",
+            "url": "https://home.treasury.gov/news/press-releases/sm1208"
+          },
+          {
+            "label": "Rusprofile / EGRUL",
+            "url": "https://www.rusprofile.ru/id/529215"
+          }
+        ]
+      },
+      {
+        "id": "firdaws",
+        "kind": "company",
+        "name_fr": "Maison de mode Firdaws",
+        "name_en": "Firdaws fashion house",
+        "legal_form": "Maison de mode (Grozny)",
+        "jurisdiction": "RU",
+        "registry_id": "n/d — non identifiée à l'EGRUL",
+        "reg_date": "",
+        "reg_place": "Grozny, Tchétchénie",
+        "geo": "ru",
+        "sanctioned": true,
+        "registry_note_fr": "Marque désignée par l'OFAC (juil. 2020) ; pas de personne morale distincte clairement rattachée à l'EGRUL sous ce nom — à confirmer.",
+        "registry_note_en": "OFAC-designated brand (July 2020); no distinct EGRUL legal entity clearly matched under this name — to confirm.",
+        "sources": [
+          {
+            "label": "OFAC — sm1208 (20/07/2020)",
+            "url": "https://home.treasury.gov/news/press-releases/sm1208"
+          }
+        ]
+      },
+      {
+        "id": "megastroy",
+        "kind": "company",
+        "name_fr": "Megastroyinvest (BTP)",
+        "name_en": "Megastroyinvest (construction)",
+        "legal_form": "OOO (SARL)",
+        "jurisdiction": "RU",
+        "registry_id": "OGRN 1072031001580 · INN 2013431689",
+        "reg_date": "2007-03-21",
+        "reg_place": "Grozny, Tchétchénie",
+        "geo": "ru",
+        "sanctioned": true,
+        "registry_note_fr": "BTP ; principal donneur d'ordre : Minstroy de Tchétchénie (>42 Mds ₽ de marchés publics). Dirigeant : I. Oumarov.",
+        "registry_note_en": "Construction; main client: Chechnya's Minstroy (>₽42bn in public contracts). Director: I. Umarov.",
+        "sources": [
+          {
+            "label": "OFAC — sm1208 (20/07/2020)",
+            "url": "https://home.treasury.gov/news/press-releases/sm1208"
+          },
+          {
+            "label": "Rusprofile / EGRUL",
+            "url": "https://www.rusprofile.ru/id/1848917"
+          }
+        ]
+      },
+      {
+        "id": "aca_mma",
+        "kind": "company",
+        "name_fr": "Absolute Championship Akhmat (MMA)",
+        "name_en": "Absolute Championship Akhmat (MMA)",
+        "legal_form": "Organisation sportive (MMA)",
+        "jurisdiction": "RU",
+        "registry_id": "n/d — à confirmer à l'EGRUL",
+        "reg_date": "",
+        "reg_place": "Grozny, Tchétchénie",
+        "geo": "ru",
+        "sanctioned": true,
+        "sources": [
+          {
+            "label": "OFAC — sm1208 (20/07/2020)",
+            "url": "https://home.treasury.gov/news/press-releases/sm1208"
+          }
+        ]
+      },
+      {
+        "id": "fc_akhmat",
+        "kind": "company",
+        "name_fr": "FC Akhmat Grozny",
+        "name_en": "FC Akhmat Grozny",
+        "legal_form": "ANO (org. autonome à but non lucratif)",
+        "jurisdiction": "RU",
+        "registry_id": "OGRN 1022002145989 · INN 2020002521",
+        "reg_date": "2000-08-15",
+        "reg_place": "Grozny, Tchétchénie",
+        "geo": "ru",
+        "sanctioned": true,
+        "registry_note_fr": "À l'EGRUL, fondateur = Administration de la République tchétchène (100 %) : contrôle formellement étatique, contrôle réel attribué à Kadyrov par l'OpenSanctions. Ex-« Terek ».",
+        "registry_note_en": "In EGRUL the founder is the Chechen Republic Administration (100%): formally state-owned, effective control attributed to Kadyrov by OpenSanctions. Formerly \"Terek\".",
+        "sources": [
+          {
+            "label": "OpenSanctions (détenu/contrôlé par R. Kadyrov)",
+            "url": "https://www.opensanctions.org/entities/Q217115/"
+          },
+          {
+            "label": "Rusprofile / EGRUL",
+            "url": "https://www.rusprofile.ru/id/2489960"
+          }
+        ]
+      },
+      {
+        "id": "villa_palm",
+        "kind": "asset",
+        "name_fr": "Villa Zabeel Saray n°21 — Palm Jumeirah (Dubaï)",
+        "name_en": "Zabeel Saray Villa 21 — Palm Jumeirah (Dubai)",
+        "legal_form": "Bien immobilier",
+        "jurisdiction": "AE",
+        "registry_id": "",
+        "geo": "uae",
+        "sanctioned": false,
+        "sources": [
+          {
+            "label": "IStories / Dubai Unlocked",
+            "url": "https://istories.media/"
+          }
+        ]
+      },
+      {
+        "id": "a319",
+        "kind": "asset",
+        "name_fr": "Airbus A319 (immatriculé EAU)",
+        "name_en": "Airbus A319 (UAE-registered)",
+        "legal_form": "Aéronef",
+        "jurisdiction": "AE",
+        "registry_id": "",
+        "geo": "uae",
+        "sanctioned": false,
+        "sources": [
+          {
+            "label": "IStories",
+            "url": "https://istories.media/"
+          }
+        ]
+      },
+      {
+        "id": "flats_dubai",
+        "kind": "asset",
+        "name_fr": "4 appartements — Dubaï (>6 M$)",
+        "name_en": "4 flats — Dubai (>$6M)",
+        "legal_form": "Biens immobiliers",
+        "jurisdiction": "AE",
+        "registry_id": "",
+        "geo": "uae",
+        "sanctioned": false,
+        "sources": [
+          {
+            "label": "Dubai Unlocked",
+            "url": "https://www.occrp.org/en/project/dubai-unlocked"
+          }
+        ]
+      },
+      {
+        "id": "sk_triumf",
+        "kind": "company",
+        "name_fr": "OOO SK « Triumf » (promoteur Bellagio)",
+        "name_en": "OOO SK “Triumf” (Bellagio developer)",
+        "legal_form": "OOO (SARL) — SPV",
+        "jurisdiction": "RU",
+        "registry_id": "OGRN 1252000000450 · INN 2013012656",
+        "reg_date": "2025-01-22",
+        "reg_place": "Grozny (district Cheikh-Mansourovski)",
+        "geo": "ru",
+        "sanctioned": false,
+        "registry_note_fr": "SPV de 18 mois portant un projet premium de 72 appartements : capital 15 000 ₽ (~150 €), UBO unique (Z. Padaev, 100 %), micro-entreprise, 41 codes OKVED, zéro historique de chantier ni contentieux. Le financement provient d'une source non identifiée à ce stade — question à instruire, non une allégation. Avéré (A1) pour les faits de registre.",
+        "registry_note_en": "18-month SPV carrying a 72-flat premium project: ₽15,000 (~€150) capital, sole UBO (Z. Padaev, 100%), micro-enterprise, 41 OKVED codes, zero construction track record or litigation. Financing comes from a source unidentified at this stage — a question to investigate, not an allegation. Established (A1) for registry facts.",
+        "sources": [
+          {
+            "label": "Extrait EGRUL du 04.07.2026 (FNS, № ЮЭ9965-26-123308047)",
+            "url": "https://pb.nalog.ru/"
+          },
+          {
+            "label": "Grozny-Inform / grozny.estate (promotionnel, C3)",
+            "url": "https://www.grozny-inform.ru/"
+          }
+        ]
+      },
+      {
+        "id": "bellagio",
+        "kind": "asset",
+        "name_fr": "Bellagio Residences (Grozny) — « Roberto Cavalli Home »",
+        "name_en": "Bellagio Residences (Grozny) — “Roberto Cavalli Home”",
+        "legal_form": "Projet immobilier (72 appartements)",
+        "jurisdiction": "RU",
+        "registry_id": "",
+        "reg_date": "",
+        "reg_place": "Bd Esambaeva 1, Grozny",
+        "geo": "ru",
+        "sanctioned": false,
+        "registry_note_fr": "Présenté le 27/06/2026 (palais Dagun Omaev). Dispositif de vente : certificats nominatifs de mobilier Roberto Cavalli Home de 10 000 à 25 000 € par acheteur + paiement échelonné jusqu'à 2 ans directement avec le promoteur, sans banque (« halal, sans riba ») — les flux acheteurs sortent du filtre LCB-FT bancaire. Avéré (A2).",
+        "registry_note_en": "Unveiled 27/06/2026 (Dagun Omaev palace). Sales scheme: named Roberto Cavalli Home furniture certificates of €10,000-25,000 per buyer + instalment payment up to 2 years directly with the developer, no bank (“halal, riba-free”) — buyer flows leave the banking AML/CFT filter. Established (A2).",
+        "sources": [
+          {
+            "label": "Grozny-Inform (agence officielle)",
+            "url": "https://www.grozny-inform.ru/"
+          },
+          {
+            "label": "grozny.estate (promoteur — C3)",
+            "url": "https://grozny.estate/"
+          }
+        ]
+      },
+      {
+        "id": "oniro",
+        "kind": "company",
+        "name_fr": "ONIRO Group (ex-Jumbo Group)",
+        "name_en": "ONIRO Group (formerly Jumbo Group)",
+        "legal_form": "Groupe de mobilier de luxe",
+        "jurisdiction": "IT",
+        "registry_id": "Registro Imprese (bilans à consulter)",
+        "reg_date": "",
+        "reg_place": "Cantù, Lombardie",
+        "geo": "",
+        "sanctioned": false,
+        "registry_note_fr": "Licencié Roberto Cavalli Home Interiors depuis 2011 (aussi Gianfranco Ferré Home 2014, ETRO Home Interiors 2017). PDG : M. Brambilla, présent à Grozny le 27/06/2026 ; en 2021 il présentait la Chine et la Russie comme premiers marchés du groupe. Question de conformité UE 833/2014 (biens de luxe > 300 €, services d'architecture) : hypothèses de structuration à tester (entité non-UE, contrat via le propriétaire dubaïote, réexportation) — aucune violation prouvée, aucune sanction. Allégué / à instruire (C3 pour les hypothèses).",
+        "registry_note_en": "Roberto Cavalli Home Interiors licensee since 2011 (also Gianfranco Ferré Home 2014, ETRO Home Interiors 2017). CEO M. Brambilla attended Grozny on 27/06/2026; in 2021 he named China and Russia as the group's main markets. EU 833/2014 compliance question (luxury goods >€300, architecture services): structuring hypotheses to test (non-EU entity, contracting via the Dubai owner, re-export) — no proven violation, no sanctions. Alleged / to investigate (C3 for hypotheses).",
+        "sources": [
+          {
+            "label": "ONIRO Group",
+            "url": "https://onirogroup.it/"
+          },
+          {
+            "label": "IFDM / La Provincia di Como",
+            "url": "https://www.ifdm.design/"
+          }
+        ]
+      },
+      {
+        "id": "vision_inv",
+        "kind": "company",
+        "name_fr": "Vision Investment Co. LLC (DICO Group)",
+        "name_en": "Vision Investment Co. LLC (DICO Group)",
+        "legal_form": "LLC",
+        "jurisdiction": "AE",
+        "registry_id": "",
+        "reg_date": "",
+        "reg_place": "Dubaï",
+        "geo": "uae",
+        "sanctioned": false,
+        "registry_note_fr": "Propriétaire de la marque Roberto Cavalli SpA depuis le 28/11/2019 (~160 M€, rachat à Clessidra). Contrôlée par H. Sajwani (DAMAC) ; partenariat DICO ↔ Cavalli initié en 2017 (hôtels AYKON). Même place de marché (Dubaï) que le cluster EAU existant. Avéré (A2).",
+        "registry_note_en": "Owner of the Roberto Cavalli SpA brand since 28/11/2019 (~€160M, bought from Clessidra). Controlled by H. Sajwani (DAMAC); DICO ↔ Cavalli partnership since 2017 (AYKON hotels). Same marketplace (Dubai) as the existing UAE cluster. Established (A2).",
+        "sources": [
+          {
+            "label": "PRNewswire / Business of Fashion",
+            "url": "https://www.businessoffashion.com/"
+          },
+          {
+            "label": "Arabian Business / Gulf News",
+            "url": "https://www.arabianbusiness.com/"
+          }
+        ]
+      },
+      {
+        "id": "isi",
+        "kind": "company",
+        "name_fr": "OOO « IndustriyaStroyInvest » (radiée)",
+        "name_en": "OOO “IndustriyaStroyInvest” (struck off)",
+        "legal_form": "OOO (SARL) — radiée d'office",
+        "jurisdiction": "RU",
+        "registry_id": "OGRN 1157746575216 · INN 7707344545",
+        "reg_date": "2015-06-26",
+        "reg_place": "Moscou (Novoslobodskaya 26)",
+        "geo": "ru",
+        "sanctioned": false,
+        "registry_note_fr": "Seul antécédent corporel de Z. Padaev : coquille jamais opérationnelle (aucun mouvement de fonds, aucun compte déposé — attestations FNS du 21.09.2017), radiée d'office le 22.01.2018. Associés 50/50 : Padaev et V. Skvortsov ; DG : S. Zuev. OKVED révélateur : construction (41.20) mais aussi holdings (64.20), prises de participations (64.99.3) et gestion de groupes financiers-industriels (70.10). Lecture Probable (B2) : véhicule satellite d'un projet non réalisé de la sphère « Industriya » (Skvortsov).",
+        "registry_note_en": "Z. Padaev's sole corporate antecedent: a never-operational shell (no fund movements, no accounts filed — FNS certificates of 21.09.2017), struck off ex officio on 22.01.2018. 50/50 partners: Padaev and V. Skvortsov; CEO: S. Zuev. Telling OKVED profile: construction (41.20) but also holdings (64.20), equity stakes (64.99.3) and management of financial-industrial groups (70.10). Probable reading (B2): satellite vehicle of an unrealised project in Skvortsov's “Industriya” sphere.",
+        "sources": [
+          {
+            "label": "Extrait EGRUL du 05.07.2026 (FNS, № ЮЭ9965-26-123790597)",
+            "url": "https://pb.nalog.ru/"
+          },
+          {
+            "label": "Checko.ru",
+            "url": "https://checko.ru/"
+          }
+        ]
+      },
+      {
+        "id": "yug-nefteprodukt",
+        "kind": "company",
+        "name_fr": "Yug-Nefteprodukt / AG-Invest",
+        "name_en": "Yug-Nefteprodukt / AG-Invest",
+        "legal_form": "Négoce pétrolier (OOO)",
+        "jurisdiction": "RU",
+        "registry_id": "",
+        "reg_date": "1998",
+        "reg_place": "Tchétchénie",
+        "geo": "ru",
+        "sanctioned": false,
+        "registry_note_fr": "Négoce pétrolier tchétchène fondé en 1998 par Vakha Agayev ; participations dans les raffineries de Touapsé et Krasnodar. Propriétaires familiaux successifs (Batyr, puis Bekkhan 2018-2021, puis Ruslan depuis 2021). Renommée AG-Invest.",
+        "registry_note_en": "Chechen oil trader founded in 1998 by Vakha Agayev; stakes in the Tuapse and Krasnodar refineries. Successive family owners (Batyr, then Bekkhan 2018-2021, then Ruslan since 2021). Renamed AG-Invest.",
+        "sources": [
+          {
+            "label": "IStories × Le Monde × OCCRP — Agayev (2026)",
+            "url": "https://istories.media/en/stories/2026/06/24/agayevs/"
+          }
+        ]
+      },
+      {
+        "id": "interinol-agom",
+        "kind": "company",
+        "name_fr": "Interinol / Agom GmbH",
+        "name_en": "Interinol / Agom GmbH",
+        "legal_form": "GmbH (négoce pétrolier, puis gestion d'actifs)",
+        "jurisdiction": "DE",
+        "registry_id": "",
+        "reg_date": "",
+        "reg_place": "Berlin, Allemagne",
+        "geo": "",
+        "sanctioned": false,
+        "registry_note_fr": "Négociant pétrolier allemand (Berlin) détenu par Batyr Agayev ; renommée Agom en 2024 et reconvertie en gestion d'actifs — marqueur de « prête-noms / évasion » (renommage 2024).",
+        "registry_note_en": "German oil trader (Berlin) owned by Batyr Agayev; renamed Agom in 2024 and repurposed into asset management — a “nominee / evasion” marker (2024 rename).",
+        "sources": [
+          {
+            "label": "IStories × Le Monde × OCCRP — Agayev (2026)",
+            "url": "https://istories.media/en/stories/2026/06/24/agayevs/"
+          }
+        ]
+      },
+      {
+        "id": "offshores-bvi-agayev",
+        "kind": "company",
+        "name_fr": "Rutley Company SA / Okling Group SA (BVI)",
+        "name_en": "Rutley Company SA / Okling Group SA (BVI)",
+        "legal_form": "Sociétés offshore (Îles Vierges britanniques)",
+        "jurisdiction": "VG",
+        "registry_id": "",
+        "reg_date": "",
+        "reg_place": "Îles Vierges britanniques",
+        "geo": "",
+        "sanctioned": false,
+        "registry_note_fr": "Offshores des Îles Vierges britanniques (fuites ICIJ) : véhicules de détention successive de Yug-Nefteprodukt et de parts de raffineries par la famille Agayev.",
+        "registry_note_en": "British Virgin Islands offshores (ICIJ leaks): vehicles for the Agayev family's successive holding of Yug-Nefteprodukt and refinery stakes.",
+        "sources": [
+          {
+            "label": "ICIJ / IStories × Le Monde × OCCRP — Agayev (2026)",
+            "url": "https://istories.media/en/stories/2026/06/24/agayevs/"
+          }
+        ]
+      },
+      {
+        "id": "everest-one",
+        "kind": "company",
+        "name_fr": "Everest One (fonds, Luxembourg)",
+        "name_en": "Everest One (fund, Luxembourg)",
+        "legal_form": "Fonds immobilier",
+        "jurisdiction": "LU",
+        "registry_id": "",
+        "reg_date": "2019",
+        "reg_place": "Luxembourg",
+        "geo": "",
+        "sanctioned": false,
+        "registry_note_fr": "Fonds immobilier luxembourgeois (2019), ~65 M€ d'actifs immobiliers en Allemagne (2022), géré par Mimco Group. Batyr Agayev en détient 56,16 % (registre luxembourgeois, projet OpenLux) + 43,5 % de Mimco Real Estate Holding.",
+        "registry_note_en": "Luxembourg real-estate fund (2019), ~€65M of German property assets (2022), managed by Mimco Group. Batyr Agayev holds 56.16% (Luxembourg registry, OpenLux project) + 43.5% of Mimco Real Estate Holding.",
+        "sources": [
+          {
+            "label": "OpenLux / IStories × Le Monde × OCCRP (2026)",
+            "url": "https://istories.media/en/stories/2026/06/24/agayevs/"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "from": "aimani",
+        "to": "fond_akhmat",
+        "type": "dirigeant",
+        "cert": "5",
+        "note_fr": "Présidente de la Fondation.",
+        "note_en": "Head of the Foundation.",
+        "source_url": "https://home.treasury.gov/news/press-releases/sm1208"
+      },
+      {
+        "from": "ramzan",
+        "to": "fond_akhmat",
+        "type": "beneficiaire_presume",
+        "cert": "4",
+        "note_fr": "Véhicule de financement du régime selon l'OFAC.",
+        "note_en": "Regime funding vehicle per OFAC.",
+        "source_url": "https://home.treasury.gov/news/press-releases/sm1208"
+      },
+      {
+        "from": "medni",
+        "to": "firdaws",
+        "type": "proprietaire",
+        "cert": "5",
+        "note_fr": "Cofondatrice.",
+        "note_en": "Co-founder.",
+        "source_url": "https://home.treasury.gov/news/press-releases/sm1208"
+      },
+      {
+        "from": "aishat",
+        "to": "firdaws",
+        "type": "dirigeant",
+        "cert": "5",
+        "note_fr": "Dirige la maison de mode.",
+        "note_en": "Runs the fashion house.",
+        "source_url": "https://home.treasury.gov/news/press-releases/sm1208"
+      },
+      {
+        "from": "ramzan",
+        "to": "megastroy",
+        "type": "beneficiaire_presume",
+        "cert": "4",
+        "note_fr": "Société liée au financement du réseau (OFAC).",
+        "note_en": "Company tied to network financing (OFAC).",
+        "source_url": "https://home.treasury.gov/news/press-releases/sm1208"
+      },
+      {
+        "from": "ramzan",
+        "to": "fc_akhmat",
+        "type": "proprietaire",
+        "cert": "4",
+        "note_fr": "Détenu/contrôlé par Kadyrov (OpenSanctions).",
+        "note_en": "Owned/controlled by Kadyrov (OpenSanctions).",
+        "source_url": "https://www.opensanctions.org/entities/Q217115/"
+      },
+      {
+        "from": "shahr",
+        "to": "villa_palm",
+        "type": "proprietaire",
+        "cert": "5",
+        "note_fr": "Propriétaire enregistré.",
+        "note_en": "Registered owner.",
+        "source_url": "https://istories.media/"
+      },
+      {
+        "from": "ramzan",
+        "to": "villa_palm",
+        "type": "beneficiaire_presume",
+        "cert": "4",
+        "note_fr": "Bénéficiaire réel présumé (prête-nom).",
+        "note_en": "Presumed beneficial owner (nominee).",
+        "source_url": "https://istories.media/"
+      },
+      {
+        "from": "shahr",
+        "to": "a319",
+        "type": "proprietaire",
+        "cert": "5",
+        "note_fr": "Propriétaire enregistré.",
+        "note_en": "Registered owner.",
+        "source_url": "https://istories.media/"
+      },
+      {
+        "from": "ramzan",
+        "to": "a319",
+        "type": "flux_allegue",
+        "cert": "3",
+        "note_fr": "Usage allégué par le clan Kadyrov.",
+        "note_en": "Alleged use by the Kadyrov clan.",
+        "source_url": "https://istories.media/"
+      },
+      {
+        "from": "taymas",
+        "to": "flats_dubai",
+        "type": "proprietaire",
+        "cert": "5",
+        "note_fr": "Propriétaire enregistré.",
+        "note_en": "Registered owner.",
+        "source_url": "https://www.occrp.org/en/project/dubai-unlocked"
+      },
+      {
+        "from": "baisarov",
+        "to": "villa_palm",
+        "type": "flux_allegue",
+        "cert": "3",
+        "note_fr": "Biens voisins à Palm Jumeirah ; rôle de gestionnaire allégué.",
+        "note_en": "Neighbouring Palm Jumeirah assets; alleged manager role.",
+        "source_url": "https://www.occrp.org/"
+      },
+      {
+        "from": "padaev",
+        "to": "sk_triumf",
+        "type": "dirigeant",
+        "cert": "5",
+        "note_fr": "DG et associé unique (100 %) — R1, avéré A1.",
+        "note_en": "CEO and sole shareholder (100%) — R1, established A1.",
+        "source_url": "https://pb.nalog.ru/"
+      },
+      {
+        "from": "sk_triumf",
+        "to": "bellagio",
+        "type": "promoteur",
+        "cert": "4",
+        "note_fr": "Promoteur du projet — R2, avéré A2.",
+        "note_en": "Project developer — R2, established A2.",
+        "source_url": "https://www.grozny-inform.ru/"
+      },
+      {
+        "from": "oniro",
+        "to": "bellagio",
+        "type": "licence_marque",
+        "cert": "4",
+        "note_fr": "Concept d'intérieur « Roberto Cavalli Home » (licence) — R3, avéré A2.",
+        "note_en": "“Roberto Cavalli Home” interior concept (licence) — R3, established A2.",
+        "source_url": "https://onirogroup.it/"
+      },
+      {
+        "from": "oniro",
+        "to": "vision_inv",
+        "type": "licence_marque",
+        "cert": "4",
+        "note_fr": "Licencié → propriétaire de la marque — R4, avéré A2.",
+        "note_en": "Licensee → brand owner — R4, established A2.",
+        "source_url": "https://onirogroup.it/"
+      },
+      {
+        "from": "brambilla",
+        "to": "oniro",
+        "type": "dirigeant",
+        "cert": "5",
+        "note_fr": "Président-directeur général.",
+        "note_en": "Chief executive.",
+        "source_url": "https://onirogroup.it/"
+      },
+      {
+        "from": "sajwani",
+        "to": "vision_inv",
+        "type": "controle",
+        "cert": "4",
+        "note_fr": "Contrôle capitalistique (fondateur DICO / DAMAC) — R5, avéré A2.",
+        "note_en": "Capital control (DICO / DAMAC founder) — R5, established A2.",
+        "source_url": "https://www.businessoffashion.com/"
+      },
+      {
+        "from": "padaev",
+        "to": "isi",
+        "type": "proprietaire",
+        "cert": "5",
+        "note_fr": "Associé 50 % (2015-2018), jamais sorti jusqu'à la radiation d'office — R6, avéré A1.",
+        "note_en": "50% partner (2015-2018), never exited until ex-officio strike-off — R6, established A1.",
+        "source_url": "https://checko.ru/"
+      },
+      {
+        "from": "skvortsov",
+        "to": "isi",
+        "type": "proprietaire",
+        "cert": "5",
+        "note_fr": "Associé 50 % (2015-2018) — R7, avéré A1.",
+        "note_en": "50% partner (2015-2018) — R7, established A1.",
+        "source_url": "https://checko.ru/"
+      },
+      {
+        "from": "vakha-agayev",
+        "to": "yug-nefteprodukt",
+        "type": "proprietaire",
+        "cert": "5",
+        "note_fr": "Fondateur (1998) ; propriétaires familiaux successifs.",
+        "note_en": "Founder (1998); successive family owners.",
+        "source_url": "https://istories.media/en/stories/2026/06/24/agayevs/"
+      },
+      {
+        "from": "ruslan-agayev",
+        "to": "yug-nefteprodukt",
+        "type": "proprietaire",
+        "cert": "5",
+        "note_fr": "Propriétaire actuel (depuis 2021).",
+        "note_en": "Current owner (since 2021).",
+        "source_url": "https://istories.media/en/stories/2026/06/24/agayevs/"
+      },
+      {
+        "from": "batyr-agayev",
+        "to": "interinol-agom",
+        "type": "proprietaire",
+        "cert": "5",
+        "note_fr": "Propriétaire · société renommée Agom en 2024, reconvertie en gestion d'actifs (prête-noms / évasion).",
+        "note_en": "Owner · company renamed Agom in 2024, repurposed into asset management (nominee / evasion).",
+        "source_url": "https://istories.media/en/stories/2026/06/24/agayevs/"
+      },
+      {
+        "from": "vakha-agayev",
+        "to": "offshores-bvi-agayev",
+        "type": "proprietaire",
+        "cert": "5",
+        "note_fr": "Détention successive de Yug-Nefteprodukt et de parts de raffineries via ces offshores (fuites ICIJ).",
+        "note_en": "Successive holding of Yug-Nefteprodukt and refinery stakes via these offshores (ICIJ leaks).",
+        "source_url": "https://istories.media/en/stories/2026/06/24/agayevs/"
+      },
+      {
+        "from": "batyr-agayev",
+        "to": "offshores-bvi-agayev",
+        "type": "proprietaire",
+        "cert": "5",
+        "note_fr": "Détention successive via ces offshores (fuites ICIJ).",
+        "note_en": "Successive holding via these offshores (ICIJ leaks).",
+        "source_url": "https://istories.media/en/stories/2026/06/24/agayevs/"
+      },
+      {
+        "from": "batyr-agayev",
+        "to": "everest-one",
+        "type": "proprietaire",
+        "cert": "5",
+        "note_fr": "Détient 56,16 % du fonds (registre luxembourgeois, projet OpenLux) + 43,5 % de Mimco Real Estate Holding.",
+        "note_en": "Holds 56.16% of the fund (Luxembourg registry, OpenLux project) + 43.5% of Mimco Real Estate Holding.",
+        "source_url": "https://istories.media/en/stories/2026/06/24/agayevs/"
+      }
+    ],
+    "cluster_uae": [
+      "shahr",
+      "baisarov",
+      "taymas",
+      "seemar",
+      "villa_palm",
+      "a319",
+      "flats_dubai",
+      "vision_inv",
+      "sajwani"
+    ]
+  },
+  "scope": {
+    "$doc": "Encart « Périmètre et exclusions » — premier jet, bilingue. À relire/corriger avant intégration dans l'interface.",
+    "title": {
+      "fr": "Périmètre et exclusions",
+      "en": "Scope and exclusions"
+    },
+    "intro": {
+      "fr": "Cette cartographie documente un réseau d'influence et d'exposition financière autour de Ramzan Kadyrov à partir de sources ouvertes (OSINT). Elle vise la lisibilité et la traçabilité, pas l'exhaustivité. Chaque lien est coté selon un indice de certitude (Avéré / Probable / Allégué) et renvoie à sa source.",
+      "en": "This map documents a network of influence and financial exposure around Ramzan Kadyrov, built from open sources (OSINT). It aims for legibility and traceability, not exhaustiveness. Every link is rated on a certainty scale (Established / Probable / Alleged) and points back to its source."
+    },
+    "sections": [
+      {
+        "heading": {
+          "fr": "Ce que la carte couvre",
+          "en": "What the map covers"
+        },
+        "items_fr": [
+          "Les personnes du premier cercle (famille, exécutants, intermédiaires, affaires) et leurs liens documentés publiquement.",
+          "Les entités juridiques et actifs (sociétés, fondations, biens immobiliers) rattachés à ces personnes par des sources ouvertes.",
+          "Les statuts de sanctions dans sept juridictions : États-Unis (OFAC), UE, Royaume-Uni, Canada, Suisse, Pologne, Japon.",
+          "Les localisations principales (Grozny, cluster Dubaï/EAU) pertinentes pour l'exposition financière."
+        ],
+        "items_en": [
+          "First-circle individuals (family, enforcers, intermediaries, business) and their publicly documented ties.",
+          "Legal entities and assets (companies, foundations, real estate) linked to those individuals via open sources.",
+          "Sanctions status across seven jurisdictions: United States (OFAC), EU, United Kingdom, Canada, Switzerland, Poland, Japan.",
+          "Key locations (Grozny, the Dubai/UAE cluster) relevant to financial exposure."
+        ]
+      },
+      {
+        "heading": {
+          "fr": "Ce que la carte ne couvre pas",
+          "en": "What the map does not cover"
+        },
+        "items_fr": [
+          "Les prête-noms, sociétés-écrans et bénéficiaires effectifs non documentés publiquement : le réseau réel est vraisemblablement plus large que ce qui est représenté.",
+          "Les flux financiers chiffrés et datés : les relations « flux allégué » signalent une direction, pas un montant vérifié.",
+          "Les désignations de sanctions postérieures à la date de dernière mise à jour, ni les retraits/allègements intervenus depuis.",
+          "Les juridictions hors des sept retenues (ex. Australie, Nouvelle-Zélande, Ukraine, Monaco) : elles peuvent viser des entités non signalées ici.",
+          "Les registres d'entreprises non publics ou fermés : côté russe, les données de fondateurs de plusieurs entités ont été retirées de l'EGRUL depuis 2020-2022.",
+          "Toute appréciation de culpabilité pénale : les cotations portent sur la solidité documentaire d'un lien, pas sur une condamnation."
+        ],
+        "items_en": [
+          "Nominees, shell companies and beneficial owners that are not publicly documented: the real network is likely broader than what is shown.",
+          "Quantified, dated money flows: \"alleged flow\" relations indicate a direction, not a verified amount.",
+          "Sanctions designations made after the last-updated date, or delistings/relaxations since then.",
+          "Jurisdictions outside the seven covered (e.g. Australia, New Zealand, Ukraine, Monaco): they may target entities not flagged here.",
+          "Non-public or closed company registers: on the Russian side, founder data for several entities has been removed from EGRUL since 2020–2022.",
+          "Any assessment of criminal guilt: ratings reflect the documentary strength of a link, not a conviction."
+        ]
+      },
+      {
+        "heading": {
+          "fr": "Méthode et limites",
+          "en": "Method and caveats"
+        },
+        "items_fr": [
+          "Sources : bases de sanctions officielles et consolidées (OFAC, EUR-Lex, OFSI, SEMA, SECO, MSWiA, MoF), agrégateur OpenSanctions, registres d'entreprises (EGRUL via Rusprofile/RBC) et enquêtes journalistiques (OCCRP, IStories, OC Media, etc.).",
+          "Les dates et programmes marqués « à confirmer » n'ont pas encore été recoupés sur la source primaire et doivent être traités avec prudence.",
+          "Une entité absente d'un régime de sanctions n'est pas nécessairement « blanchie » : l'absence peut refléter un angle mort plutôt qu'une innocence.",
+          "Corrections et ajouts bienvenus : la carte est une base de travail évolutive."
+        ],
+        "items_en": [
+          "Sources: official and consolidated sanctions lists (OFAC, EUR-Lex, OFSI, SEMA, SECO, MSWiA, MoF), the OpenSanctions aggregator, company registers (EGRUL via Rusprofile/RBC) and investigative reporting (OCCRP, IStories, OC Media, etc.).",
+          "Dates and programs marked \"to confirm\" have not yet been checked against the primary source and should be treated with caution.",
+          "An entity absent from a sanctions regime is not necessarily \"cleared\": absence may reflect a blind spot rather than innocence.",
+          "Corrections and additions welcome: this map is a living working base."
+        ]
+      }
+    ],
+    "updated": {
+      "fr": "Dernière mise à jour des données : juillet 2026.",
+      "en": "Data last updated: July 2026."
+    }
+  }
+}

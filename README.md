@@ -35,5 +35,33 @@ Document d'analyse à visée pédagogique, fondé exclusivement sur des enquête
 
 Fichier HTML unique et autonome : aucune dépendance réseau, fonctionne hors-ligne. Le fond de carte (Natural Earth) est intégré au fichier.
 
+## Modifier la carte
+
+**`index.html` est un fichier GÉNÉRÉ. Ne jamais l'éditer à la main** — toute modification directe est écrasée au prochain build.
+
+La source est séparée en deux :
+
+| Fichier | Contenu |
+|---------|---------|
+| `src/template.html` | le **rendu** : structure HTML, styles, logique d'affichage, libellés d'interface (`this.STR`) |
+| `data/kadyrov-data.json` | les **données** : entités, personnes, lieux, liens, relations, sanctions, biographies, chronologie, compteurs |
+
+Toute modification passe par le script de build :
+
+```bash
+# 1. éditer src/template.html (rendu) et/ou data/kadyrov-data.json (données)
+# 2. régénérer le fichier publié
+node scripts/build.mjs
+# 3. commiter la source ET index.html régénéré
+```
+
+Le build injecte les données sous `window.__KADYROV_STATIC` dans le template, puis réencode le tout dans le bloc `__bundler/template` d'`index.html`. Les ressources binaires intégrées (fond de carte, photos, polices) ne sont pas touchées : le fichier publié reste un HTML unique, autonome et fonctionnel hors-ligne.
+
+Détail des clés de données et correspondance avec les anciens noms de variables : `data/README.md`.
+
+### Note sur `deploy.sh`
+
+`deploy.sh` date d'avant cette séparation : il installe un fichier HTML standalone fourni en argument par-dessus `index.html`, ce qui **court-circuite le build** et écrase le fichier généré. Il reste utilisable pour publier un HTML produit ailleurs, mais dans ce cas `src/` et `data/` ne décrivent plus ce qui est en ligne. Pour le flux normal, utiliser `node scripts/build.mjs` puis commiter.
+
 ---
 *Dernière mise à jour : 29 juillet 2026.*
