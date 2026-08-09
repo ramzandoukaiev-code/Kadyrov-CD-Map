@@ -1,21 +1,25 @@
 #!/usr/bin/env bash
 #
-# deploy.sh — Publie une nouvelle version de la carte Kadyrov (fichier HTML
-# autonome) sur GitHub Pages.
+# deploy.sh — Publie une nouvelle version de la carte Kadyrov sur GitHub Pages.
 #
-# Le site est un unique fichier `index.html` servi par GitHub Pages. Ce script
-# archive la version en ligne actuelle (avec un horodatage), installe le
-# nouveau fichier standalone à sa place, puis commit et push.
+# Le site est un unique fichier `index.html` servi par GitHub Pages, mais
+# ce fichier est GÉNÉRÉ : il est produit par `scripts/build.mjs` à partir de
+#   - src/template.html      (le rendu)
+#   - data/kadyrov-data.json (les données)
+#
+# Ce script régénère index.html depuis ces sources, archive la version
+# précédente (avec un horodatage), puis commit et push l'ensemble
+# (sources + fichier généré).
 #
 # Usage :
-#   ./deploy.sh <nouveau-fichier.html> [message de commit]
+#   ./deploy.sh [message de commit]
 #
 # Exemples :
-#   ./deploy.sh Carte_Reseaux_Kadyrov_standalone.html
-#   ./deploy.sh ~/Downloads/carte.html "maj carto : ajout fiche X"
+#   ./deploy.sh
+#   ./deploy.sh "maj carto : ajout fiche X"
 #
 # Options (variables d'environnement) :
-#   NO_ARCHIVE=1   Ne pas archiver l'index.html actuel
+#   NO_ARCHIVE=1   Ne pas archiver l'index.html précédent
 #   NO_PUSH=1      Commit local sans push
 #   DRY_RUN=1      Affiche les actions sans rien modifier
 
@@ -37,49 +41,97 @@ die()   { printf '%serreur:%s %s\n' "$RED" "$RESET" "$*" >&2; exit 1; }
 run()   { if [ "${DRY_RUN:-0}" = "1" ]; then printf '   [dry-run] %s\n' "$*"; else eval "$@"; fi; }
 
 # --- Arguments --------------------------------------------------------------
-SRC="${1:-}"
-COMMIT_MSG="${2:-}"
+COMMIT_MSG="${1:-}"
 
-[ -n "$SRC" ] || die "aucun fichier source fourni.
+# Ancienne signature : ./deploy.sh <fichier.html> [message]. On refuse
+# explicitement, sinon le message de commit deviendrait un chemin de fichier
+# et l'utilisateur croirait avoir publié un HTML qui n'a jamais été lu.
+case "$COMMIT_MSG" in
+  *.html|*.htm)
+    die "cette version de deploy.sh ne prend plus de fichier HTML en argument.
 
-Usage : ./deploy.sh <nouveau-fichier.html> [message de commit]"
+index.html est désormais GÉNÉRÉ depuis src/template.html + data/kadyrov-data.json.
+Pour publier une modification :
+  1. éditer src/template.html (rendu) ou data/kadyrov-data.json (données)
+  2. ./deploy.sh \"message de commit\"
 
-[ -f "$SRC" ] || die "fichier introuvable : $SRC"
+Pour publier malgré tout un HTML produit ailleurs, l'installer à la main
+(cp fichier.html index.html) en sachant que src/ et data/ ne décriront
+alors plus ce qui est en ligne."
+    ;;
+esac
 
 # --- Validations de base ----------------------------------------------------
 [ -d .git ] || die "ce script doit être lancé depuis le dépôt git (.git introuvable)."
 
-# Vérifie que le fichier ressemble bien à une page HTML autonome.
-if ! head -c 512 "$SRC" | grep -qi '<!DOCTYPE html\|<html'; then
-  die "le fichier source ne ressemble pas à un document HTML : $SRC"
+command -v node >/dev/null 2>&1 || die "node est introuvable dans le PATH (requis par scripts/build.mjs)."
+
+for f in scripts/build.mjs src/template.html data/kadyrov-data.json; do
+  [ -f "$f" ] || die "fichier source manquant : $f"
+done
+
+# Le JSON doit être valide avant de lancer quoi que ce soit : un JSON cassé
+# ferait échouer le build à mi-chemin, après l'archivage.
+if [ "${DRY_RUN:-0}" != "1" ]; then
+  node -e 'JSON.parse(require("fs").readFileSync("data/kadyrov-data.json","utf8"))' \
+    || die "data/kadyrov-data.json n'est pas un JSON valide."
 fi
 
-SRC_SIZE=$(wc -c < "$SRC" | tr -d ' ')
-[ "$SRC_SIZE" -gt 1000 ] || die "fichier source suspicieusement petit (${SRC_SIZE} octets)."
+# --- Sauvegarde de la version actuelle (avant régénération) -----------------
+# On garde une copie temporaire pour pouvoir (a) comparer l'avant/après et
+# (b) l'archiver seulement si le build a réellement changé quelque chose.
+PREV_TMP=""
+if [ -f index.html ]; then
+  PREV_TMP="$(mktemp "${TMPDIR:-/tmp}/index-prev.XXXXXX.html")"
+  cp index.html "$PREV_TMP"
+fi
+cleanup() { [ -n "$PREV_TMP" ] && rm -f "$PREV_TMP" || true; }
+trap cleanup EXIT
 
-# --- Fichier identique ? ----------------------------------------------------
-if [ -f index.html ] && cmp -s "$SRC" index.html; then
-  warn "le fichier source est identique à index.html — rien à déployer."
+# --- Régénération ------------------------------------------------------------
+info "régénération de index.html depuis src/ + data/"
+run "node scripts/build.mjs"
+
+if [ "${DRY_RUN:-0}" = "1" ]; then
+  info "DRY_RUN=1 — arrêt avant vérification, archivage, commit et push."
   exit 0
 fi
 
-# --- Archivage de la version actuelle ---------------------------------------
-if [ -f index.html ] && [ "${NO_ARCHIVE:-0}" != "1" ]; then
+# --- Vérifications du fichier généré ----------------------------------------
+[ -f index.html ] || die "le build n'a produit aucun index.html."
+
+OUT_SIZE=$(wc -c < index.html | tr -d ' ')
+[ "$OUT_SIZE" -gt 1000 ] || die "index.html généré suspicieusement petit (${OUT_SIZE} octets)."
+
+head -c 512 index.html | grep -qi '<!DOCTYPE html\|<html' \
+  || die "index.html généré ne ressemble pas à un document HTML."
+
+grep -q 'FICHIER GÉNÉRÉ' index.html \
+  || die "le bandeau « fichier généré » est absent de index.html — build anormal."
+
+# --- Rien à publier ? --------------------------------------------------------
+# On compare le fichier régénéré à la version précédente ET on vérifie les
+# sources : une modification de src/ ou data/ qui ne changerait pas la sortie
+# reste à committer.
+if [ -n "$PREV_TMP" ] && cmp -s index.html "$PREV_TMP" && git diff --quiet -- data src scripts; then
+  warn "index.html régénéré est identique et aucune source n'a changé — rien à déployer."
+  exit 0
+fi
+
+# --- Archivage de la version précédente -------------------------------------
+ARCHIVE=""
+if [ -n "$PREV_TMP" ] && ! cmp -s index.html "$PREV_TMP" && [ "${NO_ARCHIVE:-0}" != "1" ]; then
   STAMP="$(date +%Y%m%d)"
   ARCHIVE="index-archive-${STAMP}.html"
   # Si une archive du jour existe déjà, on suffixe avec l'heure.
   if [ -e "$ARCHIVE" ]; then
     ARCHIVE="index-archive-${STAMP}-$(date +%H%M%S).html"
   fi
-  info "archivage de l'index.html actuel → ${ARCHIVE}"
-  run "cp index.html '$ARCHIVE'"
-else
-  ARCHIVE=""
+  info "archivage de la version précédente → ${ARCHIVE}"
+  cp "$PREV_TMP" "$ARCHIVE"
 fi
 
-# --- Installation du nouveau fichier ----------------------------------------
-info "installation du nouveau fichier → index.html (${SRC_SIZE} octets)"
-run "cp '$SRC' index.html"
+info "index.html régénéré (${OUT_SIZE} octets)"
 
 # --- Commit -----------------------------------------------------------------
 if [ -z "$COMMIT_MSG" ]; then
@@ -87,13 +139,13 @@ if [ -z "$COMMIT_MSG" ]; then
 fi
 
 info "commit : ${COMMIT_MSG}"
-run "git add index.html ${ARCHIVE:+'$ARCHIVE'}"
+# On commite les sources en même temps que le fichier généré : les trois
+# doivent rester cohérents dans l'historique.
+run "git add index.html data src scripts ${ARCHIVE:+'$ARCHIVE'}"
 
-if [ "${DRY_RUN:-0}" != "1" ]; then
-  if git diff --cached --quiet; then
-    warn "aucune modification indexée — rien à committer."
-    exit 0
-  fi
+if git diff --cached --quiet; then
+  warn "aucune modification indexée — rien à committer."
+  exit 0
 fi
 run "git commit -m '$COMMIT_MSG'"
 
