@@ -59,9 +59,23 @@ Le build injecte les données sous `window.__KADYROV_STATIC` dans le template, p
 
 Détail des clés de données et correspondance avec les anciens noms de variables : `data/README.md`.
 
-### Note sur `deploy.sh`
+### Publier avec `deploy.sh`
 
-`deploy.sh` date d'avant cette séparation : il installe un fichier HTML standalone fourni en argument par-dessus `index.html`, ce qui **court-circuite le build** et écrase le fichier généré. Il reste utilisable pour publier un HTML produit ailleurs, mais dans ce cas `src/` et `data/` ne décrivent plus ce qui est en ligne. Pour le flux normal, utiliser `node scripts/build.mjs` puis commiter.
+`deploy.sh` enchaîne le build et la publication :
+
+```bash
+./deploy.sh "maj carto : ajout fiche X"
+```
+
+Il régénère `index.html` depuis `src/` + `data/`, vérifie le fichier produit, archive la version précédente sous `index-archive-AAAAMMJJ.html` (seulement si la sortie a changé), commite les sources avec le fichier généré, puis pousse.
+
+| Variable | Effet |
+|----------|-------|
+| `DRY_RUN=1` | affiche les actions sans rien modifier |
+| `NO_ARCHIVE=1` | ne pas archiver la version précédente |
+| `NO_PUSH=1` | commit local, sans push |
+
+Le script ne prend plus de fichier HTML en argument : cette ancienne signature (`./deploy.sh carte.html`) est refusée avec un message d'explication, car elle court-circuitait le build et désynchronisait `src/`/`data/` de ce qui était en ligne.
 
 ---
 *Dernière mise à jour : 29 juillet 2026.*
