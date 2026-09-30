@@ -3094,7 +3094,7 @@
           }
         },
         {
-          "value": "20+",
+          "value": "15",
           "label": {
             "fr": "appartements et villas identifiés à Dubaï",
             "en": "flats and villas identified in Dubai"
@@ -3117,17 +3117,17 @@
       },
       "items": [
         {
-          "value": "13",
+          "value": "14",
           "label": {
-            "fr": "entités du réseau sous sanctions internationales",
-            "en": "network entities under international sanctions"
+            "fr": "personnes du réseau sous sanctions internationales",
+            "en": "network members under international sanctions"
           }
         },
         {
-          "value": "4",
+          "value": "11",
           "label": {
-            "fr": "régimes concernés : États-Unis, UE, R.-U., Canada",
-            "en": "regimes involved: US, EU, UK, Canada"
+            "fr": "juridictions où une sanction est en vigueur",
+            "en": "jurisdictions with sanctions in force"
           }
         }
       ]
@@ -4762,8 +4762,8 @@
       }
     ],
     "updated": {
-      "fr": "Dernière mise à jour des données : juillet 2026.",
-      "en": "Data last updated: July 2026."
+      "fr": "Dernière mise à jour des données : septembre 2026.",
+      "en": "Data last updated: September 2026."
     }
   }
 }
