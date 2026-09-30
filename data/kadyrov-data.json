@@ -281,6 +281,10 @@
     "fr_tresor": {
       "name": "Registre national français des gels d’avoirs (DG Trésor)",
       "url": "https://gels-avoirs.dgtresor.gouv.fr/"
+    },
+    "oniro_bellagio": {
+      "name": "ONIRO Group — Bellagio Residences (page partenariat)",
+      "url": "https://www.onirogroup.it/en/interior-design-service/special-partnerships/bellagio-residences"
     }
   },
   "places": [
@@ -3103,9 +3107,14 @@
         {
           "value": "72",
           "label": {
-            "fr": "appartements « Cavalli » (Bellagio Grozny) portés par une SPV au capital de 15 000 ₽",
-            "en": "“Cavalli” flats (Bellagio Grozny) carried by a ₽15,000-capital SPV"
-          }
+            "fr": "appartements de la tour Bellagio (Grozny), portés par une SPV au capital de 15 000 ₽",
+            "en": "flats in Grozny's Bellagio tower, held by an SPV capitalised at ₽15,000"
+          },
+          "count": 72,
+          "srcKeys": [
+            "oniro_bellagio",
+            "egrul"
+          ]
         }
       ]
     },
