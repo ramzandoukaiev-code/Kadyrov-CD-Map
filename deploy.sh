@@ -139,9 +139,25 @@ if [ -z "$COMMIT_MSG" ]; then
 fi
 
 info "commit : ${COMMIT_MSG}"
-# On commite les sources en même temps que le fichier généré : les trois
-# doivent rester cohérents dans l'historique.
-run "git add index.html data src scripts ${ARCHIVE:+'$ARCHIVE'}"
+# On commite les sources en même temps que le fichier généré : ils doivent
+# rester cohérents dans l'historique.
+#
+# Chemins EXPLICITES, jamais `data` en entier : data/import/ contient le
+# fichier maître, à usage strictement local. Il est déjà couvert par le
+# .gitignore, mais on ne dépend pas d'un seul garde-fou pour ça.
+run "git add index.html data/kadyrov-data.json src scripts README.md ${ARCHIVE:+'$ARCHIVE'}"
+
+# Ceinture et bretelles : si quoi que ce soit sous data/import/ s'est
+# retrouvé indexé (gitignore modifié, fichier déjà suivi, ajout manuel
+# antérieur), on s'arrête avant le commit plutôt que de le publier.
+LEAKED="$(git diff --cached --name-only -- 'data/import' || true)"
+if [ -n "$LEAKED" ]; then
+  die "des fichiers de data/import/ sont indexés — publication interrompue :
+$LEAKED
+
+data/import/ contient le fichier maître et ne doit jamais être publié.
+Retirer de l'index avec : git restore --staged data/import"
+fi
 
 if git diff --cached --quiet; then
   warn "aucune modification indexée — rien à committer."
