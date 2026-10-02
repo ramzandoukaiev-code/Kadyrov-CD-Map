@@ -168,3 +168,82 @@ resynchronisés au fil des mises à jour du jeu de données) ; 1 valeur
 n'est vérifiable avec aucun champ actuel du jeu de données. Aucune
 correction n'a été appliquée dans cette session — `statGroups` reste
 figé tel qu'affiché aujourd'hui, conformément à la consigne.
+
+---
+
+# Résolution du 30/09/2026
+
+Le constat ci-dessus n'est pas réécrit : il reste le relevé daté de
+l'état antérieur. Cette section enregistre ce qui a été appliqué.
+
+## Tableau avant / après
+
+| Valeur | Avant | Après | Règle de dérivation retenue |
+|---|---|---|---|
+| Immobilier Golfe | ≈ 50 M$ | ≈ 50 M$ (inchangé) | somme des montants chiffrés des liens `city` ∈ Golfe, `cat=imm` (50,4 M$) |
+| Unités Dubaï | 20+ | **15** | unités résidentielles énumérées dans les libellés des 4 liens `city=dubai`/`cat=imm` (9 appartements + 6 villas) |
+| Appartements Bellagio | 72 | **72 (conservé, libellé corrigé et source ajoutée)** | champ `count: 72` + `srcKeys` sur l'item — voir ci-dessous |
+| Entités sanctionnées | 13 | **14** | entrées de `sanctions.entries` portant ≥ 1 désignation sans champ `delisted` |
+| Régimes de sanctions | 4 | **11** | juridictions distinctes portant ≥ 1 désignation en vigueur |
+| Pays / juridictions | 14 | 14 (inchangé) | `hotCountries.length` |
+| Villes de répression | 6 | 6 (inchangé) | villes avec un lien `cat=rep`, `doha` exclu (libellé « contexte, antérieur à Kadyrov ») |
+
+Les écarts « entités sanctionnées » et « régimes » relevés plus haut
+(20 et 11) reposaient sur une lecture différente, désormais tranchée :
+
+- **14 et non 20** : le décompte porte sur les personnes de
+  `sanctions.entries` et exclut les mesures levées — `seemar`, radié
+  de la liste OFAC le 2023-08-03, sort du compte. Les 5 entités
+  juridiques de `finance.entities` ne sont pas comptées : leur booléen
+  `sanctioned` n'a pas d'équivalent `delisted`, on ne peut donc pas
+  vérifier que ces mesures sont toujours en vigueur. Le libellé est
+  passé de « entités » à « personnes » pour que le mot corresponde à
+  la règle.
+- **11 régimes** : le chiffre est identique avec ou sans les mesures
+  levées, la seule radiation étant américaine et les États-Unis
+  restant en vigueur par ailleurs.
+
+## Traitement du « 72 »
+
+L'audit le classait « non dérivable — absent des champs structurés ».
+Il est conservé, avec trois changements :
+
+1. **Source identifiée et vérifiée.** La page partenariat d'ONIRO
+   Group indique : *« The 20-storey tower comprises 72 flats »*.
+   Ajoutée aux `sourceRefs` sous la clé `oniro_bellagio`.
+2. **Décompte structuré.** L'item porte désormais `count: 72` et
+   `srcKeys: ["oniro_bellagio", "egrul"]` — `egrul` couvrant le
+   capital de 15 000 ₽ de la SPV, qui relève du registre. Ces champs
+   sont ignorés par le rendu, qui ne lit que `value` et `label`.
+3. **Libellé corrigé — le précédent était inexact.** La même source
+   précise que seules les parties communes sont meublées Roberto
+   Cavalli Home Interiors : *« The lobby, entrances, corridors and
+   other communal spaces are furnished by ONIRO Group using a
+   selection of pieces from the 2026 Roberto Cavalli Home Interiors
+   collection »*. Parler d'« appartements Cavalli » attribuait aux
+   logements un ameublement qui ne concerne que les espaces partagés.
+   Le libellé ne qualifie plus les appartements par la marque.
+
+Une URL d'archive Wayback doit être ajoutée à l'entrée
+`sourceRefs.oniro_bellagio` dans un second temps.
+
+## Point de vigilance non corrigé
+
+La même inexactitude subsiste ailleurs dans le jeu de données, hors du
+périmètre de cette correction — signalé, non modifié :
+
+- `bios.padaev` : « 72 appartements premium *furnished by Roberto
+  Cavalli Home Interiors* » (idem EN).
+- `bios.brambilla` : « Son équipe conçoit le concept d'intérieur de
+  **chaque appartement** du Bellagio de Grozny » / « His team designs
+  the interior concept of **every flat** in Grozny's Bellagio ».
+
+Ces deux formulations attribuent aux logements ce que la source
+réserve aux parties communes. Le lien Cantù (`links`, `city: "cantu"`),
+lui, est exact : il parle du « concept d'intérieur du Bellagio » sans
+qualifier les appartements, et sa note de source ne porte que sur la
+question de conformité UE 833/2014.
+
+Les mentions ambiguës mais défendables (`sites.bellagio`,
+`finance.entities.bellagio`, `timeline`) désignent le complexe, pas
+les logements, et n'ont pas été touchées.

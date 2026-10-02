@@ -281,6 +281,10 @@
     "fr_tresor": {
       "name": "Registre national français des gels d’avoirs (DG Trésor)",
       "url": "https://gels-avoirs.dgtresor.gouv.fr/"
+    },
+    "oniro_bellagio": {
+      "name": "ONIRO Group — Bellagio Residences (page partenariat)",
+      "url": "https://www.onirogroup.it/en/interior-design-service/special-partnerships/bellagio-residences"
     }
   },
   "places": [
@@ -1240,8 +1244,8 @@
       },
       "coords": "43.324° N · 45.703° E",
       "what": {
-        "fr": "Premier complexe résidentiel premium de Tchétchénie (72 appartements, bd Esambaeva 1), présenté le 27/06/2026 avec un concept d’intérieur « Roberto Cavalli Home » (ONIRO Group, Cantù). Vente adossée à des certificats de mobilier de 10 à 25 k€ et à un paiement échelonné sans banque (« halal, sans riba ») — flux acheteurs hors du filtre LCB-FT bancaire. Promoteur : SPV SK « Triumf » (capital 15 000 ₽, UBO unique Z. Padaev).",
-        "en": "Chechnya’s first premium residential complex (72 flats, 1 Esambaeva Blvd), unveiled on 27/06/2026 with a “Roberto Cavalli Home” interior concept (ONIRO Group, Cantù). Sales backed by €10-25k furniture certificates and bank-free instalment payment (“halal, riba-free”) — buyer flows outside the banking AML/CFT filter. Developer: SPV SK “Triumf” (₽15,000 capital, sole UBO Z. Padaev)."
+        "fr": "Premier complexe résidentiel premium de Tchétchénie (72 appartements, bd Esambaeva 1), présenté le 27/06/2026 avec des parties communes meublées en « Roberto Cavalli Home Interiors » (ONIRO Group, Cantù). Vente adossée à des certificats de mobilier de 10 à 25 k€ et à un paiement échelonné sans banque (« halal, sans riba ») — flux acheteurs hors du filtre LCB-FT bancaire. Promoteur : SPV SK « Triumf » (capital 15 000 ₽, UBO unique Z. Padaev).",
+        "en": "Chechnya’s first premium residential complex (72 flats, 1 Esambaeva Blvd), unveiled on 27/06/2026 with communal areas furnished in “Roberto Cavalli Home Interiors” (ONIRO Group, Cantù). Sales backed by €10-25k furniture certificates and bank-free instalment payment (“halal, riba-free”) — buyer flows outside the banking AML/CFT filter. Developer: SPV SK “Triumf” (₽15,000 capital, sole UBO Z. Padaev)."
       }
     }
   ],
@@ -2760,8 +2764,8 @@
     },
     "padaev": {
       "bio": {
-        "fr": "Zhandar Khozh-Akhmadovitch Padaev est le directeur général et l’associé unique (100 %) de OOO SK « Triumf », SPV enregistrée à Grozny le 22 janvier 2025 avec un capital de 15 000 ₽ (~150 €), qui porte le Bellagio Residences : 72 appartements premium « furnished by Roberto Cavalli Home Interiors », présentés le 27 juin 2026. Son seul antécédent corporel documenté est OOO « IndustriyaStroyInvest », coquille moscovite détenue à parité avec V. Skvortsov (2015-2018), jamais opérationnelle (aucun mouvement de fonds, aucun compte déposé) et radiée d’office en 2018. Rien dans ce parcours n’explique la capacité de financement d’un chantier premium avec partenariat italien : l’origine des fonds est une question ouverte à instruire, formulée comme telle et non comme une allégation. Le dispositif de vente (certificats de mobilier Cavalli de 10 à 25 k€, paiement échelonné jusqu’à 2 ans sans banque, présenté comme « halal, sans riba ») sort par ailleurs les flux acheteurs du filtre LCB-FT bancaire. L’interdiction triennale de l’art. 23.1 de la loi 129-FZ (2018-2021) était close avant la création de Triumf : aucune anomalie de ce côté.",
-        "en": "Zhandar Khozh-Akhmadovich Padaev is the CEO and sole shareholder (100%) of OOO SK “Triumf”, an SPV registered in Grozny on 22 January 2025 with ₽15,000 (~€150) in capital, which carries the Bellagio Residences: 72 premium flats “furnished by Roberto Cavalli Home Interiors”, unveiled on 27 June 2026. His only documented corporate antecedent is OOO “IndustriyaStroyInvest”, a Moscow shell held 50/50 with V. Skvortsov (2015-2018), never operational (no fund movements, no accounts filed) and struck off in 2018. Nothing in this record explains the capacity to finance a premium development with an Italian partnership: the origin of the funds is an open question to investigate, framed as such and not as an allegation. The sales scheme (Cavalli furniture certificates of €10-25k, instalment payment up to 2 years with no bank, marketed as “halal, riba-free”) also takes buyer flows outside the banking AML/CFT filter. The three-year ban under art. 23.1 of law 129-FZ (2018-2021) had lapsed before Triumf’s creation: no anomaly there."
+        "fr": "Zhandar Khozh-Akhmadovitch Padaev est le directeur général et l’associé unique (100 %) de OOO SK « Triumf », SPV enregistrée à Grozny le 22 janvier 2025 avec un capital de 15 000 ₽ (~150 €), qui porte le Bellagio Residences, tour de 72 appartements présentée le 27 juin 2026, dont les parties communes — hall, entrées, couloirs — sont meublées par ONIRO Group avec la collection Roberto Cavalli Home Interiors 2026. Son seul antécédent corporel documenté est OOO « IndustriyaStroyInvest », coquille moscovite détenue à parité avec V. Skvortsov (2015-2018), jamais opérationnelle (aucun mouvement de fonds, aucun compte déposé) et radiée d’office en 2018. Rien dans ce parcours n’explique la capacité de financement d’un chantier premium avec partenariat italien : l’origine des fonds est une question ouverte à instruire, formulée comme telle et non comme une allégation. Le dispositif de vente (certificats de mobilier Cavalli de 10 à 25 k€, paiement échelonné jusqu’à 2 ans sans banque, présenté comme « halal, sans riba ») sort par ailleurs les flux acheteurs du filtre LCB-FT bancaire. L’interdiction triennale de l’art. 23.1 de la loi 129-FZ (2018-2021) était close avant la création de Triumf : aucune anomalie de ce côté.",
+        "en": "Zhandar Khozh-Akhmadovich Padaev is the CEO and sole shareholder (100%) of OOO SK “Triumf”, an SPV registered in Grozny on 22 January 2025 with ₽15,000 (~€150) in capital, which carries the Bellagio Residences, a 72-flat tower unveiled on 27 June 2026 whose communal areas — lobby, entrances, corridors — are furnished by ONIRO Group with the 2026 Roberto Cavalli Home Interiors collection. His only documented corporate antecedent is OOO “IndustriyaStroyInvest”, a Moscow shell held 50/50 with V. Skvortsov (2015-2018), never operational (no fund movements, no accounts filed) and struck off in 2018. Nothing in this record explains the capacity to finance a premium development with an Italian partnership: the origin of the funds is an open question to investigate, framed as such and not as an allegation. The sales scheme (Cavalli furniture certificates of €10-25k, instalment payment up to 2 years with no bank, marketed as “halal, riba-free”) also takes buyer flows outside the banking AML/CFT filter. The three-year ban under art. 23.1 of law 129-FZ (2018-2021) had lapsed before Triumf’s creation: no anomaly there."
       },
       "sources": [
         {
@@ -2787,13 +2791,21 @@
             "fr": "Présentation officielle du 27/06/2026 — A3/B2.",
             "en": "Official launch of 27/06/2026 — A3/B2."
           }
+        },
+        {
+          "label": "ONIRO Group — Bellagio Residences",
+          "url": "https://www.onirogroup.it/en/interior-design-service/special-partnerships/bellagio-residences",
+          "note": {
+            "fr": "Page partenariat : tour de 72 appartements ; parties communes meublées Roberto Cavalli Home Interiors — A2.",
+            "en": "Partnership page: 72-flat tower; communal areas furnished in Roberto Cavalli Home Interiors — A2."
+          }
         }
       ]
     },
     "brambilla": {
       "bio": {
-        "fr": "Moreno Brambilla est le président-directeur général d’ONIRO Group (ex-Jumbo Group, Cantù, Lombardie), titulaire de la licence Roberto Cavalli Home Interiors depuis 2011 — le groupe détient aussi les licences Gianfranco Ferré Home (2014) et ETRO Home Interiors (2017). Son équipe conçoit le concept d’intérieur de chaque appartement du Bellagio de Grozny, et il s’est déplacé en personne à la présentation du 27 juin 2026. En 2021, il déclarait publiquement que la Chine et la Russie étaient les principaux marchés du groupe — un débouché russe assumé avant les sanctions de 2022. La fourniture d’un concept d’intérieur et de mobilier de luxe (> 300 €) à un projet russe soulève une question de conformité au règlement UE 833/2014 (art. 3h, annexe XVIII ; interdiction des services d’architecture depuis oct. 2022) ; les hypothèses de structuration (entité non-UE, contrat via le propriétaire dubaïote, réexportation via pays tiers) restent à tester. Réserve importante : aucune sanction ne vise ONIRO ni Brambilla, et rien ne prouve à ce stade une violation — ce qui est établi est un montage qui mérite une due diligence, pas une infraction constatée.",
-        "en": "Moreno Brambilla is the CEO of ONIRO Group (formerly Jumbo Group, Cantù, Lombardy), holder of the Roberto Cavalli Home Interiors licence since 2011 — the group also holds the Gianfranco Ferré Home (2014) and ETRO Home Interiors (2017) licences. His team designs the interior concept of every flat in Grozny’s Bellagio, and he attended the 27 June 2026 launch in person. In 2021 he publicly stated that China and Russia were the group’s main markets — an assumed Russian outlet before the 2022 sanctions. Supplying an interior concept and luxury furniture (>€300) to a Russian project raises a compliance question under EU Regulation 833/2014 (art. 3h, Annex XVIII; architecture services banned since Oct 2022); the structuring hypotheses (non-EU entity, contracting via the Dubai brand owner, third-country re-export) remain to be tested. Important caveat: no sanctions target ONIRO or Brambilla, and nothing proves a violation at this stage — what is established is an arrangement that warrants due diligence, not a recorded offence."
+        "fr": "Moreno Brambilla est le président-directeur général d’ONIRO Group (ex-Jumbo Group, Cantù, Lombardie), titulaire de la licence Roberto Cavalli Home Interiors depuis 2011 — le groupe détient aussi les licences Gianfranco Ferré Home (2014) et ETRO Home Interiors (2017). Son équipe aménage les parties communes — hall, entrées, couloirs — du Bellagio de Grozny avec la collection Roberto Cavalli Home Interiors 2026, et il s’est déplacé en personne à la présentation du 27 juin 2026. En 2021, il déclarait publiquement que la Chine et la Russie étaient les principaux marchés du groupe — un débouché russe assumé avant les sanctions de 2022. La fourniture d’un concept d’intérieur et de mobilier de luxe (> 300 €) à un projet russe soulève une question de conformité au règlement UE 833/2014 (art. 3h, annexe XVIII ; interdiction des services d’architecture depuis oct. 2022) ; les hypothèses de structuration (entité non-UE, contrat via le propriétaire dubaïote, réexportation via pays tiers) restent à tester. Réserve importante : aucune sanction ne vise ONIRO ni Brambilla, et rien ne prouve à ce stade une violation — ce qui est établi est un montage qui mérite une due diligence, pas une infraction constatée.",
+        "en": "Moreno Brambilla is the CEO of ONIRO Group (formerly Jumbo Group, Cantù, Lombardy), holder of the Roberto Cavalli Home Interiors licence since 2011 — the group also holds the Gianfranco Ferré Home (2014) and ETRO Home Interiors (2017) licences. His team furnishes the communal areas — lobby, entrances, corridors — of Grozny’s Bellagio with the 2026 Roberto Cavalli Home Interiors collection, and he attended the 27 June 2026 launch in person. In 2021 he publicly stated that China and Russia were the group’s main markets — an assumed Russian outlet before the 2022 sanctions. Supplying an interior concept and luxury furniture (>€300) to a Russian project raises a compliance question under EU Regulation 833/2014 (art. 3h, Annex XVIII; architecture services banned since Oct 2022); the structuring hypotheses (non-EU entity, contracting via the Dubai brand owner, third-country re-export) remain to be tested. Important caveat: no sanctions target ONIRO or Brambilla, and nothing proves a violation at this stage — what is established is an arrangement that warrants due diligence, not a recorded offence."
       },
       "sources": [
         {
@@ -2818,6 +2830,14 @@
           "note": {
             "fr": "Présence à la présentation du 27/06/2026 — A3/B2.",
             "en": "Presence at the 27/06/2026 launch — A3/B2."
+          }
+        },
+        {
+          "label": "ONIRO Group — Bellagio Residences",
+          "url": "https://www.onirogroup.it/en/interior-design-service/special-partnerships/bellagio-residences",
+          "note": {
+            "fr": "Page partenariat : tour de 72 appartements ; parties communes meublées Roberto Cavalli Home Interiors — A2.",
+            "en": "Partnership page: 72-flat tower; communal areas furnished in Roberto Cavalli Home Interiors — A2."
           }
         }
       ]
@@ -3094,7 +3114,7 @@
           }
         },
         {
-          "value": "20+",
+          "value": "15",
           "label": {
             "fr": "appartements et villas identifiés à Dubaï",
             "en": "flats and villas identified in Dubai"
@@ -3103,9 +3123,14 @@
         {
           "value": "72",
           "label": {
-            "fr": "appartements « Cavalli » (Bellagio Grozny) portés par une SPV au capital de 15 000 ₽",
-            "en": "“Cavalli” flats (Bellagio Grozny) carried by a ₽15,000-capital SPV"
-          }
+            "fr": "appartements de la tour Bellagio (Grozny), portés par une SPV au capital de 15 000 ₽",
+            "en": "flats in Grozny's Bellagio tower, held by an SPV capitalised at ₽15,000"
+          },
+          "count": 72,
+          "srcKeys": [
+            "oniro_bellagio",
+            "egrul"
+          ]
         }
       ]
     },
@@ -3117,17 +3142,17 @@
       },
       "items": [
         {
-          "value": "13",
+          "value": "14",
           "label": {
-            "fr": "entités du réseau sous sanctions internationales",
-            "en": "network entities under international sanctions"
+            "fr": "personnes du réseau sous sanctions internationales",
+            "en": "network members under international sanctions"
           }
         },
         {
-          "value": "4",
+          "value": "11",
           "label": {
-            "fr": "régimes concernés : États-Unis, UE, R.-U., Canada",
-            "en": "regimes involved: US, EU, UK, Canada"
+            "fr": "juridictions où une sanction est en vigueur",
+            "en": "jurisdictions with sanctions in force"
           }
         }
       ]
@@ -4762,8 +4787,8 @@
       }
     ],
     "updated": {
-      "fr": "Dernière mise à jour des données : juillet 2026.",
-      "en": "Data last updated: July 2026."
+      "fr": "Dernière mise à jour des données : septembre 2026.",
+      "en": "Data last updated: September 2026."
     }
   }
 }
