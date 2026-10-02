@@ -543,7 +543,7 @@
         </div>
       </sc-if>
 
-      <div id="kd-lieux" style="position:absolute;left:50%;top:14px;transform:translateX(-50%);display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:center;max-width:70%">
+      <div id="kd-lieux" style="position:absolute;left:50%;top:14px;transform:translateX(-50%);display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:center;width:max-content;max-width:70%">
         <span style="font-family:'IBM Plex Mono';font-size:9.5px;letter-spacing:.8px;color:#6f828e;text-transform:uppercase">{{ tx.lieuxLbl }}</span>
         <sc-for list="{{ lieux }}" as="l" hint-placeholder-count="4">
           <button sc-camel-on-click="{{ l.onClick }}" style="{{ l.style }}">{{ l.label }}</button>
