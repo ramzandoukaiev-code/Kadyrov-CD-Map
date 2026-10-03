@@ -543,7 +543,7 @@
         </div>
       </sc-if>
 
-      <div id="kd-lieux" style="position:absolute;left:50%;top:14px;transform:translateX(-50%);display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:center;max-width:70%">
+      <div id="kd-lieux" style="position:absolute;left:50%;top:14px;transform:translateX(-50%);display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:center;width:max-content;max-width:70%">
         <span style="font-family:'IBM Plex Mono';font-size:9.5px;letter-spacing:.8px;color:#6f828e;text-transform:uppercase">{{ tx.lieuxLbl }}</span>
         <sc-for list="{{ lieux }}" as="l" hint-placeholder-count="4">
           <button sc-camel-on-click="{{ l.onClick }}" style="{{ l.style }}">{{ l.label }}</button>
@@ -1317,7 +1317,7 @@ class Component extends DCLogic {
       const g = f.geometry; if(!g) return null;
       let polys = g.type==='Polygon' ? [g.coordinates] : g.type==='MultiPolygon' ? g.coordinates : [];
       const clipped = [];
-      polys.forEach(poly=>{ const rings=[]; poly.forEach(ring=>{ const c=this.clipRing(ring); if(c.length>=3) rings.push(c); }); if(rings.length) clipped.push(rings); });
+      polys.forEach(poly=>{ const rings=[]; poly.forEach(ring=>{ const c=this.clipRing(this.unwrapRing(ring)); if(c.length>=3) rings.push(c); }); if(rings.length) clipped.push(rings); });
       return clipped.length ? { name:(f.properties&&f.properties.name)||'', polys:clipped } : null;
     }).filter(Boolean);
   }
@@ -1345,6 +1345,18 @@ class Component extends DCLogic {
         })
         .catch(()=>{});
     }catch(e){ this.setState({ mapState:'off' }); }
+  }
+  unwrapRing(ring){
+    const out=[]; let off=0, prev=null;
+    for(const [lon,lat] of ring){
+      let L=lon+off;
+      if(prev!==null){
+        if(L-prev>180){ off-=360; L-=360; }
+        else if(L-prev<-180){ off+=360; L+=360; }
+      }
+      out.push([L,lat]); prev=L;
+    }
+    return out;
   }
   clipRing(ring){
     const B = this.clipBox;
