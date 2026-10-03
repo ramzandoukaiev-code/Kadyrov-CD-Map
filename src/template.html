@@ -1125,6 +1125,11 @@ class Component extends DCLogic {
     // restée visible. 0 tant qu'il est fermé (et toujours 0 en mise en
     // page mobile, où le panneau est empilé sous la carte).
     this.PANEL_W = 378;
+    // En mise en page mobile, la carte occupe toute la largeur et les
+    // étiquettes des villes les plus à l'est (Dubaï, la dernière de la
+    // bbox) sont dessinées à droite de leur point : elles débordaient du
+    // cadre. On réserve une marge, par le même mécanisme que le panneau.
+    this.LABEL_MARGIN = 36;
     this.reservedRight = this.state.panelAside ? this.PANEL_W : 0;
     this._reservedGoal = this.reservedRight;
     this.view = { k:1, x:0, y:0 };
@@ -1308,8 +1313,10 @@ class Component extends DCLogic {
       c.getContext('2d').setTransform(dpr,0,0,dpr,0,0);
     });
     // Hors animation de recadrage, on réaligne la réserve sur l'état courant
-    // (utile au montage et au franchissement de la bascule mobile).
-    if(!this._reRaf) this.reservedRight = this.reservedTarget();
+    // (utile au montage et au franchissement de la bascule mobile). On
+    // synchronise aussi l'objectif, pour qu'un simple redimensionnement
+    // n'enclenche pas une animation de recadrage par-dessus.
+    if(!this._reRaf){ this.reservedRight = this.reservedTarget(); this._reservedGoal = this.reservedRight; }
     this.fitProjection(); this.drawBase();
     this.setState(s=>({ ready:true, tick:s.tick+1 }));
   }
@@ -1339,10 +1346,12 @@ class Component extends DCLogic {
   }
   toScreen(lon,la){ const p = this.proj(lon,la); return { x:p.x*this.view.k+this.view.x, y:p.y*this.view.k+this.view.y }; }
 
-  // ---- recadrage sur la zone laissée libre par le panneau latéral ----
-  // En mise en page mobile le panneau est empilé sous la carte : rien à réserver.
+  // ---- largeur réservée à droite de la projection ----
+  // Deux raisons de réserver : en desktop le panneau latéral se superpose à
+  // la carte ; en mobile il est empilé dessous, mais les étiquettes de l'est
+  // déborderaient du cadre sans une marge.
   reservedTarget(){
-    try{ if(window.matchMedia('(max-width:860px)').matches) return 0; }catch(e){}
+    try{ if(window.matchMedia('(max-width:860px)').matches) return this.LABEL_MARGIN; }catch(e){}
     return this.state.panelAside ? this.PANEL_W : 0;
   }
   visibleCx(){ return (this.viewW - (this.reservedRight||0))/2; }
