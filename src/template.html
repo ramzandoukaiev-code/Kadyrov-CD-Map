@@ -429,6 +429,16 @@
   @keyframes kdpulse{0%,100%{opacity:.55}50%{opacity:1}}
   a{color:inherit}
   button{-webkit-tap-highlight-color:transparent}
+  /* Appel visuel sur les deux boutons d'ouverture de panneau : 3 cycles
+     au chargement, puis plus rien. Rien du tout si l'utilisateur a
+     demandé à réduire les animations. */
+  @keyframes kd-pulse{
+    0%,100%{ box-shadow:0 0 0 0 rgba(255,179,71,0) }
+    50%{ box-shadow:0 0 0 7px rgba(255,179,71,.30) }
+  }
+  @media (prefers-reduced-motion: no-preference){
+    #kd-aside-tab,#kd-foot-tab{ animation:kd-pulse 1.7s ease-in-out 3 }
+  }
   @media (max-width:860px){
     html,body{height:auto;overflow:auto}
     #kd-root{position:static !important;height:auto !important;min-height:100vh;min-height:100dvh;overflow:visible !important}
@@ -543,7 +553,7 @@
         </div>
       </sc-if>
 
-      <div id="kd-lieux" style="position:absolute;left:50%;top:14px;transform:translateX(-50%);display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:center;width:max-content;max-width:70%">
+      <div id="kd-lieux" style="position:absolute;left:{{ lieuxLeft }};top:14px;transform:translateX(-50%);display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:center;width:max-content;max-width:70%">
         <span style="font-family:'IBM Plex Mono';font-size:9.5px;letter-spacing:.8px;color:#6f828e;text-transform:uppercase">{{ tx.lieuxLbl }}</span>
         <sc-for list="{{ lieux }}" as="l" hint-placeholder-count="4">
           <button sc-camel-on-click="{{ l.onClick }}" style="{{ l.style }}">{{ l.label }}</button>
@@ -573,12 +583,12 @@
         <div style="font-family:'IBM Plex Mono';font-size:9.5px;color:#8aa0ac;text-align:center;margin-top:2px">{{ zoomLabel }}</div>
       </div>
 
-      <div id="kd-mapstatus" style="position:absolute;right:{{ statusRight }};top:14px;transition:right .28s ease;display:flex;align-items:center;gap:7px;font-family:'IBM Plex Mono';font-size:9.5px;letter-spacing:.6px;color:#6f828e;text-transform:uppercase;pointer-events:none">
+      <div id="kd-mapstatus" style="position:absolute;right:{{ statusRight }};top:14px;transition:right .28s ease;display:{{ statusDisplay }};align-items:center;gap:7px;font-family:'IBM Plex Mono';font-size:9.5px;letter-spacing:.6px;color:#6f828e;text-transform:uppercase;pointer-events:none">
         <span style="{{ mapStatusDot }}"></span>{{ tx.mapStatus }}
       </div>
     </section>
 
-    <button id="kd-aside-tab" sc-camel-on-click="{{ toggleAside }}" style="position:absolute;top:14px;right:{{ asideTabRight }};z-index:21;writing-mode:vertical-rl;font-family:'IBM Plex Mono';font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:#ffd9a0;background:rgba(11,19,26,.92);border:1px solid rgba(255,179,71,.35);border-right:none;border-radius:7px 0 0 7px;padding:12px 6px;cursor:pointer;transition:right .28s ease;backdrop-filter:blur(3px);white-space:nowrap">{{ asideTabLbl }}</button>
+    <button id="kd-aside-tab" sc-camel-on-click="{{ toggleAside }}" style="position:absolute;top:14px;right:{{ asideTabRight }};z-index:21;writing-mode:vertical-rl;font-family:'IBM Plex Mono';font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#10171d;background:rgba(255,179,71,.9);border:1px solid rgba(255,179,71,.9);border-right:none;border-radius:7px 0 0 7px;padding:12px 7px;cursor:pointer;transition:right .28s ease;backdrop-filter:blur(3px);white-space:nowrap">{{ asideTabLbl }}</button>
 
     <aside id="kd-aside" style="position:absolute;top:0;right:0;bottom:0;width:378px;z-index:20;border-left:1px solid rgba(120,150,165,.14);background:linear-gradient(180deg,#0a1118,#080d12);display:flex;flex-direction:column;min-height:0;transition:transform .28s ease;box-shadow:-18px 0 44px rgba(0,0,0,.5);transform:{{ asideTransform }}">
       <div id="kd-aside-scroll" style="overflow-y:auto;padding:18px 18px 22px;display:flex;flex-direction:column;gap:18px">
@@ -840,7 +850,7 @@
 
   <footer style="flex:none;border-top:1px solid rgba(120,150,165,.14);background:#080d12">
     <div style="display:flex;align-items:center;gap:12px;padding:5px 22px">
-      <button sc-camel-on-click="{{ toggleFoot }}" style="display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono';font-size:9.5px;letter-spacing:.8px;text-transform:uppercase;color:#ffd9a0;background:rgba(255,179,71,.08);border:1px solid rgba(255,179,71,.3);border-radius:5px;padding:4px 10px;cursor:pointer;flex:none">{{ footToggleLbl }}</button>
+      <button id="kd-foot-tab" sc-camel-on-click="{{ toggleFoot }}" style="display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono';font-size:12px;letter-spacing:.8px;text-transform:uppercase;color:#10171d;background:rgba(255,179,71,.9);border:1px solid rgba(255,179,71,.9);border-radius:5px;padding:5px 11px;cursor:pointer;flex:none">{{ footToggleLbl }}</button>
       <div style="font-family:'IBM Plex Mono';font-size:9px;color:#5f717c;letter-spacing:.3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0">{{ footHint }}</div>
     </div>
     <sc-if value="{{ footOpen }}" hint-placeholder-val="{{ false }}">
@@ -1098,7 +1108,7 @@ class Component extends DCLogic {
     this.state = {
       lang: (props && props.defaultLang) || 'fr',
       filters: { '5':true, '4':true, '3':true },
-      panelAside:false, panelFoot:false,
+      panelAside:(typeof window!=='undefined' && window.innerWidth>=1280), panelFoot:false,
       catFilters: { imm:true, dipl:true, hum:true, rep:true, dyn:true },
       evasionOnly:false, sancFilter:'all',
       selCity: null, hoverCity: null, selPerson: null, selSite: null, selEntity: null, modalOpen: false,
@@ -1110,6 +1120,13 @@ class Component extends DCLogic {
     this.bbox = { lonMin:-1, lonMax:57, latMin:19, latMax:56 };
     this.clipBox = { minx:-32, miny:-2, maxx:108, maxy:74 };
     this.viewW = 1000; this.viewH = 620; this.countries = null;
+    // Le panneau latéral se superpose à la carte au lieu de la rétrécir :
+    // on réserve sa largeur pour que la projection tienne dans la zone
+    // restée visible. 0 tant qu'il est fermé (et toujours 0 en mise en
+    // page mobile, où le panneau est empilé sous la carte).
+    this.PANEL_W = 378;
+    this.reservedRight = this.state.panelAside ? this.PANEL_W : 0;
+    this._reservedGoal = this.reservedRight;
     this.view = { k:1, x:0, y:0 };
 
     this.CAT = window.__KADYROV_STATIC.cat;
@@ -1244,7 +1261,7 @@ class Component extends DCLogic {
       controle:{fr:'Contrôle capitalistique',en:'Capital control'} };
     return (M[t]||{})[l]||t; }
   isUAE(kind,id){ if(kind==='entity'){ const e=this.entity(id); return !!(e&&e.geo==='uae')||this.CLUSTER_UAE.has(id); } return this.CLUSTER_UAE.has(id); }
-  selectEntity(id){ this.setState({ selEntity:id, selPerson:null, selCity:null, selSite:null, modalOpen:true }); }
+  selectEntity(id){ this.setState({ selEntity:id, selPerson:null, selCity:null, selSite:null, modalOpen:true }); this.syncHash(id); }
   toggleSanctions(){ this.setState(s=>({ showSanctions:!s.showSanctions })); }
   toggleFinance(){ this.setState(s=>({ showFinance:!s.showFinance })); }
   toggleGeoUAE(){ const on=!this.state.geoUAE; this.setState({ geoUAE:on, showFinance: on?true:this.state.showFinance }); if(on){ this.flyTo(55.16,25.11,14); } else { this.home(); } }
@@ -1266,12 +1283,14 @@ class Component extends DCLogic {
     c.addEventListener('wheel', this._h.wheel, { passive:false });
     this.loadMap();
     this.loadData();
+    this.applyHash();
     this._raf = requestAnimationFrame(this.loop);
   }
   componentWillUnmount(){
     this._mounted = false;
     if (this._raf) cancelAnimationFrame(this._raf);
     if (this._flyRaf) cancelAnimationFrame(this._flyRaf);
+    this.cancelReframe();
     if (this.ro) this.ro.disconnect();
     const c = this.arcRef.current;
     if (c && this._h){ c.removeEventListener('pointerdown', this._h.down); c.removeEventListener('wheel', this._h.wheel); }
@@ -1288,6 +1307,9 @@ class Component extends DCLogic {
       c.style.width = this.viewW+'px'; c.style.height = this.viewH+'px';
       c.getContext('2d').setTransform(dpr,0,0,dpr,0,0);
     });
+    // Hors animation de recadrage, on réaligne la réserve sur l'état courant
+    // (utile au montage et au franchissement de la bascule mobile).
+    if(!this._reRaf) this.reservedRight = this.reservedTarget();
     this.fitProjection(); this.drawBase();
     this.setState(s=>({ ready:true, tick:s.tick+1 }));
   }
@@ -1299,10 +1321,16 @@ class Component extends DCLogic {
     const x0 = xr(b.lonMin), x1 = xr(b.lonMax);
     const y0 = ym(b.latMax), y1 = ym(b.latMin);
     const spanX = x1-x0, spanY = y0-y1;
-    const W = this.viewW, H = this.viewH;
+    const W = Math.max(50, this.viewW - (this.reservedRight||0)), H = this.viewH;
     const s = Math.min(W*(1-2*pad)/spanX, H*(1-2*pad)/spanY);
     const offX = (W - s*spanX)/2, offY = (H - s*spanY)/2;
     this.proj = (lon,la)=>({ x: offX + s*(xr(lon)-x0), y: offY + s*(y0-ym(la)) });
+    // Inverse de proj : sert à garder un point géographique en place quand
+    // la projection est recalculée (ouverture/fermeture du panneau).
+    this.projInv = (x,y)=>({
+      lon: ((x-offX)/s + x0)*180/Math.PI,
+      lat: (Math.atan(Math.exp(y0-(y-offY)/s)) - Math.PI/4)*360/Math.PI
+    });
     const gp = new Path2D();
     for(let lon=-30;lon<=105;lon+=5){ for(let la=-2;la<=74;la+=2){ const p=this.proj(lon,la); la===-2?gp.moveTo(p.x,p.y):gp.lineTo(p.x,p.y); } }
     for(let la=0;la<=70;la+=5){ for(let lon=-30;lon<=105;lon+=2){ const p=this.proj(lon,la); lon===-30?gp.moveTo(p.x,p.y):gp.lineTo(p.x,p.y); } }
@@ -1310,6 +1338,47 @@ class Component extends DCLogic {
     if(this.countries) this.buildCountryPaths();
   }
   toScreen(lon,la){ const p = this.proj(lon,la); return { x:p.x*this.view.k+this.view.x, y:p.y*this.view.k+this.view.y }; }
+
+  // ---- recadrage sur la zone laissée libre par le panneau latéral ----
+  // En mise en page mobile le panneau est empilé sous la carte : rien à réserver.
+  reservedTarget(){
+    try{ if(window.matchMedia('(max-width:860px)').matches) return 0; }catch(e){}
+    return this.state.panelAside ? this.PANEL_W : 0;
+  }
+  visibleCx(){ return (this.viewW - (this.reservedRight||0))/2; }
+  // Point géographique actuellement au centre de la zone visible.
+  centerGeo(){
+    if(!this.projInv) return null;
+    const k=this.view.k||1;
+    return this.projInv((this.visibleCx()-this.view.x)/k, (this.viewH/2-this.view.y)/k);
+  }
+  // Replace ce point au centre de la nouvelle zone visible, à zoom constant :
+  // le recadrage ne perturbe donc ni le zoom ni le déplacement de l'utilisateur.
+  recenterOn(geo){
+    if(!geo || !isFinite(geo.lon) || !isFinite(geo.lat)) return;
+    const k=this.view.k||1, b=this.proj(geo.lon,geo.lat);
+    this.view.x = this.visibleCx() - b.x*k;
+    this.view.y = this.viewH/2 - b.y*k;
+  }
+  cancelReframe(){ if(this._reRaf){ cancelAnimationFrame(this._reRaf); this._reRaf=null; } }
+  reframe(target, dur){
+    const from = this.reservedRight||0;
+    if(Math.abs(target-from) < 0.5) return;
+    const geo = this.centerGeo();
+    this.cancelReframe();
+    const t0 = performance.now();
+    const step=(ts)=>{
+      if(!this._mounted){ this._reRaf=null; return; }
+      let p = dur>0 ? (ts-t0)/dur : 1; if(p>1) p=1;
+      this.reservedRight = from + (target-from)*this.easeOut(p);
+      this.fitProjection();
+      this.recenterOn(geo);
+      this.drawBase();
+      this.setState(s=>({ tick:s.tick+1 }));
+      if(p<1) this._reRaf=requestAnimationFrame(step); else this._reRaf=null;
+    };
+    this._reRaf=requestAnimationFrame(step);
+  }
 
   parseTopo(topo){
     const fc = window.topojson.feature(topo, topo.objects.countries);
@@ -1410,7 +1479,11 @@ class Component extends DCLogic {
   loop = (ts)=>{ if(!this._mounted) return; if(!document.hidden){ try{ this.drawArcs(ts/1000); }catch(e){ window.__drawErr = (e && e.stack) || String(e); } } this._raf = requestAnimationFrame(this.loop); }
   applyView(){ this.drawBase(); if(this._viewPend) return; this._viewPend=true; requestAnimationFrame(()=>{ this._viewPend=false; if(this._mounted) this.setState(s=>({ tick:s.tick+1 })); }); }
   panMove(){ this.drawBase(); const o=this.overlayRef.current; if(o){ const dx=this.view.x-this._renderView.x, dy=this.view.y-this._renderView.y; o.style.transform='translate('+dx+'px,'+dy+'px)'; } }
-  componentDidUpdate(){ const o=this.overlayRef.current; if(o && o.style.transform) o.style.transform=''; }
+  componentDidUpdate(){ const o=this.overlayRef.current; if(o && o.style.transform) o.style.transform='';
+    // On compare à l'objectif mémorisé plutôt qu'à prevState : ce runtime ne
+    // garantit pas l'argument, et l'objectif suffit à détecter le changement.
+    const t=this.reservedTarget();
+    if(this._reservedGoal!==t){ this._reservedGoal=t; this.reframe(t, 320); } }
 
   drawArcs(t){
     const ctx = this.arcCtx; if(!ctx||!this.proj) return;
@@ -1515,12 +1588,44 @@ class Component extends DCLogic {
   toggleCat(k){ this.setState(s=>({ catFilters:{...s.catFilters,[k]:!s.catFilters[k]} })); }
   toggleEvasion(){ this.setState(s=>({ evasionOnly:!s.evasionOnly })); }
   setSanc(v){ this.setState({ sancFilter:v }); }
-  selectCity(id){ const sel=this.state.selCity!==id; this.setState(s=>({ selCity:s.selCity===id?null:id, selPerson:null, selSite:null, panelAside:true })); if(sel) this.scrollDetail(); }
+  selectCity(id){ const sel=this.state.selCity!==id; this.setState(s=>({ selCity:s.selCity===id?null:id, selPerson:null, selSite:null, panelAside:true })); this.syncHash(sel?id:null); if(sel) this.scrollDetail(); }
   scrollDetail(delay){ try{ if(!window.matchMedia('(max-width:860px)').matches) return; setTimeout(()=>{ const el=document.getElementById('kd-detail'); if(!el) return; const y=el.getBoundingClientRect().top+window.pageYOffset-58; window.scrollTo({top:y,behavior:'smooth'}); }, delay||60); }catch(e){} }
-  selectPerson(id){ this.setState({ selPerson:id, selEntity:null, selCity:null, selSite:null, modalOpen:true }); }
-  selectSite(id){ const st=this.SITES.find(s=>s.id===id); this.setState({ selSite:id, selCity:null, selPerson:null, panelAside:true }); if(st) this.flyTo(st.lon,st.lat,st.k); this.scrollDetail(900); }
-  clearSel(){ this.setState({ selCity:null, selPerson:null, selSite:null, selEntity:null, modalOpen:false }); }
-  closeModal(){ this.setState({ modalOpen:false }); }
+  selectPerson(id){ this.setState({ selPerson:id, selEntity:null, selCity:null, selSite:null, modalOpen:true }); this.syncHash(id); }
+  selectSite(id){ const st=this.SITES.find(s=>s.id===id); this.setState({ selSite:id, selCity:null, selPerson:null, panelAside:true }); this.syncHash(id); if(st) this.flyTo(st.lon,st.lat,st.k); this.scrollDetail(900); }
+  clearSel(){ this.setState({ selCity:null, selPerson:null, selSite:null, selEntity:null, modalOpen:false }); this.syncHash(null); }
+  closeModal(){ this.setState({ modalOpen:false }); this.syncHash(null); }
+
+  // ---- liens directs : #id dans l'URL ouvre la fiche correspondante ----
+  // L'ordre de résolution suit la précision du nœud : adresse précise
+  // (SITES) avant la ville (PLACES), puis personne, puis entité.
+  resolveHashId(id){
+    if(!id) return null;
+    if(this.SITES.some(s=>s.id===id)) return 'site';
+    if(this.PLACES.some(p=>p.id===id)) return 'city';
+    if(this.PEOPLE.some(p=>p.id===id)) return 'person';
+    if(this.ENTITIES.some(e=>e.id===id)) return 'entity';
+    return null;
+  }
+  applyHash(){
+    try{
+      const id=decodeURIComponent((window.location.hash||'').replace(/^#/,'')).trim();
+      const kind=this.resolveHashId(id);
+      if(!kind) return;
+      if(kind==='site') this.selectSite(id);
+      else if(kind==='city') this.selectCity(id);
+      else if(kind==='person') this.selectPerson(id);
+      else this.selectEntity(id);
+    }catch(e){}
+  }
+  // replaceState : l'URL reste copiable sans empiler d'entrées d'historique
+  // ni déclencher de hashchange (donc pas de boucle avec applyHash).
+  syncHash(id){
+    try{
+      if(!window.history||!window.history.replaceState) return;
+      const base=window.location.pathname+window.location.search;
+      window.history.replaceState(null,'',id?base+'#'+encodeURIComponent(id):base);
+    }catch(e){}
+  }
 
   sancSection(id){
     const list=this.sancList(id); const J=this.JUR; const l=this.state.lang;
@@ -1775,6 +1880,15 @@ class Component extends DCLogic {
     }));
     const timeline = this.TL.map(t=>({ y:t.y, label: lang==='fr'?t.fr:t.en, color:this.CAT[t.cat].color }));
     const evOn=this.state.evasionOnly;
+    // Répartition de la largeur de carte restée visible entre les trois
+    // éléments ancrés en haut : rangée « Lieux clés », indicateur de fond,
+    // onglet du panneau. Largeurs constatées au rendu (rangée 698px en FR,
+    // 705px en EN ; indicateur ~165px ; onglet ~30px).
+    const visW = Math.max(200, (this.viewW||1000) - (this.state.panelAside?this.PANEL_W:0));
+    const RANGEE_W=710, STATUT_W=170, ONGLET_W=34, MARGE=12;
+    const statutVisible = visW >= RANGEE_W + STATUT_W + ONGLET_W + 3*MARGE;
+    const zoneDroite = ONGLET_W + MARGE + (statutVisible ? STATUT_W + MARGE : 0);
+    const lieuxLeftPx = Math.round(Math.max(RANGEE_W/2, (visW - zoneDroite)/2));
     const evasionBtn={ display:'flex',alignItems:'center',gap:'8px',width:'100%',marginTop:'10px',padding:'6px 8px',borderRadius:'5px',cursor:'pointer', border:'1px solid '+(evOn?'rgba(255,255,255,.55)':'rgba(120,150,165,.22)'), background:evOn?'rgba(255,255,255,.08)':'transparent' };
     const evasionTxt={ fontFamily:"'IBM Plex Sans'",fontSize:'11px',color:evOn?'#eef4f8':'#9fb0bc' };
     const sf=this.state.sancFilter;
@@ -1902,12 +2016,21 @@ class Component extends DCLogic {
       toggleAside:()=>this.setState(s=>({panelAside:!s.panelAside})),
       asideTransform:this.state.panelAside?'translateX(0)':'translateX(100%)',
       asideTabRight:this.state.panelAside?'378px':'0px',
+      // La section carte garde toute la largeur : le panneau se superpose.
+      // On répartit la zone restée visible entre la rangée « Lieux clés »,
+      // l'indicateur de fond et l'onglet, tous ancrés à droite. Quand la
+      // place manque (panneau ouvert sur écran étroit), l'indicateur — la
+      // seule information purement contextuelle des trois — s'efface.
+      lieuxLeft:lieuxLeftPx+'px',
+      statusDisplay:statutVisible?'flex':'none',
       asideTabLbl:this.state.panelAside?(lang==='fr'?'Fermer ▸':'Close ▸'):(lang==='fr'?'◂ Fiches & réseau':'◂ Files & network'),
       ctrlRight:this.state.panelAside?'394px':'16px',
-      statusRight:this.state.panelAside?'394px':'52px',
+      // Panneau ouvert, l'onglet « Fermer » occupe 378→408 px depuis la
+      // droite : on place l'indicateur au-delà pour qu'il reste entier.
+      statusRight:this.state.panelAside?'418px':'52px',
       footOpen:this.state.panelFoot,
       toggleFoot:()=>this.setState(s=>({panelFoot:!s.panelFoot})),
-      footToggleLbl:(this.state.panelFoot?'▾ ':'▴ ')+(lang==='fr'?'Chronologie & sources':'Timeline & sources'),
+      footToggleLbl:(this.state.panelFoot?'▾ ':'▴ ')+(lang==='fr'?'Chronologie & sources':'Timeline & sources')+' ('+(this.SOURCES?this.SOURCES.length:0)+')',
       footHint:lang==='fr'?'2004–2026 · corpus de sources · périmètre méthodologique — cliquer pour déplier':'2004–2026 · source corpus · methodological scope — click to expand',
       detail:this.buildDetail(), clearSel:()=>this.clearSel(),
       modal:this.buildModal(), closeModal:()=>this.closeModal(), modalStop:(e)=>e.stopPropagation(),
