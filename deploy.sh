@@ -145,7 +145,7 @@ info "commit : ${COMMIT_MSG}"
 # Chemins EXPLICITES, jamais `data` en entier : data/import/ contient le
 # fichier maître, à usage strictement local. Il est déjà couvert par le
 # .gitignore, mais on ne dépend pas d'un seul garde-fou pour ça.
-run "git add index.html data/kadyrov-data.json src scripts README.md ${ARCHIVE:+'$ARCHIVE'}"
+run "git add index.html data/kadyrov-data.json src scripts assets README.md ${ARCHIVE:+'$ARCHIVE'}"
 
 # Ceinture et bretelles : si quoi que ce soit sous data/import/ s'est
 # retrouvé indexé (gitignore modifié, fichier déjà suivi, ajout manuel
