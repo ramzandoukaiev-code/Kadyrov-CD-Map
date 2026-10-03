@@ -58,7 +58,7 @@ const META_BLOCK = `  ${META_START}
   <meta name="description" content="${OG_DESC}">
   <link rel="canonical" href="${SITE_URL}">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Kadyrov · Réseau d’influence">
+  <meta property="og:site_name" content="Kadyrov Network Map">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:title" content="${OG_TITLE}">
   <meta property="og:description" content="${OG_DESC}">
