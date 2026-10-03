@@ -1317,7 +1317,7 @@ class Component extends DCLogic {
       const g = f.geometry; if(!g) return null;
       let polys = g.type==='Polygon' ? [g.coordinates] : g.type==='MultiPolygon' ? g.coordinates : [];
       const clipped = [];
-      polys.forEach(poly=>{ const rings=[]; poly.forEach(ring=>{ const c=this.clipRing(ring); if(c.length>=3) rings.push(c); }); if(rings.length) clipped.push(rings); });
+      polys.forEach(poly=>{ const rings=[]; poly.forEach(ring=>{ const c=this.clipRing(this.unwrapRing(ring)); if(c.length>=3) rings.push(c); }); if(rings.length) clipped.push(rings); });
       return clipped.length ? { name:(f.properties&&f.properties.name)||'', polys:clipped } : null;
     }).filter(Boolean);
   }
@@ -1345,6 +1345,18 @@ class Component extends DCLogic {
         })
         .catch(()=>{});
     }catch(e){ this.setState({ mapState:'off' }); }
+  }
+  unwrapRing(ring){
+    const out=[]; let off=0, prev=null;
+    for(const [lon,lat] of ring){
+      let L=lon+off;
+      if(prev!==null){
+        if(L-prev>180){ off-=360; L-=360; }
+        else if(L-prev<-180){ off+=360; L+=360; }
+      }
+      out.push([L,lat]); prev=L;
+    }
+    return out;
   }
   clipRing(ring){
     const B = this.clipBox;
