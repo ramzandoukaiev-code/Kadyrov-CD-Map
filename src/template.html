@@ -900,6 +900,17 @@
             <sc-if value="{{ modal.hasPhoto }}" hint-placeholder-val="{{ false }}">
               <div data-mphoto="1" role="img" aria-label="{{ modal.title }}" style="{{ modal.photoStyle }}"></div>
             </sc-if>
+            <sc-if value="{{ modal.photoCredit.show }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:-6px;font-family:'IBM Plex Mono';font-size:8.5px;line-height:1.4;color:#6f828e">
+                <sc-if value="{{ modal.photoCredit.hasUrl }}" hint-placeholder-val="{{ false }}">
+                  <a href="{{ modal.photoCredit.url }}" target="_blank" rel="noopener" style="color:#7cc9e0;text-decoration:none;border-bottom:1px solid rgba(124,201,224,.3)">{{ modal.photoCredit.label }}</a>
+                </sc-if>
+                <sc-if value="{{ modal.photoCredit.noUrl }}" hint-placeholder-val="{{ true }}">
+                  <span>{{ modal.photoCredit.label }}</span>
+                </sc-if>
+                <span>{{ modal.photoCredit.licence }}</span>
+              </div>
+            </sc-if>
             <sc-if value="{{ modal.noPhoto }}" hint-placeholder-val="{{ false }}">
               <div data-mphoto="1" style="width:100%;aspect-ratio:5/6;flex:none;border-radius:8px;border:1px solid rgba(120,150,165,.22);background:repeating-linear-gradient(135deg,rgba(120,150,165,.06) 0px,rgba(120,150,165,.06) 8px,transparent 8px,transparent 16px),#0b1219;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px">
                 <span style="font-family:'Barlow Condensed';font-weight:700;font-size:46px;color:#334653">{{ modal.initials }}</span>
@@ -1436,6 +1447,16 @@ class Component extends DCLogic {
     }
     return out;
   }
+  // ---- photos des fiches ----
+  // Les photos sont des ressources du bundle : civil[].photo porte un
+  // identifiant déclaré dans ext_resources, que le dépaquetage expose dans
+  // window.__resources sous forme d'URL blob. Un identifiant absent ou non
+  // résolu renvoie null, et l'appelant retombe sur les initiales.
+  resolvePhoto(id){
+    if(!id || typeof id !== 'string') return null;
+    try{ const r = window.__resources; const u = r && r[id]; return (typeof u === 'string' && u) ? u : null; }
+    catch(e){ return null; }
+  }
   clipRing(ring){
     const B = this.clipBox;
     const clip = (pts, inside, inter)=>{ const out=[]; const n=pts.length; if(!n) return out;
@@ -1722,7 +1743,7 @@ class Component extends DCLogic {
     const sanc=(pe.sanc&&pe.sanc.length)?pe.sanc.map(s=>({label:s,style:sancChip})):[{label:lang==='fr'?'Non sanctionné':'Not sanctioned',style:greyChip}];
     const bd=this.BIOS[pe.id];
     const sources=(bd&&bd.sources?bd.sources:[]).map(s=>({label:s.label,url:s.url,note:this.L(s.note)}));
-    const photo=civ.photo?encodeURI(civ.photo):null;
+    const photo=this.resolvePhoto(civ.photo);
     const initials=(((civ.prenom||pe.full)[0])||'')+(((civ.nom||'')[0])||'');
     const sancSec=this.sancSection(pe.id);
     const linkedEnt=this.relsFor('person',pe.id).map(r=>{ const ent=this.entity(r.to); const m=this.CERT[r.cert]||this.CERT['3'];
@@ -1744,6 +1765,12 @@ class Component extends DCLogic {
       linkedLbl: lang==='fr'?'Structures liées':'Linked structures',
       evasion:!!pe.evasion, evasionLbl:lang==='fr'?'Évasion / prête-nom':'Evasion / nominee',
       hasPhoto:!!photo, noPhoto:!photo, photo,
+      // Crédit photo : masqué tant que le libellé n'est pas renseigné, pour
+      // qu'un champ encore vide n'affiche pas une ligne orpheline.
+      photoCredit:(()=>{ const c=civ.photoCredit||{}; const lab=(c.label||'').trim();
+        const url=(c.url||'').trim(); const lic=(c.licence||'').trim();
+        return { show: !!(photo && lab), label: lab, url, hasUrl: !!url, noUrl: !url,
+                 licence: lic ? ' · '+lic : '' }; })(),
       photoStyle:{ width:'100%', aspectRatio:'5/6', flex:'none', borderRadius:'8px', border:'1px solid rgba(120,150,165,.3)', backgroundImage:photo?('url("'+photo+'")'):'none', backgroundSize:'cover', backgroundPosition:'center top', filter:'saturate(.88) contrast(1.04)' },
       noPhotoLbl:lang==='fr'?'photo non disponible':'no photo available',
       initials,
@@ -1914,7 +1941,7 @@ class Component extends DCLogic {
       const cl=p.cluster?this.CLUSTERS[p.cluster]:null;
       const col=p.center?'#e8503a':cl.color;
       const civ=this.CIVIL[p.id]||{};
-      const photo=civ.photo?encodeURI(civ.photo):null;
+      const photo=this.resolvePhoto(civ.photo);
       const hl=(selP===p.id)||(activePeople.size>0&&activePeople.has(p.id));
       const dim=(!matchSanc(p))||(activePeople.size>0&&!activePeople.has(p.id)&&!p.center)||(geoUAE&&!this.isUAE('person',p.id)&&!p.center);
       const initials=(((civ.prenom||p.full)[0])||'')+(((civ.nom||'')[0])||'');

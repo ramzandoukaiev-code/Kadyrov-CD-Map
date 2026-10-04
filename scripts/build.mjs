@@ -90,10 +90,44 @@ function ensureMeta(html) {
   return sansTitre.slice(0, at) + META_BLOCK + '\n' + sansTitre.slice(at);
 }
 
+// Les photos des fiches ne sont pas des fichiers servis à côté de la page :
+// ce sont des ressources embarquées dans le bundle, déclarées dans
+// __bundler/ext_resources et exposées au runtime via window.__resources.
+// Un identifiant absent de ce manifeste ne lèverait aucune erreur — la photo
+// disparaîtrait simplement, remplacée par les initiales. On fait donc
+// échouer le build, pour que la rupture soit visible tout de suite.
+function verifiePhotos(html, data) {
+  const m = html.match(/<script type="__bundler\/ext_resources">\n([\s\S]*?)\n\s*<\/script>/);
+  if (!m) throw new Error('Bloc __bundler/ext_resources introuvable : impossible de vérifier les photos.');
+  let connus;
+  try { connus = new Set(JSON.parse(m[1]).map((r) => r.id)); }
+  catch (e) { throw new Error('__bundler/ext_resources illisible : ' + e.message); }
+
+  const manquants = [];
+  for (const [id, fiche] of Object.entries((data && data.civil) || {})) {
+    const p = fiche && fiche.photo;
+    if (!p) continue;                       // null ou absent : fiche sans photo, cas normal
+    if (typeof p !== 'string') { manquants.push(`${id} : photo n'est pas une chaîne (${typeof p})`); continue; }
+    if (p.includes('/') || p.includes('.')) {
+      manquants.push(`${id} : "${p}" ressemble à un chemin de fichier — attendu : un identifiant de ext_resources`);
+      continue;
+    }
+    if (!connus.has(p)) manquants.push(`${id} : "${p}" absent de ext_resources`);
+  }
+  if (manquants.length) {
+    throw new Error(
+      'Photos de fiches non résolubles — build interrompu :\n  ' + manquants.join('\n  ') +
+      `\n\nIdentifiants disponibles : ${[...connus].join(', ')}`
+    );
+  }
+}
+
 function main() {
   const currentHtml = readFileSync(indexPath, 'utf8');
   const data = JSON.parse(readFileSync(dataPath, 'utf8'));
   const templateHtml = readFileSync(templatePath, 'utf8');
+
+  verifiePhotos(currentHtml, data);
 
   const m = currentHtml.match(TEMPLATE_BLOCK_RE);
   if (!m) {
