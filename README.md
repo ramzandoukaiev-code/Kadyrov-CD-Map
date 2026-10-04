@@ -64,8 +64,17 @@ Détail des clés de données et correspondance avec les anciens noms de variabl
 Les photos ne sont pas des fichiers servis à côté de la page : ce sont des **ressources embarquées** dans `index.html`, déclarées dans le bloc `__bundler/ext_resources` et exposées au runtime sous `window.__resources`. Le champ `photo` d'une fiche (`data/kadyrov-data.json`, clé `civil`) porte donc un **identifiant de ressource**, jamais un chemin de fichier :
 
 ```json
-"ramzan": { "photo": "kadyrovImg", "photoCredit": { "label": "", "url": "", "licence": "" } }
+"ramzan": {
+  "photo": "kadyrovImg",
+  "photoCredit": {
+    "label": "Photo : tatarstan.ru, CC BY 4.0, via Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Ramzan_Kadyrov_May_2024.jpg",
+    "licence": "CC BY 4.0"
+  }
+}
 ```
+
+`photoCredit` est affiché sous la photo de la fiche : `label` est le texte visible, `url` la page Commons du fichier (le texte devient un lien), `licence` l'intitulé exact répété à part. Le crédit n'apparaît que si la fiche a une photo **et** un `label` non vide. Toute photo ajoutée doit donc venir avec son crédit : auteur, licence et page source.
 
 `photo: null` affiche les initiales à la place. Le build refuse de produire un fichier si un identifiant est absent de `ext_resources` ou ressemble à un chemin — c'est ce contrôle qui empêche une photo de disparaître en silence.
 
@@ -84,7 +93,9 @@ Formats acceptés : `.jpg`, `.jpeg`, `.png`, `.avif`, `.webp`, `.gif`, `.svg`.
 
 Le retrait est refusé tant qu'une fiche référence encore l'identifiant : passer son `photo` à `null` d'abord. Il est également refusé si l'uuid de la ressource est cité ailleurs dans le fichier. Après chaque opération, la cohérence entre les photos et `ext_resources` est revérifiée.
 
-Une sauvegarde des images d'origine se trouve dans `data/import/photos/`, dossier ignoré par Git et donc jamais publié.
+Une sauvegarde des images se trouve dans `data/import/photos/`, dossier ignoré par Git et donc jamais publié : les fichiers d'origine à la racine, les rendus téléchargés depuis Wikimedia Commons dans `commons/`.
+
+Les photos publiées viennent de Wikimedia Commons, téléchargées dans un rendu servi par Commons lui-même (aucun recadrage ni retouche en local : le cadrage est fait en CSS). Commons n'accepte qu'une liste fixe de largeurs de vignette — `20, 40, 60, 120, 250, 330, 500, 960, 1280, 1920, 3840` ; toute autre valeur renvoie une erreur 400. Pour un grand côté d'environ 600 px sur des portraits, la largeur utile est donc **500 px**, sans jamais dépasser la largeur d'origine du fichier.
 
 ### Publier avec `deploy.sh`
 
@@ -105,4 +116,4 @@ Il régénère `index.html` depuis `src/` + `data/`, vérifie le fichier produit
 Le script ne prend plus de fichier HTML en argument : cette ancienne signature (`./deploy.sh carte.html`) est refusée avec un message d'explication, car elle court-circuitait le build et désynchronisait `src/`/`data/` de ce qui était en ligne.
 
 ---
-*Dernière mise à jour : 29 juillet 2026.*
+*Dernière mise à jour : 4 octobre 2026.*

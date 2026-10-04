@@ -1766,11 +1766,14 @@ class Component extends DCLogic {
       evasion:!!pe.evasion, evasionLbl:lang==='fr'?'Évasion / prête-nom':'Evasion / nominee',
       hasPhoto:!!photo, noPhoto:!photo, photo,
       // Crédit photo : masqué tant que le libellé n'est pas renseigné, pour
-      // qu'un champ encore vide n'affiche pas une ligne orpheline.
+      // qu'un champ encore vide n'affiche pas une ligne orpheline. La licence
+      // n'est ajoutée que si le libellé ne la cite pas déjà, sinon elle
+      // s'afficherait deux fois sur la même ligne.
       photoCredit:(()=>{ const c=civ.photoCredit||{}; const lab=(c.label||'').trim();
         const url=(c.url||'').trim(); const lic=(c.licence||'').trim();
+        const double = !!lic && lab.toLowerCase().indexOf(lic.toLowerCase())!==-1;
         return { show: !!(photo && lab), label: lab, url, hasUrl: !!url, noUrl: !url,
-                 licence: lic ? ' · '+lic : '' }; })(),
+                 licence: (lic && !double) ? ' · '+lic : '' }; })(),
       photoStyle:{ width:'100%', aspectRatio:'5/6', flex:'none', borderRadius:'8px', border:'1px solid rgba(120,150,165,.3)', backgroundImage:photo?('url("'+photo+'")'):'none', backgroundSize:'cover', backgroundPosition:'center top', filter:'saturate(.88) contrast(1.04)' },
       noPhotoLbl:lang==='fr'?'photo non disponible':'no photo available',
       initials,
