@@ -1805,6 +1805,11 @@
       "origine": {
         "fr": "Urus-Martan, Tchétchénie",
         "en": "Urus-Martan, Chechnya"
+      },
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "bekkhan-agayev": {
@@ -1823,6 +1828,11 @@
       "origine": {
         "fr": "Grozny, Tchétchénie",
         "en": "Grozny, Chechnya"
+      },
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "batyr-agayev": {
@@ -1841,6 +1851,11 @@
       "origine": {
         "fr": "Berlin / Monaco",
         "en": "Berlin / Monaco"
+      },
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "ruslan-agayev": {
@@ -1859,13 +1874,18 @@
       "origine": {
         "fr": "Tchétchénie · Russie",
         "en": "Chechnya · Russia"
+      },
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "ramzan": {
       "nom": "Kadyrov",
       "prenom": "Ramzan Akhmatovitch",
       "sexe": "M",
-      "photo": "uploads/kadyrov.jpeg",
+      "photo": "kadyrovImg",
       "naissance": {
         "fr": "5 octobre 1976",
         "en": "5 October 1976"
@@ -1877,13 +1897,18 @@
       "origine": {
         "fr": "Tsentaroï, Tchétchénie",
         "en": "Tsentaroy, Chechnya"
+      },
+      "photoCredit": {
+        "label": "Photo : tatarstan.ru, CC BY 4.0, via Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Ramzan_Kadyrov_May_2024.jpg",
+        "licence": "CC BY 4.0"
       }
     },
     "aimani": {
       "nom": "Kadyrova",
       "prenom": "Aimani Nesievna",
       "sexe": "F",
-      "photo": "uploads/aymani.jpg",
+      "photo": "aimaniImg",
       "naissance": {
         "fr": "1953",
         "en": "1953"
@@ -1895,13 +1920,18 @@
       "origine": {
         "fr": "Tchétchénie",
         "en": "Chechnya"
+      },
+      "photoCredit": {
+        "label": "Photo : ChGTRK Grozny, CC BY 3.0, via Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:%D0%96%D0%B5%D0%BD%D0%B0_%D0%90%D1%85%D0%BC%D0%B0%D1%82%D0%B0_%D0%9A%D0%B0%D0%B4%D1%8B%D1%80%D0%BE%D0%B2%D0%B0_(cropped).jpg",
+        "licence": "CC BY 3.0"
       }
     },
     "medni": {
       "nom": "Kadyrova",
       "prenom": "Medni Moussaïevna",
       "sexe": "F",
-      "photo": "uploads/medni.jpeg",
+      "photo": "medniImg",
       "naissance": {
         "fr": "1979",
         "en": "1979"
@@ -1913,13 +1943,18 @@
       "origine": {
         "fr": "Tchétchénie",
         "en": "Chechnya"
+      },
+      "photoCredit": {
+        "label": "Photo : Пресс-служба Президента Российской Федерации, CC BY 4.0, via Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D0%B4%D1%8B%D1%80%D0%BE%D0%B2%D0%B0_%D0%9C%D0%B5%D0%B4%D0%BD%D0%B8_%D0%9C%D1%83%D1%81%D0%B0%D0%B5%D0%B2%D0%BD%D0%B0,_23.05.2023.png",
+        "licence": "CC BY 4.0"
       }
     },
     "aishat": {
       "nom": "Kadyrova",
       "prenom": "Aishat Ramzanovna",
       "sexe": "F",
-      "photo": "uploads/aishat kadyrov.jpeg",
+      "photo": "aishatImg",
       "naissance": {
         "fr": "31 décembre 1998",
         "en": "31 December 1998"
@@ -1931,13 +1966,18 @@
       "origine": {
         "fr": "Tchétchénie",
         "en": "Chechnya"
+      },
+      "photoCredit": {
+        "label": "Photo : minnacinform-chr.ru, CC BY 4.0, via Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Aishat_Kadyrova_(2023-09-05).jpg",
+        "licence": "CC BY 4.0"
       }
     },
     "adamk": {
       "nom": "Kadyrov",
       "prenom": "Adam Ramzanovitch",
       "sexe": "M",
-      "photo": "uploads/adam.avif",
+      "photo": null,
       "naissance": {
         "fr": "24 novembre 2007",
         "en": "24 November 2007"
@@ -1949,13 +1989,18 @@
       "origine": {
         "fr": "Grozny, Tchétchénie",
         "en": "Grozny, Chechnya"
+      },
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "delim": {
       "nom": "Delimkhanov",
       "prenom": "Adam Sultanovitch",
       "sexe": "M",
-      "photo": "uploads/delimkhanov.jpeg",
+      "photo": "delimImg",
       "naissance": {
         "fr": "25 septembre 1969",
         "en": "25 September 1969"
@@ -1967,13 +2012,18 @@
       "origine": {
         "fr": "Benoy, Tchétchénie",
         "en": "Benoy, Chechnya"
+      },
+      "photoCredit": {
+        "label": "Photo : duma.gov.ru, CC BY 4.0, via Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Adam_Delimkhanov_2018_(cropped).jpg",
+        "licence": "CC BY 4.0"
       }
     },
     "alaud": {
       "nom": "Alaudinov",
       "prenom": "Apti Aronovitch",
       "sexe": "M",
-      "photo": "uploads/alaud.jpeg",
+      "photo": "alaudImg",
       "naissance": {
         "fr": "5 avril 1973",
         "en": "5 April 1973"
@@ -1985,13 +2035,18 @@
       "origine": {
         "fr": "Tchétchénie",
         "en": "Chechnya"
+      },
+      "photoCredit": {
+        "label": "Photo : Дагиров Умар, CC BY-SA 4.0, via Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Apti_Aludinov_2017.jpg",
+        "licence": "CC BY-SA 4.0"
       }
     },
     "daudov": {
       "nom": "Daudov",
       "prenom": "Magomed Khozhakhmedovitch",
       "sexe": "M",
-      "photo": "uploads/Даудов_Магомед.jpg",
+      "photo": "daudovImg",
       "naissance": {
         "fr": "26 février 1980",
         "en": "26 February 1980"
@@ -2003,6 +2058,11 @@
       "origine": {
         "fr": "Tchétchénie",
         "en": "Chechnya"
+      },
+      "photoCredit": {
+        "label": "Photo : Press Service (council.gov.ru), CC BY 4.0, via Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Magomed_Daudov_2018.jpg",
+        "licence": "CC BY 4.0"
       }
     },
     "vismuradov": {
@@ -2020,6 +2080,12 @@
       "origine": {
         "fr": "Tchétchénie",
         "en": "Chechnya"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "kataev": {
@@ -2034,6 +2100,12 @@
       "origine": {
         "fr": "Tchétchénie",
         "en": "Chechnya"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "shahr": {
@@ -2048,6 +2120,12 @@
       "origine": {
         "fr": "Tchétchénie",
         "en": "Chechnya"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "baisarov": {
@@ -2065,6 +2143,12 @@
       "origine": {
         "fr": "District de Grozny, Tchétchénie",
         "en": "Grozny district, Chechnya"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "taymas": {
@@ -2079,6 +2163,12 @@
       "origine": {
         "fr": "Tchétchénie",
         "en": "Chechnya"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "seemar": {
@@ -2093,6 +2183,12 @@
       "origine": {
         "fr": "Inde · établi aux ÉAU",
         "en": "India · based in the UAE"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "sabsabi": {
@@ -2107,6 +2203,12 @@
       "origine": {
         "fr": "Alep, Syrie",
         "en": "Aleppo, Syria"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "dugaz": {
@@ -2124,6 +2226,12 @@
       "origine": {
         "fr": "Tchétchénie",
         "en": "Chechnya"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "martynov": {
@@ -2138,6 +2246,12 @@
       "origine": {
         "fr": "Russie (ex-FSB)",
         "en": "Russia (ex-FSB)"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "zakriev": {
@@ -2155,13 +2269,19 @@
       "origine": {
         "fr": "Tchétchénie",
         "en": "Chechnya"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "dadaev": {
       "nom": "Dadaev",
       "prenom": "Mourad (« Noah Krieger »)",
       "sexe": "M",
-      "photo": "uploads/noah kruger-c3f8beea.jpeg",
+      "photo": null,
       "naissance": {
         "fr": "1989",
         "en": "1989"
@@ -2173,6 +2293,11 @@
       "origine": {
         "fr": "Grozny · Samachki, Tchétchénie · installé à Hanovre",
         "en": "Grozny · Samashki, Chechnya · based in Hanover"
+      },
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "padaev": {
@@ -2190,6 +2315,12 @@
       "origine": {
         "fr": "Tchétchénie · antécédent moscovite (2015-2018)",
         "en": "Chechnya · Moscow antecedent (2015-2018)"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "brambilla": {
@@ -2204,6 +2335,12 @@
       "origine": {
         "fr": "Cantù, Lombardie, Italie",
         "en": "Cantù, Lombardy, Italy"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "sajwani": {
@@ -2221,6 +2358,12 @@
       "origine": {
         "fr": "Dubaï, Émirats arabes unis",
         "en": "Dubai, United Arab Emirates"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     },
     "skvortsov": {
@@ -2238,6 +2381,12 @@
       "origine": {
         "fr": "Moscou, Russie",
         "en": "Moscow, Russia"
+      },
+      "photo": null,
+      "photoCredit": {
+        "label": "",
+        "url": "",
+        "licence": ""
       }
     }
   },
