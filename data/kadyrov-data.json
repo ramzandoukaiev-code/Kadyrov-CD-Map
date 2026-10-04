@@ -1908,7 +1908,7 @@
       "nom": "Kadyrova",
       "prenom": "Aimani Nesievna",
       "sexe": "F",
-      "photo": "aimaniImg",
+      "photo": null,
       "naissance": {
         "fr": "1953",
         "en": "1953"
@@ -1931,7 +1931,7 @@
       "nom": "Kadyrova",
       "prenom": "Medni Moussaïevna",
       "sexe": "F",
-      "photo": "medniImg",
+      "photo": null,
       "naissance": {
         "fr": "1979",
         "en": "1979"
@@ -1954,7 +1954,7 @@
       "nom": "Kadyrova",
       "prenom": "Aishat Ramzanovna",
       "sexe": "F",
-      "photo": "aishatImg",
+      "photo": null,
       "naissance": {
         "fr": "31 décembre 1998",
         "en": "31 December 1998"
@@ -1977,7 +1977,7 @@
       "nom": "Kadyrov",
       "prenom": "Adam Ramzanovitch",
       "sexe": "M",
-      "photo": "adamImg",
+      "photo": null,
       "naissance": {
         "fr": "24 novembre 2007",
         "en": "24 November 2007"

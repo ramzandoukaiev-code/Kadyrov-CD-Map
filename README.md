@@ -59,6 +59,33 @@ Le build injecte les données sous `window.__KADYROV_STATIC` dans le template, p
 
 Détail des clés de données et correspondance avec les anciens noms de variables : `data/README.md`.
 
+### Photos des fiches
+
+Les photos ne sont pas des fichiers servis à côté de la page : ce sont des **ressources embarquées** dans `index.html`, déclarées dans le bloc `__bundler/ext_resources` et exposées au runtime sous `window.__resources`. Le champ `photo` d'une fiche (`data/kadyrov-data.json`, clé `civil`) porte donc un **identifiant de ressource**, jamais un chemin de fichier :
+
+```json
+"ramzan": { "photo": "kadyrovImg", "photoCredit": { "label": "", "url": "", "licence": "" } }
+```
+
+`photo: null` affiche les initiales à la place. Le build refuse de produire un fichier si un identifiant est absent de `ext_resources` ou ressemble à un chemin — c'est ce contrôle qui empêche une photo de disparaître en silence.
+
+**Attention :** mettre `photo` à `null` retire l'affichage, pas la distribution. Les octets de l'image restent dans le fichier publié tant que la ressource n'est pas retirée du bundle.
+
+`scripts/build.mjs` gère les ressources :
+
+```bash
+node scripts/build.mjs --resource-list                      # inventaire, poids, fiches utilisatrices
+node scripts/build.mjs --resource-add     <id> <fichier>    # ajoute (refuse si l'id existe)
+node scripts/build.mjs --resource-replace <id> <fichier>    # remplace le contenu, uuid conservé
+node scripts/build.mjs --resource-remove  <id>              # retire du manifeste ET des ext_resources
+```
+
+Formats acceptés : `.jpg`, `.jpeg`, `.png`, `.avif`, `.webp`, `.gif`, `.svg`.
+
+Le retrait est refusé tant qu'une fiche référence encore l'identifiant : passer son `photo` à `null` d'abord. Il est également refusé si l'uuid de la ressource est cité ailleurs dans le fichier. Après chaque opération, la cohérence entre les photos et `ext_resources` est revérifiée.
+
+Une sauvegarde des images d'origine se trouve dans `data/import/photos/`, dossier ignoré par Git et donc jamais publié.
+
 ### Publier avec `deploy.sh`
 
 `deploy.sh` enchaîne le build et la publication :
