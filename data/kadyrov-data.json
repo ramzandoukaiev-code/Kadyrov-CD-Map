@@ -336,7 +336,7 @@
       "id": "riyadh",
       "lon": 46.72,
       "lat": 24.71,
-      "dir": "down",
+      "dir": "left",
       "name": {
         "fr": "Riyad",
         "en": "Riyadh"
@@ -378,7 +378,7 @@
       "id": "aleppo",
       "lon": 37.16,
       "lat": 36.2,
-      "dir": "left",
+      "dir": "up",
       "name": {
         "fr": "Alep",
         "en": "Aleppo"
@@ -476,7 +476,7 @@
       "id": "lille",
       "lon": 3.06,
       "lat": 50.63,
-      "dir": "left",
+      "dir": "down",
       "name": {
         "fr": "Lille",
         "en": "Lille"
@@ -504,7 +504,7 @@
       "id": "prague",
       "lon": 14.42,
       "lat": 50.08,
-      "dir": "right",
+      "dir": "up",
       "name": {
         "fr": "Prague",
         "en": "Prague"
@@ -518,7 +518,7 @@
       "id": "istanbul",
       "lon": 28.98,
       "lat": 41.01,
-      "dir": "down",
+      "dir": "left",
       "name": {
         "fr": "Istanbul",
         "en": "Istanbul"
@@ -546,7 +546,7 @@
       "id": "cantu",
       "lon": 9.13,
       "lat": 45.74,
-      "dir": "left",
+      "dir": "down",
       "name": {
         "fr": "Cantù",
         "en": "Cantù"
@@ -560,7 +560,7 @@
       "id": "luxembourg",
       "lon": 6.13,
       "lat": 49.61,
-      "dir": "left",
+      "dir": "right",
       "name": {
         "fr": "Luxembourg",
         "en": "Luxembourg"
